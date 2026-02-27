@@ -1,0 +1,741 @@
+/* --- 1. NEW: DESKTOP VIDEO & POSTER SCALING --- */
+@keyframes heroFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.video-container {
+    animation: heroFadeIn 1.5s ease-in-out;
+    background-color: #000; 
+    overflow: hidden;
+    height: calc(100vh - 90px) !important; 
+    width: 100vw !important;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* This forces the video and poster to be the exact same size */
+.video-hero {
+    width: 100vw !important;
+    height: calc(100vh - 90px) !important; 
+    display: block;
+    object-fit: cover !important; 
+    object-position: center 30%; 
+    min-width: 100% !important; 
+    min-height: 100% !important;
+    transform: scale(1.02); 
+}
+
+/* --- 2. PRESERVED: YOUR ORIGINAL MOBILE LOGIC --- */
+
+/* For desktop devices */
+@media (min-width: 768px) {
+    .mobile-image {
+        display: none;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 867px) {
+    .desktop-image {
+        display: none;
+    }
+    
+    .mobile-image img {
+        padding-bottom: 60px;
+        padding-top: -20px;
+    }
+
+    img[src*="wing-valley-edit-scaled.jpeg"],
+    .pricing-paragraph,
+    .aircraft-paragraph {
+        margin-bottom: -60px;
+    }
+
+    .aircraft-paragraph {
+        margin-top: 20px;
+    }
+
+    .video-container {
+        display: none !important; /* Keep video hidden on mobile */
+    }
+
+    .container.mt-5 {
+        margin-top: 6rem !important;
+        margin-bottom: 6rem !important;
+    }
+
+    .carousel-inner .carousel-item img {
+        margin-top: 30px;
+    }
+
+    #brands {
+        background: #f5f6f8;
+        border-radius: 12px;
+        padding: 24px 16px;
+        box-shadow: 0 6px 18px rgba(0,0,0,.05);
+        margin: 20px 0;
+    }
+
+    #brands h2 {
+        margin: 0 0 1rem;
+        text-align: center;
+    }
+
+    #brands .carousel-inner img {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+/* Hide carousel arrows universally */
+.carousel-control-prev, 
+.carousel-control-next {
+    display: none !important;
+}
+
+/* --- 3. PRESERVED: YOUR FINAL HEADER/LOGO FIXES --- */
+@media only screen and (max-width: 768px) {
+    .site-logo, .site-branding, .custom-logo-link, .navbar-brand {
+        position: absolute !important;
+        top: 22px !important;
+        left: 20px !important;
+        z-index: 50 !important;
+        width: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .site-logo img, .custom-logo-link img, .navbar-brand img {
+        width: 250px !important; 
+        height: auto !important;
+        max-width: 70vw !important; 
+    }
+
+    button.menu-toggle, button.navbar-toggler, .mobile-menu-toggle, #menu-toggle {
+        position: absolute !important;
+        top: 24px !important;
+        right: 20px !important;
+        display: block !important;
+        z-index: 100 !important;
+        background: transparent !important;
+    }
+
+    .site-header, .navbar, #masthead {
+        min-height: 90px !important;
+        position: relative !important;
+        background: #fff !important;
+        margin-bottom: 0 !important;
+    }
+
+    .elementor-widget-image, .wp-block-image, .img-container img, .main-image {
+        margin-bottom: 60px !important; 
+    }
+
+    .text-section {
+        padding-top: 15px !important;
+    }
+
+    .container.mt-5 {
+        margin-top: 10px !important; 
+        padding-top: 0 !important;
+    }
+    
+    .wrapper, .site-content, .entry-content {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .col-md-6.col-sm-6 {
+        margin-bottom: 10px !important; 
+    }
+    .card-body {
+        padding: 10px !important; 
+    }
+}
+/* 4. FULL-SCREEN AIRCRAFT SNAP LAYOUT */
+
+/* BREAKOUT: Forces the container to ignore theme boundaries */
+/* 4. FULL-SCREEN AIRCRAFT SNAP LAYOUT */
+
+/* BREAKOUT: Forces the container to ignore theme boundaries */
+.aircraft-showcase {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    background: #000; /* Dark background to prevent white flashes */
+}
+
+/* Adjust focal point to show more chairs in Large Cabin */
+.aircraft-showcase .aircraft-slide:first-child {
+    background-position: center 100% !important;
+}
+
+/* Ensure images cover the full screen */
+.aircraft-slide {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: flex-end;
+    padding: 10vh 10vw; /* Responsive padding */
+}
+/* Info Overlay Box - Updated with Valley Jet Navy */
+.info-overlay {
+    background: rgba(15, 22, 38, 0.85); /* Valley Jet Navy with transparency */
+    backdrop-filter: blur(10px); 
+    padding: 40px;
+    max-width: 500px;
+    color: #fff;
+    border-left: 4px solid #FF533D; /* Valley Jet Fast Orange Accent */
+    animation: fadeInUp 1s ease-out;
+}
+
+.category-label {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #FF533D; /* Fast Orange for small labels */
+}
+
+/* Primary Button - Updated with Fast Orange */
+.btn-primary {
+    display: inline-block;
+    background: #FF533D; /* Fast Orange */
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #fff;
+    color: #0F1626; /* Navy text on white hover */
+}/* Info Overlay Box - Updated with Valley Jet Navy */
+.info-overlay {
+    background: rgba(15, 22, 38, 0.85); /* Valley Jet Navy with transparency */
+    backdrop-filter: blur(10px); 
+    padding: 40px;
+    max-width: 500px;
+    color: #fff;
+    border-left: 4px solid #FF533D; /* Valley Jet Fast Orange Accent */
+    animation: fadeInUp 1s ease-out;
+}
+
+.category-label {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #FF533D; /* Fast Orange for small labels */
+}
+
+/* Primary Button - Updated with Fast Orange */
+.btn-primary {
+    display: inline-block;
+    background: #FF533D; /* Fast Orange */
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #fff;
+    color: #0F1626; /* Navy text on white hover */
+}
+
+/* Simple Animation */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .info-overlay {
+        margin: 20px;
+        padding: 20px;
+    }
+    .info-overlay h2 {
+        font-size: 2rem;
+    }
+}
+/* MOBILE-SPECIFIC REFINEMENTS */
+@media (max-width: 768px) {
+    /* Shrink the Navy Box */
+    .info-overlay {
+        padding: 20px 25px; /* Less bulk inside the box */
+        margin: 0 15px 40px 15px; /* Keeps box away from screen edges */
+        max-width: 90%;
+    }
+
+    /* Shrink the Heading */
+    .info-overlay h2 {
+        font-size: 1.8rem !important; /* Prevents text from taking up too many lines */
+        margin-bottom: 10px;
+    }
+
+    /* Smaller Specs Text */
+    .info-overlay p {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    /* Slimmer Buttons */
+    .btn-primary {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+        margin-top: 15px;
+        width: 100%; /* Makes button easier to tap on mobile */
+        text-align: center;
+    }
+}
+/* MOBILE-SPECIFIC REFINEMENTS */
+@media (max-width: 768px) {
+
+    /* 1. Push content down to clear the header 
+    .aircraft-showcase {
+        margin-top: 160px !important;
+    }*/
+
+    /* 2. Slimmer Info Box */
+    .info-overlay {
+        padding: 15px 20px !important;
+        margin: 0 auto 30px auto !important;
+        max-width: 85% !important;
+    }
+
+    /* 3. Heading & Text sizing */
+    .info-overlay h2 {
+        font-size: 1.6rem !important;
+        margin-bottom: 8px !important;
+    }
+    
+    .info-overlay p {
+        font-size: 0.9rem !important;
+        line-height: 1.3 !important;
+    }
+
+    /* 4. Full-width primary buttons */
+    .btn-primary {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding: 12px 10px !important;
+        font-size: 0.85rem !important;
+        margin-top: 12px !important;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+			min-height: 60px !important;}
+	  .aircraft-showcase {
+      margin-top: 1em !important;}
+}
+/* ── PAGE-SPECIFIC VARIABLES ── */
+:root {
+  --vj-navy:  #0F1626;
+  --vj-orange:#FF533D;
+  --vj-white: #ffffff;
+  --vj-light: #f5f6f8;
+  --vj-muted: #6c757d;
+}
+
+/* ── HERO BANNER ── */
+.lv-hero {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  min-height: 88vh;
+  background:
+    linear-gradient(to right, rgba(15,22,38,.92) 45%, rgba(15,22,38,.45) 100%),
+    url('https://valleyjet.com/wp-content/uploads/2020/09/LasVegas_banner.jpg') center 35% / cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 10vh 10vw;
+  animation: heroFadeIn 1.5s ease-in-out;
+}
+
+.lv-hero-inner { max-width: 620px; }
+
+.lv-eyebrow {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+  color: var(--vj-orange);
+  margin-bottom: 16px;
+}
+
+.lv-hero h1 {
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  font-weight: 700;
+  color: var(--vj-white);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.lv-hero h1 span { color: var(--vj-orange); }
+
+.lv-hero p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,.75);
+  max-width: 480px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.lv-hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+
+.btn-outline-vj {
+  display: inline-block;
+  background: transparent;
+  color: var(--vj-white);
+  padding: 12px 28px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: .85rem;
+  letter-spacing: .05em;
+  border: 2px solid rgba(255,255,255,.45);
+  transition: border-color .25s, color .25s;
+}
+.btn-outline-vj:hover {
+  border-color: var(--vj-orange);
+  color: var(--vj-orange);
+  text-decoration: none;
+}
+
+/* ── STATS STRIP ── */
+.lv-stats {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background: var(--vj-navy);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 3px solid var(--vj-orange);
+}
+
+.lv-stat {
+  padding: 2.2rem 1.5rem;
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,.08);
+}
+.lv-stat:last-child { border-right: none; }
+
+.lv-stat-num {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--vj-orange);
+  line-height: 1;
+}
+.lv-stat-label {
+  display: block;
+  font-size: .7rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.55);
+  margin-top: .4rem;
+}
+
+/* ── SECTION DEFAULTS ── */
+.lv-section {
+  padding: 80px 0;
+}
+.lv-section-dark {
+  background: var(--vj-navy);
+  color: var(--vj-white);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 80px 10vw;
+}
+.lv-section-light {
+  background: var(--vj-light);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 80px 10vw;
+}
+
+.lv-eyebrow-sm {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+  color: var(--vj-orange);
+  margin-bottom: 10px;
+}
+
+.lv-section h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: inherit;
+}
+.lv-section-dark h2 { color: var(--vj-white); }
+.lv-section-dark p  { color: rgba(255,255,255,.72); }
+
+/* ── TWO-COL INTRO ── */
+.lv-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.lv-intro-img {
+  position: relative;
+}
+.lv-intro-img img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+}
+.lv-intro-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: var(--vj-orange);
+  color: var(--vj-white);
+  padding: 18px 22px;
+  text-align: center;
+  font-weight: 700;
+}
+.lv-intro-badge strong {
+  display: block;
+  font-size: 2rem;
+  line-height: 1;
+}
+.lv-intro-badge span {
+  font-size: .7rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+/* ── AIRCRAFT CARDS ── */
+.lv-aircraft-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-top: 40px;
+}
+
+.lv-aircraft-card {
+  background: rgba(255,255,255,.05);
+  border-top: 3px solid transparent;
+  padding: 30px 24px;
+  transition: border-color .3s, background .3s;
+}
+.lv-aircraft-card:hover {
+  border-color: var(--vj-orange);
+  background: rgba(255,83,61,.07);
+}
+
+.lv-ac-type {
+  display: block;
+  font-size: .68rem;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: var(--vj-orange);
+  margin-bottom: 6px;
+}
+.lv-ac-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--vj-white);
+  margin-bottom: 10px;
+}
+.lv-aircraft-card p {
+  font-size: .88rem;
+  color: rgba(255,255,255,.6);
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+.lv-ac-specs {
+  display: flex;
+  justify-content: space-between;
+  font-size: .78rem;
+  color: rgba(255,255,255,.4);
+  border-top: 1px solid rgba(255,255,255,.1);
+  padding-top: 12px;
+  margin-top: 14px;
+}
+
+/* ── SERVICES GRID ── */
+.lv-services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.lv-service-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.lv-service-icon {
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  background: var(--vj-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.lv-service-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--vj-navy);
+  margin-bottom: 6px;
+}
+.lv-service-item p {
+  font-size: .9rem;
+  color: var(--vj-muted);
+  margin: 0;
+}
+
+/* ── AIRPORTS ── */
+.lv-airport-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  margin-top: 30px;
+}
+
+.lv-airport-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.lv-airport-list li {
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.lv-airport-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  color: var(--vj-white);
+  text-decoration: none;
+  font-size: .9rem;
+  transition: color .2s;
+}
+.lv-airport-list a:hover { color: var(--vj-orange); text-decoration: none; }
+.lv-airport-code {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--vj-orange);
+  margin-right: 14px;
+  min-width: 52px;
+  display: inline-block;
+}
+.lv-airport-arrow { color: rgba(255,255,255,.3); transition: transform .2s; }
+.lv-airport-list a:hover .lv-airport-arrow {
+  transform: translateX(4px);
+  color: var(--vj-orange);
+}
+
+.lv-map-wrap {
+  border: 1px solid rgba(255,83,61,.25);
+}
+.lv-map-wrap iframe {
+  width: 100%;
+  height: 360px;
+  display: block;
+  filter: grayscale(70%) contrast(1.1);
+}
+
+/* ── CTA BANNER ── */
+.lv-cta-banner {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background:
+    linear-gradient(rgba(15,22,38,.88), rgba(15,22,38,.88)),
+    url('https://images.unsplash.com/photo-1605493624455-a56d6d312b6f?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  padding: 90px 10vw;
+  text-align: center;
+  color: var(--vj-white);
+}
+.lv-cta-banner h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 700;
+  max-width: 650px;
+  margin: 0 auto 16px;
+  color: var(--vj-white);
+}
+.lv-cta-banner p {
+  max-width: 480px;
+  margin: 0 auto 32px;
+  color: rgba(255,255,255,.7);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 867px) {
+  .lv-hero {
+    min-height: auto;
+    padding: 100px 6vw 60px;
+    background-position: 70% center;
+  }
+  .lv-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lv-stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,.08); }
+  .lv-two-col,
+  .lv-aircraft-grid,
+  .lv-services-grid,
+  .lv-airport-grid { grid-template-columns: 1fr; }
+  .lv-aircraft-grid { gap: 1px; }
+  .lv-intro-badge { right: 0; bottom: 0; }
+  .lv-section-dark,
+  .lv-section-light { padding: 60px 6vw; }
+}
