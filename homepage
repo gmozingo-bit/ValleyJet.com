@@ -7,6 +7,68 @@
 /* General styling for mobile first */
 .wrapper { padding: 0 !important; }
 
+.home-hero {
+  background: linear-gradient(180deg, #ffffff 0%, #f3f6fb 100%);
+  border-radius: 22px;
+  padding: 3rem 2rem;
+  box-shadow: 0 20px 45px rgba(15, 22, 38, 0.08);
+}
+
+.home-hero .main-image {
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(15, 22, 38, 0.22);
+}
+
+.hero-content h1,
+.hero-content h2 {
+  color: #0f1626;
+  letter-spacing: 0.3px;
+}
+
+.hero-content p {
+  color: #2f3d53;
+  font-size: 1.04rem;
+  line-height: 1.75;
+  margin-top: 1.25rem;
+}
+
+.hero-content .btn {
+  background: linear-gradient(135deg, #0f1626 0%, #1f3457 100%);
+  border: none;
+  border-radius: 999px;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 10px 20px rgba(15, 22, 38, 0.2);
+}
+
+.hero-content .btn:hover {
+  transform: translateY(-2px);
+  transition: all 0.25s ease;
+}
+
+.loyal-customers {
+  margin-top: 120px;
+  margin-bottom: 40px;
+  padding: 2.25rem 1.5rem;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(15, 22, 38, 0.08);
+}
+
+.loyal-customers h1,
+#brands h2 {
+  color: #0f1626;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#brands {
+  border-radius: 16px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+  box-shadow: 0 10px 22px rgba(15, 22, 38, 0.08);
+}
+
 @media (max-width: 768px) {
   #navbarNavDropdown.navbar-collapse.show { padding-top: 5em !important; }
   #navbarNavDropdown.navbar-collapse.show ul.navbar-nav { margin-top: 0 !important; }
@@ -38,6 +100,16 @@
   .pricing-paragraph { margin-bottom: 20px; }
   .aircraft-paragraph { margin-top: 20px; }
   .video-container { display: none; }
+
+  .home-hero {
+    border-radius: 14px;
+    padding: 2rem 1.1rem;
+  }
+
+  .hero-content p {
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
 }
 
 @media (max-width: 767px) {
@@ -96,13 +168,13 @@
 </div>
 
 
-<div class="container mt-5">
+<div class="container mt-5 home-hero">
   <div class="row">
     <div class="col-md-6 img-container position-relative">
       <img class="main-image" style="position: relative; z-index: 1; width: 80%;" src="https://valleyjet.com/wp-content/uploads/2023/02/wing-valley-edit-scaled.jpeg" alt="Private Jet Interior" fetchpriority="high"/>
     </div>
     
-    <div class="col-md-6 text-section d-flex align-items-center">
+    <div class="col-md-6 text-section d-flex align-items-center hero-content">
       <div>
         <h1 style="font-weight: normal; font-size: 2rem; margin: 0; line-height: 1.2;">
           ValleyJet<br class="d-md-none"> Private Jet Charter
@@ -127,7 +199,7 @@
 </div>
 
 
-<div class="container d-none d-sm-block" style="margin-top: 120px; margin-bottom: 40px;">
+<div class="container d-none d-sm-block loyal-customers">
   <div class="row">
     <div class="col-12 text-center">
       <h1 style="font-size: 2.2rem; margin-bottom: 40px;">OUR LOYAL CUSTOMERS</h1>
@@ -192,21 +264,12 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
   </a>
 </div>
-  <a class="carousel-control-prev" style="filter: invert(100%);" href="#brands" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" style="filter: invert(100%);" href="#brands" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
 
 <div class="container mt-5">
   <div class="row mb-5">
     <div class="col-md-6 text-section d-flex align-items-center pricing-paragraph">
       <div>
-        <h3 style="text-align: center;">MAXIMIZE YOUR TIME</h2>
+        <h3 style="text-align: center;">MAXIMIZE YOUR TIME</h3>
         <p>
           Experience the ultimate in executive private air travel with ValleyJet. Our team of local experts will work closely with you to plan every detail of your chartered flight, ensuring that it meets your exacting standards of luxury, safety, and comfort. Choose from our selection of handpicked aircraft options, including regionally based, transient, and floating planes and helicopters, and enjoy exceptional value for money with our competitive pricing. Whether you need a light jet charter from Scottsdale for a short getaway or a midsize cabin for extended travel, we’ll match you with the ideal aircraft.
         </p>
@@ -426,4 +489,3 @@ window.addEventListener('load', function() {
     </div>
   </div>
 </div>
-
