@@ -10,9 +10,42 @@
 @media (max-width: 768px) {
   #navbarNavDropdown.navbar-collapse.show { padding-top: 5em !important; }
   #navbarNavDropdown.navbar-collapse.show ul.navbar-nav { margin-top: 0 !important; }
+
+  /* Fix Logo Carousel Grid */
+  #brands .carousel-inner { display: flex; flex-wrap: wrap; justify-content: center; }
+  #brands .carousel-item { display: block !important; flex: 0 0 50%; max-width: 50%; padding: 10px; opacity: 1 !important; }
+  #brands .carousel-item img { max-width: 80% !important; height: auto; }
+  #brands .carousel-control-prev, #brands .carousel-control-next { display: none; }
+
+  /* Hides double line-breaks that cause large gaps */
   br + br { display: none; }
+
+  .container.mt-5 {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    min-height: auto !important;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    display: block !important;
+  }
+
   body { scroll-snap-type: none !important; overflow-y: auto; scroll-behavior: smooth; }
+
+  .text-section h1 { font-size: 1.7rem !important; line-height: 1.2; }
+  .text-section h2 { font-size: 1.4rem !important; line-height: 1.3; margin-top: 5px !important; }
+
+  img[src*="wing-valley-edit-scaled.jpeg"] { margin-bottom: 20px; }
+  .pricing-paragraph { margin-bottom: 20px; }
+  .aircraft-paragraph { margin-top: 20px; }
   .video-container { display: none; }
+}
+
+@media (max-width: 767px) {
+  .container.mt-5 { margin-top: 6rem !important; margin-bottom: 6rem !important; }
+}
+
+@media (max-width: 1100px) {
+  .full-width-image-mobile { margin-left: -50vw; left: 50% !important; width: 100vw; }
 }
 </style>
 
@@ -21,7 +54,38 @@
 <meta name="msvalidate.01" content="5D23002D2A65C8F88EE04B321CEEDC92" />
 
 <!-- ════════════════════════════════════════════════════════
-     SECTION 1: VIDEO HERO
+     SECTION 1: MOBILE QUICK-ACCESS CARDS (mobile only)
+     ════════════════════════════════════════════════════════ -->
+<div class="row mb-4 d-lg-none d-xl-none">
+  <div class="col-md-6 col-sm-6">
+    <div class="card text-center">
+      <a href="https://valleyjet.com/contact/">
+        <div class="card-body">
+          <div class="mb-8 mt-8 new-charter">
+            <img src="https://valleyjet.com/wp-content/uploads/2018/04/new-charter.jpg" alt="valley jet new-charter" width="498" height="160" class="mb-35 img-fluid alignnone size-full wp-image-640" />
+            <div style="text-align: center; font-size:32px;"><span class="badge badge-secondary"><b><i>NEW CHARTER</i></b></span></div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-sm-6">
+    <div class="card text-center">
+      <a href="https://valleyjet.com/aircraft/">
+        <div class="card-body">
+          <div class="mb-8 mt-8 aircraft-options">
+            <img src="https://valleyjet.com/wp-content/uploads/2018/12/charter-options-new1.jpg" alt="ValleyJet aircraft fleet options" width="498" height="160" class="mb-35 img-fluid alignnone size-full wp-image-641" />
+            <div class="ao-text" style="text-align: center; font-size:32px;"><span class="badge badge-secondary"><b><i> AIRCRAFT FLEET</i></b></span></div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION 2: VIDEO HERO (attention / emotional hook)
      ════════════════════════════════════════════════════════ -->
 <div class="video-container" style="position: relative; margin: 0; padding: 0; width: 100vw; left: 50%; transform: translateX(-50%); overflow: hidden;">
   <video
@@ -38,29 +102,9 @@
 </div>
 
 <!-- ════════════════════════════════════════════════════════
-     SECTION 2: STATS STRIP
-     ════════════════════════════════════════════════════════ -->
-<div class="lv-stats">
-  <div class="lv-stat">
-    <span class="lv-stat-num">10,000+</span>
-    <span class="lv-stat-label">Aircraft Worldwide</span>
-  </div>
-  <div class="lv-stat">
-    <span class="lv-stat-num">24/7</span>
-    <span class="lv-stat-label">Charter Service</span>
-  </div>
-  <div class="lv-stat">
-    <span class="lv-stat-num">60+</span>
-    <span class="lv-stat-label">Local Aircraft</span>
-  </div>
-  <div class="lv-stat">
-    <span class="lv-stat-num">2</span>
-    <span class="lv-stat-label">Operational Bases</span>
-  </div>
-</div>
-
-<!-- ════════════════════════════════════════════════════════
-     SECTION 3: INTRO / ABOUT
+     SECTION 3: BRAND INTRO (trust + CTA) — NEW DESIGN
+     "ValleyJet Private Jet Charter / Helicopter & Executive
+      Aviation — Scottsdale, Phoenix & San Diego"
      ════════════════════════════════════════════════════════ -->
 <div class="lv-section" style="padding: 80px 0;">
   <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
@@ -85,7 +129,8 @@
 </div>
 
 <!-- ════════════════════════════════════════════════════════
-     SECTION 4: AIRCRAFT TYPES (Dark)
+     SECTION 4: 10,000+ AIRCRAFT AT YOUR FINGERTIPS — NEW DESIGN
+     (product showcase with jet category cards)
      ════════════════════════════════════════════════════════ -->
 <div class="lv-section-dark">
   <div style="text-align: center; margin-bottom: 10px;">
@@ -131,176 +176,305 @@
 </div>
 
 <!-- ════════════════════════════════════════════════════════
-     SECTION 5: MAXIMIZE YOUR TIME (Two-Col, Light)
+     SECTION 5: SERVICES (capabilities — desktop 3-col)
      ════════════════════════════════════════════════════════ -->
-<div class="lv-section-light">
-  <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto;">
-    <div>
-      <span class="lv-eyebrow-sm">The ValleyJet Difference</span>
-      <h2 style="color: var(--vj-navy);">Maximize Your Time</h2>
-      <p>Experience the ultimate in executive private air travel with ValleyJet. Our team of local experts will work closely with you to plan every detail of your chartered flight, ensuring that it meets your exacting standards of luxury, safety, and comfort. Whether you need a light jet charter from Scottsdale for a short getaway or a midsize cabin for extended travel, we'll match you with the ideal aircraft and enjoy exceptional value for money with our competitive pricing.</p>
-      <p>Wherever you go, let ValleyJet take you there in style. Our 24/7 charter service offers the best in private jet rentals, helicopter tours, exquisite catering, ramp-side valet, and bespoke requests. From booking to arrival, we strive to exceed your expectations and make your journey an unforgettable experience.</p>
-      <a href="https://valleyjet.com/contact/" class="btn-primary" style="margin-top: 16px;">Get a Quote</a>
-    </div>
-    <div class="lv-intro-img">
-      <img src="https://valleyjet.com/wp-content/uploads/2023/02/adobestock_98400582.webp" alt="Private Jet Interior Luxury Cabin" loading="lazy"/>
-    </div>
-  </div>
-</div>
-
-<!-- ════════════════════════════════════════════════════════
-     SECTION 6: SERVICES (White)
-     ════════════════════════════════════════════════════════ -->
-<div class="lv-section" style="padding: 80px 0;">
-  <div style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
-    <div style="text-align: center; margin-bottom: 40px;">
-      <span class="lv-eyebrow-sm">What We Offer</span>
-      <h2 style="color: var(--vj-navy); font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700;">Charter Services</h2>
-    </div>
-    <div class="lv-services-grid">
-      <div class="lv-service-item">
-        <div class="lv-service-icon">
-          <img src="https://valleyjet.com/wp-content/uploads/2018/07/new-clock.png" alt="On demand private jet charter" style="width: 28px; height: 28px; filter: brightness(0) invert(1);" loading="lazy"/>
-        </div>
-        <div>
-          <h3>On Demand</h3>
-          <p>Call at anytime of the day or night and we will arrange your private charter to anywhere in the world. No membership commitments required.</p>
-        </div>
+<div class="d-none d-sm-block">
+  <div class="row mt-7 mb-7">
+    <div class="col-lg-4">
+      <div class="text-center">
+        [edsanimate_start entry_animation_type= "fadeInLeft" entry_delay= "0" entry_duration= "2" entry_timing= "ease" exit_animation_type= "" exit_delay= "" exit_duration= "" exit_timing= "" animation_repeat= "1" keep= "yes" animate_on= "scroll" scroll_offset= "75"]<img src="https://valleyjet.com/wp-content/uploads/2018/07/new-clock.png" alt="valley jet clock" class="alignnone size-full wp-image-1192" style="width: 25%;" loading="lazy"/>[edsanimate_end]
+        <h3>ON DEMAND</h3>
+        <p>Call at anytime of the day or night and we will arrange your private charter to anywhere in the world. </p>
       </div>
-      <div class="lv-service-item">
-        <div class="lv-service-icon">
-          <img src="https://valleyjet.com/wp-content/uploads/2018/07/plane-icon-1.png" alt="10000 plus aircraft worldwide" style="width: 28px; height: 28px; filter: brightness(0) invert(1);" loading="lazy"/>
-        </div>
-        <div>
-          <h3>10,000+ Aircraft</h3>
-          <p>From anywhere in the world, ValleyJet will match you with the perfect aircraft to suit your wants and needs. <a href="https://valleyjet.com/light-jet-charter/">Light Jet</a> | <a href="https://valleyjet.com/midsize-jet-charter/">Mid Jet</a> | <a href="https://valleyjet.com/heavyjet/">Heavy Jet</a></p>
-        </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="text-center">
+        [edsanimate_start entry_animation_type= "fadeInUp" entry_delay= "0" entry_duration= "2" entry_timing= "ease" exit_animation_type= "" exit_delay= "" exit_duration= "" exit_timing= "" animation_repeat= "1" keep= "yes" animate_on= "scroll" scroll_offset= "75" custom_css_class= ""]<img src="https://valleyjet.com/wp-content/uploads/2018/07/plane-icon-1.png" alt="valley jet plane" class="alignnone size-full wp-image-1177" style="width: 22%;" loading="lazy"/>[edsanimate_end]
+        <h3 class="text-center">10,000+ AIRCRAFT</h3>
+        <p>From anywhere in the world, ValleyJet will match you with the perfect aircraft to suit your wants and needs.<a href="https://valleyjet.com/light-jet-charter/">Light Jet</a> | <a href="https://valleyjet.com/midsize-jet-charter/">Mid Jet</a>  | <a href="https://valleyjet.com/heavyjet/">Heavy Jet</a></p>
       </div>
-      <div class="lv-service-item">
-        <div class="lv-service-icon">
-          <img src="https://valleyjet.com/wp-content/uploads/2018/07/person-1.png" alt="Dedicated jet services team" style="width: 28px; height: 28px; filter: brightness(0) invert(1);" loading="lazy"/>
-        </div>
-        <div>
-          <h3>Jet Services</h3>
-          <p>A dedicated team of aviation experts will provide you with around the clock, over the top customer experiences with white-glove service.</p>
-        </div>
-      </div>
-      <div class="lv-service-item">
-        <div class="lv-service-icon" style="font-size: 1.3rem; font-weight: 800;">&#9992;</div>
-        <div>
-          <h3>Helicopter Charter</h3>
-          <p>Seamless helicopter transfers across the Valley and beyond. Over 60 planes and helicopters available locally for immediate dispatch.</p>
-        </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="text-center">
+        [edsanimate_start entry_animation_type= "fadeInRight" entry_delay= "0" entry_duration= "2" entry_timing= "ease" exit_animation_type= "" exit_delay= "" exit_duration= "" exit_timing= "" animation_repeat= "1" keep= "yes" animate_on= "scroll" scroll_offset= "75" custom_css_class= ""]<img src="https://valleyjet.com/wp-content/uploads/2018/07/person-1.png" alt="valley jet person" class="alignnone size-full wp-image-1178" style="width: 25%;" loading="lazy"/>[edsanimate_end]
+        <h3 class="text-center">JET SERVICES</h3>
+        <p>A dedicated team of aviation experts will provide you with around the clock, over the top customer experiences.</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ════════════════════════════════════════════════════════
-     SECTION 7: DESTINATIONS (Dark)
-     ════════════════════════════════════════════════════════ -->
-<div class="lv-section-dark">
-  <div style="text-align: center; margin-bottom: 40px;">
-    <span class="lv-eyebrow-sm">Popular Routes</span>
-    <h2 style="color: var(--vj-white); font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700;">Destinations</h2>
+<!-- SERVICES CAROUSEL (mobile only) -->
+<div id="icon_carousel" class="carousel slide d-sm-none" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active text-center">
+      <img class="alignnone size-full" src="https://valleyjet.com/wp-content/uploads/2018/07/new-clock.png" alt="First slide" style="width: 25%;" loading="lazy">
+      <h2>ON DEMAND</h2>
+      <p>Call at anytime of the day or night and we will arrange your private charter to anywhere in the world. </p>
+    </div>
+    <div class="carousel-item text-center">
+      <img class="alignnone size-full" src="https://valleyjet.com/wp-content/uploads/2018/07/plane-icon-1.png" alt="Second slide" style="width: 22%;" loading="lazy">
+      <h2 class="text-center">10,000+ AIRCRAFT</h2>
+      <p>From anywhere in the world, ValleyJet will match you with the perfect aircraft to suit your wants and needs.<a href="https://valleyjet.com/light-jet-charter/">Light Jet</a> | <a href="https://valleyjet.com/midsize-jet-charter/">Mid Jet</a>  | <a href="https://valleyjet.com/heavyjet/">Heavy Jet</a></p>
+    </div>
+    <div class="carousel-item text-center">
+      <img src="https://valleyjet.com/wp-content/uploads/2018/07/person-1.png" alt="Third slide" style="width: 25%;" loading="lazy"><h2 class="text-center">JET SERVICES</h2>
+      <p>A dedicated team of aviation experts will provide you with around the clock, over the top customer experiences.</p>
+    </div>
   </div>
-  <div class="hp-destinations-grid">
-    <div class="hp-dest-card">
-      <img src="https://valleyjet.com/wp-content/uploads/2020/06/doggo.png" alt="Scottsdale Phoenix private jet charter" loading="lazy"/>
-      <div class="hp-dest-content">
-        <h3>Scottsdale &amp; Phoenix</h3>
-        <p>Based in Scottsdale, Arizona, ValleyJet serves the Southwest and the Western United States with exceptional door to ramp service, flight time flexibility that can be scheduled from anywhere at the drop of a dime, and an aircraft network of over 7,000 jets worldwide and over 60 planes and helicopters in the valley. Our team works to effectively organize the best private jet and helicopter charter to fit your budget and preference.</p>
-        <a href="https://valleyjet.com/private-jet-charters-scottsdale/" class="btn-primary" style="font-size: .85rem; padding: 10px 24px;">Learn More</a>
+  <a class="carousel-control-prev" style="filter: invert(100%);" href="#icon_carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" style="filter: invert(100%);" href="#icon_carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION 6: MAXIMIZE YOUR TIME (value proposition)
+     ════════════════════════════════════════════════════════ -->
+<div class="container mt-5">
+  <div class="row mb-5">
+    <div class="col-md-6 text-section d-flex align-items-center pricing-paragraph">
+      <div>
+        <h3 style="text-align: center;">MAXIMIZE YOUR TIME</h2>
+        <p>
+          Experience the ultimate in executive private air travel with ValleyJet. Our team of local experts will work closely with you to plan every detail of your chartered flight, ensuring that it meets your exacting standards of luxury, safety, and comfort. Choose from our selection of handpicked aircraft options, including regionally based, transient, and floating planes and helicopters, and enjoy exceptional value for money with our competitive pricing. Whether you need a light jet charter from Scottsdale for a short getaway or a midsize cabin for extended travel, we'll match you with the ideal aircraft.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6 img-container position-relative">
+      <img src="https://valleyjet.com/wp-content/uploads/2023/02/adobestock_98400582.webp" alt="Private Jet Interior" class="main-image" style="position: relative; z-index: 1; width: 100%;" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION 7: LOYAL CUSTOMERS — SOCIAL PROOF (desktop)
+     ════════════════════════════════════════════════════════ -->
+<div class="container d-none d-sm-block" style="margin-top: 120px; margin-bottom: 40px;">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1 style="font-size: 2.2rem; margin-bottom: 40px;">OUR LOYAL CUSTOMERS</h1>
+    </div>
+  </div>
+
+  <div class="row align-items-center">
+    <div class="col-lg-3">
+      <div class="text-center">
+        [edsanimate_start entry_animation_type= "fadeInLeft" entry_delay= "0" entry_duration= "1" entry_timing= "ease" exit_animation_type= "" exit_delay= "" exit_duration= "" exit_timing= "" animation_repeat= "1" keep= "yes" animate_on= "scroll" scroll_offset= "75" custom_css_class= ""]
+        <img src="https://valleyjet.com/wp-content/uploads/2024/12/CCR_logo.svg_.png" alt="CCR" class="alignnone size-full wp-image-1192" style="width: 80%;" loading="lazy"/>
+        [edsanimate_end]
       </div>
     </div>
 
-    <div class="hp-dest-card">
-      <img src="https://valleyjet.com/wp-content/uploads/2023/02/IMG_0347.jpeg" alt="San Diego private jet charter" loading="lazy"/>
-      <div class="hp-dest-content">
-        <h3>San Diego</h3>
-        <p>Our San Diego operational base provides coastal charter services across Southern California. Enjoy jet charter San Diego empty legs, on-demand private jet rentals, and helicopter tours along the coast. Whether flying to Vegas, Scottsdale, or beyond, our San Diego team delivers the same uncompromising ValleyJet experience.</p>
-        <a href="https://valleyjet.com/jet-charter-san-diego/" class="btn-primary" style="font-size: .85rem; padding: 10px 24px;">Learn More</a>
+    <div class="col-lg-3">
+      <div class="text-center">
+        [edsanimate_start entry_animation_type= "fadeInLeft" entry_delay= "0" entry_duration= "2" entry_timing= "ease" exit_animation_type= "" exit_delay= "" exit_duration= "" exit_timing= "" animation_repeat= "1" keep= "yes" animate_on= "scroll" scroll_offset= "75" custom_css_class= ""]
+        <img src="https://valleyjet.com/wp-content/uploads/2020/06/George_P._Johnson.png" alt="George P. Johnson" class="alignnone size-full wp-image-1192" style="width: 85%;" loading="lazy"/>
+        [edsanimate_end]
       </div>
     </div>
 
-    <div class="hp-dest-card">
-      <img src="https://valleyjet.com/wp-content/uploads/2020/06/aspen-home.jpg" alt="Aspen private jet charter direct flight" loading="lazy"/>
-      <div class="hp-dest-content">
-        <h3>Aspen</h3>
-        <p>Skip the commute and catch a ValleyJet flight direct to Aspen, Colorado, Provo, Utah, and your other winter vacation destinations. We provide an experience beyond your flight, offering vacation packages at the most exclusive resorts in the Rocky Mountains. Aspen chartered flights and other mountainous airport destinations are the fastest and easiest way to enjoy more time on the slopes and less time on the runway.</p>
-        <a href="https://valleyjet.com/aspen-private-jet-charter/" class="btn-primary" style="font-size: .85rem; padding: 10px 24px;">Learn More</a>
+    <div class="col-lg-3">
+      <div class="text-center">
+        [edsanimate_start entry_animation_type= "fadeInUp" entry_delay= "0" entry_duration= "2" entry_timing= "ease" exit_animation_type= "" exit_delay= "" exit_duration= "" exit_timing= "" animation_repeat= "1" keep= "yes" animate_on= "scroll" scroll_offset= "75" custom_css_class= ""]
+        <img src="https://valleyjet.com/wp-content/uploads/2020/06/infiniti.png" alt="Infiniti" class="alignnone size-full wp-image-1177" style="width: 78%;" loading="lazy"/>
+        [edsanimate_end]
       </div>
     </div>
 
-    <div class="hp-dest-card">
-      <img src="https://valleyjet.com/wp-content/uploads/2020/06/pool-home.jpg" alt="Paradise tropical private plane charter" loading="lazy"/>
-      <div class="hp-dest-content">
-        <h3>Paradise Plane Direct</h3>
-        <p>Jet set in one of ValleyJet's premier plane charters to the world's most remote, exotic and beautiful beaches. We are offering more flights than ever to the British Virgin Islands, Jamaica and Costa Rica. Enjoy a new type of first class service, welcomed with warm towels, flowing chilled champagne and cabin comforts that cannot be matched by commercial travel. Aircraft charter to the tropics in comfort and arrive refreshed and ready to explore. <a href="https://goo.gl/maps/WkW65BgzTdteq5HS8" target="_blank" style="color: var(--vj-orange);">View Our Customer Reviews</a></p>
+    <div class="col-lg-3">
+      <div class="text-center">
+        [edsanimate_start entry_animation_type= "fadeInRight" entry_delay= "0" entry_duration= "2" entry_timing= "ease" exit_animation_type= "" exit_delay= "" exit_duration= "" exit_timing= "" animation_repeat= "1" keep= "yes" animate_on= "scroll" scroll_offset= "75" custom_css_class= ""]
+        <img src="https://valleyjet.com/wp-content/uploads/2020/06/arizona-cardinals.png" alt="Arizona Cardinals" class="alignnone size-full wp-image-1178" style="width: 80%;" loading="lazy"/>
+        [edsanimate_end]
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LOYAL CUSTOMERS — SOCIAL PROOF (mobile carousel) -->
+<div id="brands" class="carousel slide d-sm-none" data-ride="carousel" style="margin-top: 60px; margin-bottom: 20px;">
+  <center><h2 style="margin-bottom: 20px;">OUR LOYAL CUSTOMERS</h2></center>
+  <div class="carousel-inner">
+    <div class="carousel-item active text-center">
+      <img class="alignnone size-full" src="https://valleyjet.com/wp-content/uploads/2025/01/CCR_small.png" alt="ccr" loading="lazy"/>
+    </div>
+    <div class="carousel-item text-center">
+      <img class="alignnone size-full" src="https://valleyjet.com/wp-content/uploads/2020/02/arizona.png" alt="First slide" loading="lazy">
+    </div>
+    <div class="carousel-item text-center">
+      <img class="alignnone size-full" src="https://valleyjet.com/wp-content/uploads/2020/02/infiniti.png" alt="Second slide" loading="lazy">
+    </div>
+    <div class="carousel-item text-center">
+      <img src="https://valleyjet.com/wp-content/uploads/2020/02/george.png" alt="Third slide" loading="lazy">
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" style="display:none;" href="#brands" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </a>
+  <a class="carousel-control-next" style="display:none;" href="#brands" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </a>
+</div>
+  <a class="carousel-control-prev" style="filter: invert(100%);" href="#brands" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" style="filter: invert(100%);" href="#brands" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION 8: INTERIOR IMAGES (visual proof — desktop)
+     ════════════════════════════════════════════════════════ -->
+<div class="d-none d-sm-block">
+  <div class="row mt-4 mb-7">
+    <div class="col-md-8 col-sm-8">
+      <img src="https://valleyjet.com/wp-content/uploads/2020/06/midjet-interior-web-home.jpg" alt="lightjet interior" class="animated fadeInLeft eds-on-scroll shadow img-responsive" loading="lazy">
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <div class="col-md-12">
+        <img src="https://valleyjet.com/wp-content/uploads/2020/06/mid-top-1-web-home.jpg" alt="" class="animated fadeInRight eds-on-scroll shadow img-responsive" loading="lazy">
+      </div>
+      <div class="col-md-12 d-none d-sm-block">
+        <img src="https://valleyjet.com/wp-content/uploads/2020/06/mid-top-2-web-home.jpg" alt="" style="margin-top:30px;" class="animated fadeInRight shadow img-responsive" loading="lazy">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- INTERIOR IMAGES (mobile carousel) -->
+<div id="carouselExampleControls" class="carousel slide d-sm-none mt-5 mt-sm-0 full-width-image-mobile" data-ride="carousel">
+  <ol class="carousel-indicators" style="bottom: 32px;">
+    <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+    <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://valleyjet.com/wp-content/uploads/2019/01/mid-carousel-1.jpg" alt="First slide" loading="lazy">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://valleyjet.com/wp-content/uploads/2019/01/mid-carousel-2.jpg" alt="Second slide" loading="lazy">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://valleyjet.com/wp-content/uploads/2021/08/midjet-carousel-3.jpg" alt="Third slide" loading="lazy">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION 9: SCOTTSDALE & PHOENIX (primary market)
+     ════════════════════════════════════════════════════════ -->
+<div class="container-fluid mt-4">
+  <div class="card" style="border: none;">
+    <div class="card-body" style="padding-bottom: 0px !important;">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-6 col-sm-6 ml-5-mountains">
+          [edsanimate_start entry_animation_type="fadeInLeft" entry_delay="0" entry_duration="2" entry_timing="ease" exit_animation_type="" exit_delay="" exit_duration="" exit_timing="" animation_repeat="1" keep="yes" animate_on="scroll" scroll_offset="75" custom_css_class=""]
+          <img src="https://valleyjet.com/wp-content/uploads/2020/06/doggo.png" alt="aspen" class="img-fluid mx-auto img-thumbnail alignnone size-full wp-image-501 rounded" loading="lazy"/>
+          [edsanimate_end]
+        </div>
+        <div class="col-md-5 col-sm-6 center-element-home-mountains margin-top-1">
+          <div>
+            <p><h4><b>SCOTTSDALE & PHOENIX</b></h4> PRIVATE JET CHARTER</p>
+            <p>Based in Scottsdale, Arizona, ValleyJet serves the Southwest and the Western United States with exceptional door to ramp service, flight time flexibility that can be scheduled from anywhere at the drop of a dime, and an aircraft network of over 7,000 jets worldwide and over 60 planes and helicopters in the valley. Our team works to effectively organize the best private jet and helicopter charter to fit your budget and preference. <a href="https://valleyjet.com/private-jet-charters-scottsdale/">Learn more about the ValleyJet experience</a>.</p>
+            <hr>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- ════════════════════════════════════════════════════════
-     SECTION 8: LOYAL CUSTOMERS (Light)
+     SECTION 10: FULL-WIDTH IMAGE (visual break)
      ════════════════════════════════════════════════════════ -->
-<div class="lv-section-light">
-  <div style="text-align: center; margin-bottom: 40px;">
-    <span class="lv-eyebrow-sm">Trusted By</span>
-    <h2 style="color: var(--vj-navy); font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700;">Our Loyal Customers</h2>
-  </div>
-  <div class="hp-logo-grid">
-    <div class="hp-logo-item">
-      <img src="https://valleyjet.com/wp-content/uploads/2024/12/CCR_logo.svg_.png" alt="CCR" loading="lazy"/>
-    </div>
-    <div class="hp-logo-item">
-      <img src="https://valleyjet.com/wp-content/uploads/2020/06/George_P._Johnson.png" alt="George P. Johnson" loading="lazy"/>
-    </div>
-    <div class="hp-logo-item">
-      <img src="https://valleyjet.com/wp-content/uploads/2020/06/infiniti.png" alt="Infiniti" loading="lazy"/>
-    </div>
-    <div class="hp-logo-item">
-      <img src="https://valleyjet.com/wp-content/uploads/2020/06/arizona-cardinals.png" alt="Arizona Cardinals" loading="lazy"/>
+<div id="porsche" class="carousel slide mt-6 mb-6 full-width-image-mobile" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://valleyjet.com/wp-content/uploads/2023/02/22-UPDATE-BLUE-SKYS-01-1-scaled.jpg" alt="porshe private jet charter" class="img-responsive alignnone size-full wp-image-4321" loading="lazy"/>
     </div>
   </div>
 </div>
 
 <!-- ════════════════════════════════════════════════════════
-     SECTION 9: EMPTY LEG NEWSLETTER (Two-Col, White)
+     SECTION 11: EMPTY LEG NEWSLETTER (conversion / deals)
      ════════════════════════════════════════════════════════ -->
-<div class="lv-section" style="padding: 80px 0;">
-  <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
-    <div>
-      <span class="lv-eyebrow-sm">Save Up to 75%</span>
-      <h2 style="color: var(--vj-navy);">Empty Leg Newsletter</h2>
-      <p>One-way flights, also referred to in the industry as "empty legs", "empty flights", "dead-heads", "repositioning legs", and "ferry flights" are private plane charters that fly without passengers to reposition for a flight or return to home base. Booking wisely using our jet charter Scottsdale and San Diego empty legs, you could save up to 75% on the cost of conventional private jet services.</p>
-      <p><strong>Popular routes include our Scottsdale to Vegas private jet charters, which are frequently available at discounted rates.</strong> Stay updated with our Empty Leg Newsletter for one way charters from Scottsdale, Phoenix, and San Diego to <a href="https://valleyjet.com/las-vegas-jet-charter/">Vegas</a>, <a href="https://valleyjet.com/jet-charter-san-diego/">San Diego</a>, Aspen, and <a href="https://districtjet.com/">other popular destinations</a>.</p>
-      <a href="https://valleyjet.com/empty-leg-newsletter/" class="btn-primary" style="margin-top: 16px;">Sign Up for Empty Legs</a>
-    </div>
-    <div class="lv-intro-img">
-      <img src="https://valleyjet.com/wp-content/uploads/2020/06/empty-leg-home.jpg" alt="ValleyJet empty leg private jet charter deals" loading="lazy"/>
+<div class="container-fluid mt-5">
+  <div class="card" style="border: none;">
+    <div class="card-body" style="padding-bottom: 0px !important;">
+      <div class="row">
+        <div class="col-md-5 col-sm-6 center-element-home">
+          <p><h4><b>EMPTY LEG </b> </h4>NEWSLETTER</p>
+          <p style="font-size:14.5px;">One-way flights, also referred to in the industry as "empty legs", "empty flights", "dead-heads", "repositioning legs", and "ferry flights" are private plane charters that fly without passengers to reposition for a flight or return to home base. Booking wisely using our jet charter Scottsdale and San Diego empty legs, you could save up to 75% on the cost of conventional private jet services. <strong>Popular routes include our Scottsdale to Vegas private jet charters, which are frequently available at discounted rates.</strong> Stay updated with our Empty Leg Newsletter for one way charters from Scottsdale, Phoenix, and San Diego to <a href="https://valleyjet.com/las-vegas-jet-charter/">Vegas</a>, <a href="https://valleyjet.com/jet-charter-san-diego/">San Diego</a>, Aspen, and <a href="https://districtjet.com/">other popular destinations</a>.</p>
+          <a href="https://valleyjet.com/empty-leg-newsletter/" role="button" class="mt-2 btn btn-block btn-dark btn-newsletter">SIGN UP</a>
+          <hr>
+        </div>
+        <div class="col-md-6 col-sm-6 text-right">
+          [edsanimate_start entry_animation_type= "fadeInRight" entry_delay= "0" entry_duration= "2" entry_timing= "ease" exit_animation_type= "" exit_delay= "" exit_duration= "" exit_timing= "" animation_repeat= "1" keep= "yes" animate_on= "scroll" scroll_offset= "75" custom_css_class= ""]
+          <img src="https://valleyjet.com/wp-content/uploads/2020/06/empty-leg-home.jpg" alt="valley jet empty leg" width="400" height="400" class="alignnone img-fluid mx-auto size-full wp-image-702 rounded img-thumbnail" loading="lazy"/>[edsanimate_end]
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 <!-- ════════════════════════════════════════════════════════
-     SECTION 10: FULL-WIDTH IMAGE
+     SECTION 12: ASPEN (seasonal destination)
      ════════════════════════════════════════════════════════ -->
-<div class="hp-full-img">
-  <img src="https://valleyjet.com/wp-content/uploads/2023/02/22-UPDATE-BLUE-SKYS-01-1-scaled.jpg" alt="ValleyJet private jet charter fleet on runway" loading="lazy"/>
+<div class="container-fluid mt-4">
+  <div class="card" style="border: none;">
+    <div class="card-body" style="padding-bottom: 0px !important;">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 ml-5-mountains">
+          [edsanimate_start entry_animation_type= "fadeInLeft" entry_delay= "0" entry_duration= "2" entry_timing= "ease" exit_animation_type= "" exit_delay= "" exit_duration= "" exit_timing= "" animation_repeat= "1" keep= "yes" animate_on= "scroll" scroll_offset= "75" custom_css_class= ""]
+          <img src="https://valleyjet.com/wp-content/uploads/2020/06/aspen-home.jpg" alt="aspen" class="img-fluid mx-auto img-thumbnail alignnone size-full wp-image-501 rounded" loading="lazy"/>[edsanimate_end]
+        </div>
+        <div class="col-md-5 col-sm-6 center-element-home-mountains margin-top-1">
+          <p><h4><b>ASPEN</b></h4> CHARTER FLIGHT DIRECT</p>
+          <p>Skip the commute and catch a ValleyJet flight direct to Aspen, Colorado, Provo, Utah, and your other winter vacation destinations. We provide an experience beyond your flight, offering vacation packages for the individuals and couples at the most exclusive resorts in the Rocky Mountains. Aspen chartered flights and other mountainous airport destinations are the fastest and easiest way to enjoy more time on the slopes and less time on the runway. To learn more about pricing and time savings with a <a href="https://g.page/r/CSSQoO0mQLHHEAE">Phoenix private jet charter</a> to Colorado, <a href="https://valleyjet.com/aspen-private-jet-charter/">read this</a>.</p>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- ════════════════════════════════════════════════════════
-     SECTION 11: FINAL CTA
+     SECTION 13: PARADISE PLANE DIRECT (aspirational)
      ════════════════════════════════════════════════════════ -->
-<div class="lv-cta-banner">
-  <span class="lv-eyebrow-sm" style="color: var(--vj-orange);">Ready to Fly?</span>
-  <h2>Experience the ValleyJet Difference</h2>
-  <p>Get in touch with our ValleyJet 24/7 charter service desk today to experience the unparalleled difference that ValleyJet offers. On-demand private jet and helicopter charter from Scottsdale, Phoenix, and San Diego.</p>
-  <div class="lv-hero-ctas" style="justify-content: center;">
-    <a href="https://valleyjet.com/contact/" class="btn-primary">Book Your Charter</a>
-    <a href="tel:" class="btn-outline-vj">Call 24/7</a>
+<div class="container-fluid mt-4 mb-4">
+  <div class="card" style="border: none;">
+    <div class="card-body" style="padding-bottom: 0px !important;">
+      <div class="row">
+        <div class="col-md-5 col-sm-6 center-element-home-paradise">
+          <h4><i><b>PARADISE PLANE DIRECT</b></i> </h4>
+          <p>Jet set in one of ValleyJet's premier plane charters to the world's most remote, exotic and beautiful beaches. We are offering more flights than ever to the British Virgin Islands, Jamaica and Costa Rica. Enjoy a new type of first class service, welcomed with warm towels, flowing chilled champagne and cabin comforts that cannot be matched by commercial travel. Aircraft charter to the tropics in comfort and arrive refreshed and ready to explore. Dont settle for less than 5 star service, our reviews speak for their self.
+          <a href="https://goo.gl/maps/WkW65BgzTdteq5HS8" target="_blank">View Our Customer Reviews</a></p>
+          <hr>
+        </div>
+        <div class="col-md-6 col-sm-6 text-right">
+          [edsanimate_start entry_animation_type= "fadeInRight" entry_delay= "0" entry_duration= "2" entry_timing= "ease" exit_animation_type= "" exit_delay= "" exit_duration= "" exit_timing= "" animation_repeat= "1" keep= "yes" animate_on= "scroll" scroll_offset= "75" custom_css_class= ""]
+          <img src="https://valleyjet.com/wp-content/uploads/2020/06/pool-home.jpg" alt="POOL" class="img-thumbnail mx-auto img-fluid alignnone size-full wp-image-503 rounded" loading="lazy"/>[edsanimate_end]
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
