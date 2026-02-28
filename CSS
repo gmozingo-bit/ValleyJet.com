@@ -228,42 +228,6 @@
 .btn-primary:hover {
     background: #fff;
     color: #0F1626; /* Navy text on white hover */
-}/* Info Overlay Box - Updated with Valley Jet Navy */
-.info-overlay {
-    background: rgba(15, 22, 38, 0.85); /* Valley Jet Navy with transparency */
-    backdrop-filter: blur(10px); 
-    padding: 40px;
-    max-width: 500px;
-    color: #fff;
-    border-left: 4px solid #FF533D; /* Valley Jet Fast Orange Accent */
-    animation: fadeInUp 1s ease-out;
-}
-
-.category-label {
-    display: block;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 12px;
-    margin-bottom: 10px;
-    color: #FF533D; /* Fast Orange for small labels */
-}
-
-/* Primary Button - Updated with Fast Orange */
-.btn-primary {
-    display: inline-block;
-    background: #FF533D; /* Fast Orange */
-    color: #fff;
-    padding: 12px 30px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 20px;
-    transition: 0.3s;
-    border: none;
-}
-
-.btn-primary:hover {
-    background: #fff;
-    color: #0F1626; /* Navy text on white hover */
 }
 
 /* Simple Animation */
