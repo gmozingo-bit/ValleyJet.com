@@ -703,3 +703,113 @@
   .lv-section-dark,
   .lv-section-light { padding: 60px 6vw; }
 }
+
+/* ══════════════════════════════════════════════════════════
+   HOMEPAGE-SPECIFIC COMPONENTS
+   ══════════════════════════════════════════════════════════ */
+
+/* ── DESTINATIONS GRID ── */
+.hp-destinations-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  margin-top: 40px;
+}
+
+.hp-dest-card {
+  background: rgba(255,255,255,.04);
+  overflow: hidden;
+  transition: background .3s;
+}
+.hp-dest-card:hover {
+  background: rgba(255,83,61,.06);
+}
+
+.hp-dest-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.hp-dest-content {
+  padding: 28px 24px;
+}
+
+.hp-dest-content h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--vj-white);
+  margin-bottom: 10px;
+}
+
+.hp-dest-content p {
+  font-size: .88rem;
+  color: rgba(255,255,255,.6);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* ── CUSTOMER LOGO GRID ── */
+.hp-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hp-logo-item {
+  text-align: center;
+}
+
+.hp-logo-item img {
+  max-width: 80%;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: .6;
+  transition: filter .3s, opacity .3s;
+}
+
+.hp-logo-item img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* ── FULL-WIDTH IMAGE BREAK ── */
+.hp-full-img {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+  max-height: 500px;
+}
+
+.hp-full-img img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── HOMEPAGE RESPONSIVE ── */
+@media (max-width: 867px) {
+  .hp-destinations-grid {
+    grid-template-columns: 1fr;
+  }
+  .hp-dest-card img {
+    height: 200px;
+  }
+  .hp-logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .hp-full-img,
+  .hp-full-img img {
+    height: 280px;
+  }
+}
