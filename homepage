@@ -110,10 +110,6 @@
   <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
     <div class="lv-intro-img">
       <img src="https://valleyjet.com/wp-content/uploads/2023/02/wing-valley-edit-scaled.jpeg" alt="ValleyJet Private Jet Charter Interior" fetchpriority="high"/>
-      <div class="lv-intro-badge">
-        <strong>Est. 2015</strong>
-        <span>Scottsdale, AZ</span>
-      </div>
     </div>
     <div>
       <span class="lv-eyebrow-sm">Premier Charter Service</span>
