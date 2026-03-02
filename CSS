@@ -501,19 +501,26 @@
   right: -20px;
   background: var(--vj-orange);
   color: var(--vj-white);
-  padding: 18px 22px;
+  border: 10px solid var(--vj-white);
+  padding: 20px 26px 18px;
   text-align: center;
   font-weight: 700;
+  line-height: 1;
 }
 .lv-intro-badge strong {
   display: block;
-  font-size: 2rem;
+  font-size: 2.2rem;
   line-height: 1;
+  letter-spacing: .04em;
+  margin-bottom: 6px;
 }
 .lv-intro-badge span {
-  font-size: .7rem;
-  letter-spacing: .15em;
-  text-transform: uppercase;
+  display: block;
+  font-size: 1.05rem;
+  letter-spacing: .015em;
+  line-height: 1.05;
+  text-transform: none;
+  font-weight: 500;
 }
 
 /* ── AIRCRAFT CARDS ── */
