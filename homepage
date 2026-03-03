@@ -284,7 +284,7 @@
 <!-- ════════════════════════════════════════════════════════
      SECTION 9: INTERIOR IMAGE (visual break)
      ════════════════════════════════════════════════════════ -->
-<div class="hp-full-img">
+<div class="hp-full-img hp-full-img--charter-jet">
   <img src="https://valleyjet.com/wp-content/uploads/2026/03/VJ-Phenom-300E-Branded-2026.png" alt="ValleyJet Phenom 300E private jet" loading="lazy"/>
 </div>
 
