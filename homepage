@@ -213,7 +213,25 @@
 </div>
 
 <!-- ════════════════════════════════════════════════════════
-     SECTION 7: SERVICES (capabilities — desktop 3-col)
+     SECTION 7: EMPTY LEG NEWSLETTER (conversion / deals)
+     ════════════════════════════════════════════════════════ -->
+<div class="lv-section" style="padding: 80px 0;">
+  <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
+    <div>
+      <span class="lv-eyebrow-sm">Save Up to 75%</span>
+      <h2 style="color: var(--vj-navy);">Empty Leg Newsletter</h2>
+      <p>One-way flights, also referred to in the industry as "empty legs", "empty flights", "dead-heads", "repositioning legs", and "ferry flights" are private plane charters that fly without passengers to reposition for a flight or return to home base. Booking wisely using our jet charter Scottsdale and San Diego empty legs, you could save up to 75% on the cost of conventional private jet services.</p>
+      <p><strong>Popular routes include our Scottsdale to Vegas private jet charters, which are frequently available at discounted rates.</strong> Stay updated with our Empty Leg Newsletter for one way charters from Scottsdale, Phoenix, and San Diego to <a href="https://valleyjet.com/las-vegas-jet-charter/">Vegas</a>, <a href="https://valleyjet.com/jet-charter-san-diego/">San Diego</a>, Aspen, and <a href="https://districtjet.com/">other popular destinations</a>.</p>
+      <a href="https://valleyjet.com/empty-leg-newsletter/" class="btn-primary" style="margin-top: 16px;">Sign Up for Empty Legs</a>
+    </div>
+    <div class="lv-intro-img">
+      <img src="https://valleyjet.com/wp-content/uploads/2020/06/empty-leg-home.jpg" alt="ValleyJet empty leg private jet charter deals Scottsdale San Diego" loading="lazy"/>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION 8: SERVICES (capabilities — desktop 3-col)
      ════════════════════════════════════════════════════════ -->
 <div class="d-none d-sm-block">
   <div class="row mt-7 mb-7">
@@ -352,29 +370,7 @@
 </div>
 
 <!-- ════════════════════════════════════════════════════════
-     SECTION 11: EMPTY LEG NEWSLETTER (conversion / deals)
-     ════════════════════════════════════════════════════════ -->
-<div class="container-fluid mt-5">
-  <div class="card" style="border: none;">
-    <div class="card-body" style="padding-bottom: 0px !important;">
-      <div class="row">
-        <div class="col-md-5 col-sm-6 center-element-home">
-          <p><h4><b>EMPTY LEG </b> </h4>NEWSLETTER</p>
-          <p style="font-size:14.5px;">One-way flights, also referred to in the industry as "empty legs", "empty flights", "dead-heads", "repositioning legs", and "ferry flights" are private plane charters that fly without passengers to reposition for a flight or return to home base. Booking wisely using our jet charter Scottsdale and San Diego empty legs, you could save up to 75% on the cost of conventional private jet services. <strong>Popular routes include our Scottsdale to Vegas private jet charters, which are frequently available at discounted rates.</strong> Stay updated with our Empty Leg Newsletter for one way charters from Scottsdale, Phoenix, and San Diego to <a href="https://valleyjet.com/las-vegas-jet-charter/">Vegas</a>, <a href="https://valleyjet.com/jet-charter-san-diego/">San Diego</a>, Aspen, and <a href="https://districtjet.com/">other popular destinations</a>.</p>
-          <a href="https://valleyjet.com/empty-leg-newsletter/" role="button" class="mt-2 btn btn-block btn-dark btn-newsletter">SIGN UP</a>
-          <hr>
-        </div>
-        <div class="col-md-6 col-sm-6 text-right">
-          [edsanimate_start entry_animation_type= "fadeInRight" entry_delay= "0" entry_duration= "2" entry_timing= "ease" exit_animation_type= "" exit_delay= "" exit_duration= "" exit_timing= "" animation_repeat= "1" keep= "yes" animate_on= "scroll" scroll_offset= "75" custom_css_class= ""]
-          <img src="https://valleyjet.com/wp-content/uploads/2020/06/empty-leg-home.jpg" alt="valley jet empty leg" width="400" height="400" class="alignnone img-fluid mx-auto size-full wp-image-702 rounded img-thumbnail" loading="lazy"/>[edsanimate_end]
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ════════════════════════════════════════════════════════
-     SECTION 12: ASPEN (seasonal destination)
+     SECTION 11: ASPEN (seasonal destination)
      ════════════════════════════════════════════════════════ -->
 <div class="container-fluid mt-4">
   <div class="card" style="border: none;">
