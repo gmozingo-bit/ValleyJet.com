@@ -193,6 +193,7 @@
       <img src="https://valleyjet.com/wp-content/uploads/2020/06/arizona-cardinals.png" alt="Arizona Cardinals" loading="lazy"/>
     </div>
   </div>
+  <p style="text-align: center; color: var(--vj-muted); margin-top: 30px; font-size: .9rem; letter-spacing: .05em;">And many more trusted partners across the country</p>
 </div>
 
 <!-- ════════════════════════════════════════════════════════
@@ -207,7 +208,7 @@
       <a href="https://valleyjet.com/contact/" class="btn-primary" style="margin-top: 16px;">Get a Quote</a>
     </div>
     <div class="lv-intro-img">
-      <img src="https://valleyjet.com/wp-content/uploads/2023/02/adobestock_98400582.webp" alt="Private Jet Interior Luxury Cabin" loading="lazy"/>
+      <img src="https://valleyjet.com/wp-content/uploads/2023/02/adobestock_98400582.webp" alt="Private Jet Interior Luxury Cabin" style="object-position: center center;" loading="lazy"/>
     </div>
   </div>
 </div>
@@ -241,8 +242,8 @@
     </div>
     <div class="lv-services-grid">
       <div class="lv-service-item">
-        <div class="lv-service-icon">
-          <img src="https://valleyjet.com/wp-content/uploads/2018/07/new-clock.png" alt="On demand private jet charter" style="width: 28px; height: 28px; filter: brightness(0) invert(1);" loading="lazy"/>
+        <div class="lv-service-icon" style="background: transparent;">
+          <img src="https://valleyjet.com/wp-content/uploads/2018/07/new-clock.png" alt="On demand private jet charter" style="width: 36px; height: 36px; filter: invert(40%) sepia(98%) saturate(2472%) hue-rotate(343deg) brightness(101%) contrast(101%);" loading="lazy"/>
         </div>
         <div>
           <h3>On Demand</h3>
@@ -250,8 +251,8 @@
         </div>
       </div>
       <div class="lv-service-item">
-        <div class="lv-service-icon">
-          <img src="https://valleyjet.com/wp-content/uploads/2018/07/plane-icon-1.png" alt="10000 plus aircraft worldwide" style="width: 28px; height: 28px; filter: brightness(0) invert(1);" loading="lazy"/>
+        <div class="lv-service-icon" style="background: transparent;">
+          <img src="https://valleyjet.com/wp-content/uploads/2018/07/plane-icon-1.png" alt="10000 plus aircraft worldwide" style="width: 36px; height: 36px; filter: invert(40%) sepia(98%) saturate(2472%) hue-rotate(343deg) brightness(101%) contrast(101%);" loading="lazy"/>
         </div>
         <div>
           <h3>10,000+ Aircraft</h3>
@@ -259,8 +260,8 @@
         </div>
       </div>
       <div class="lv-service-item">
-        <div class="lv-service-icon">
-          <img src="https://valleyjet.com/wp-content/uploads/2018/07/person-1.png" alt="Dedicated jet services team" style="width: 28px; height: 28px; filter: brightness(0) invert(1);" loading="lazy"/>
+        <div class="lv-service-icon" style="background: transparent;">
+          <img src="https://valleyjet.com/wp-content/uploads/2018/07/person-1.png" alt="Dedicated jet services team" style="width: 36px; height: 36px; filter: invert(40%) sepia(98%) saturate(2472%) hue-rotate(343deg) brightness(101%) contrast(101%);" loading="lazy"/>
         </div>
         <div>
           <h3>Jet Services</h3>
@@ -268,7 +269,9 @@
         </div>
       </div>
       <div class="lv-service-item">
-        <div class="lv-service-icon" style="font-size: 1.3rem; font-weight: 800;">&#9992;</div>
+        <div class="lv-service-icon" style="background: transparent;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" style="width: 36px; height: 36px; fill: var(--vj-orange);"><path d="M128 32c0-17.7 14.3-32 32-32H288c17.7 0 32 14.3 32 32h32c61.9 0 112 50.1 112 112v64h48c17.7 0 32 14.3 32 32v32c17.7 0 32 14.3 32 32s-14.3 32-32 32H512 448 192 64 32C14.3 304 0 289.7 0 272s14.3-32 32-32V208c0-17.7 14.3-32 32-32h48V144c0-61.9 50.1-112 112-112h32zM96 208v32H64v32H192V208H96zm256 0v64H576V240H544V208H352zM224 64c-44.2 0-80 35.8-80 80v32h160V64H224zm-64 320H192v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V384H96c-17.7 0-32-14.3-32-32s14.3-32 32-32h64c17.7 0 32 14.3 32 32s-14.3 32-32 32zm288-32c17.7 0 32 14.3 32 32s-14.3 32-32 32H416v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V384H320c-17.7 0-32-14.3-32-32s14.3-32 32-32h128z"/></svg>
+        </div>
         <div>
           <h3>Helicopter Charter</h3>
           <p>Seamless helicopter transfers across the Valley and beyond. Over 60 planes and helicopters available locally for immediate dispatch.</p>
