@@ -708,6 +708,8 @@
   .lv-intro-badge { right: 0; bottom: 0; }
   .lv-section-dark,
   .lv-section-light { padding: 60px 6vw; }
+  .lv-intro-img img { height: 280px !important; object-fit: cover; }
+  .lv-intro-img { margin-bottom: 24px; }
 }
 
 /* ══════════════════════════════════════════════════════════
