@@ -246,83 +246,27 @@
 </div>
 
 <!-- ════════════════════════════════════════════════════════
-     SECTION 7: LOYAL CUSTOMERS — SOCIAL PROOF (desktop)
+     SECTION 7: LOYAL CUSTOMERS — SOCIAL PROOF
      ════════════════════════════════════════════════════════ -->
-<div class="container d-none d-sm-block" style="margin-top: 120px; margin-bottom: 40px;">
-  <div class="row">
-    <div class="col-12 text-center">
-      <h1 style="font-size: 2.2rem; margin-bottom: 40px;">OUR LOYAL CUSTOMERS</h1>
+<div class="lv-section" style="padding: 80px 0;">
+  <div style="text-align: center; margin-bottom: 40px;">
+    <span class="lv-eyebrow-sm">Trusted By</span>
+    <h2 style="color: var(--vj-navy); font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700;">Our Loyal Customers</h2>
+  </div>
+  <div class="hp-logo-grid">
+    <div class="hp-logo-item">
+      <img src="https://valleyjet.com/wp-content/uploads/2024/12/CCR_logo.svg_.png" alt="CCR" loading="lazy"/>
+    </div>
+    <div class="hp-logo-item">
+      <img src="https://valleyjet.com/wp-content/uploads/2020/06/George_P._Johnson.png" alt="George P. Johnson" loading="lazy"/>
+    </div>
+    <div class="hp-logo-item">
+      <img src="https://valleyjet.com/wp-content/uploads/2020/06/infiniti.png" alt="Infiniti" loading="lazy"/>
+    </div>
+    <div class="hp-logo-item">
+      <img src="https://valleyjet.com/wp-content/uploads/2020/06/arizona-cardinals.png" alt="Arizona Cardinals" loading="lazy"/>
     </div>
   </div>
-
-  <div class="row align-items-center">
-    <div class="col-lg-3">
-      <div class="text-center">
-        [edsanimate_start entry_animation_type= "fadeInLeft" entry_delay= "0" entry_duration= "1" entry_timing= "ease" exit_animation_type= "" exit_delay= "" exit_duration= "" exit_timing= "" animation_repeat= "1" keep= "yes" animate_on= "scroll" scroll_offset= "75" custom_css_class= ""]
-        <img src="https://valleyjet.com/wp-content/uploads/2024/12/CCR_logo.svg_.png" alt="CCR" class="alignnone size-full wp-image-1192" style="width: 80%;" loading="lazy"/>
-        [edsanimate_end]
-      </div>
-    </div>
-
-    <div class="col-lg-3">
-      <div class="text-center">
-        [edsanimate_start entry_animation_type= "fadeInLeft" entry_delay= "0" entry_duration= "2" entry_timing= "ease" exit_animation_type= "" exit_delay= "" exit_duration= "" exit_timing= "" animation_repeat= "1" keep= "yes" animate_on= "scroll" scroll_offset= "75" custom_css_class= ""]
-        <img src="https://valleyjet.com/wp-content/uploads/2020/06/George_P._Johnson.png" alt="George P. Johnson" class="alignnone size-full wp-image-1192" style="width: 85%;" loading="lazy"/>
-        [edsanimate_end]
-      </div>
-    </div>
-
-    <div class="col-lg-3">
-      <div class="text-center">
-        [edsanimate_start entry_animation_type= "fadeInUp" entry_delay= "0" entry_duration= "2" entry_timing= "ease" exit_animation_type= "" exit_delay= "" exit_duration= "" exit_timing= "" animation_repeat= "1" keep= "yes" animate_on= "scroll" scroll_offset= "75" custom_css_class= ""]
-        <img src="https://valleyjet.com/wp-content/uploads/2020/06/infiniti.png" alt="Infiniti" class="alignnone size-full wp-image-1177" style="width: 78%;" loading="lazy"/>
-        [edsanimate_end]
-      </div>
-    </div>
-
-    <div class="col-lg-3">
-      <div class="text-center">
-        [edsanimate_start entry_animation_type= "fadeInRight" entry_delay= "0" entry_duration= "2" entry_timing= "ease" exit_animation_type= "" exit_delay= "" exit_duration= "" exit_timing= "" animation_repeat= "1" keep= "yes" animate_on= "scroll" scroll_offset= "75" custom_css_class= ""]
-        <img src="https://valleyjet.com/wp-content/uploads/2020/06/arizona-cardinals.png" alt="Arizona Cardinals" class="alignnone size-full wp-image-1178" style="width: 80%;" loading="lazy"/>
-        [edsanimate_end]
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- LOYAL CUSTOMERS — SOCIAL PROOF (mobile carousel) -->
-<div id="brands" class="carousel slide d-sm-none" data-ride="carousel" style="margin-top: 60px; margin-bottom: 20px;">
-  <center><h2 style="margin-bottom: 20px;">OUR LOYAL CUSTOMERS</h2></center>
-  <div class="carousel-inner">
-    <div class="carousel-item active text-center">
-      <img class="alignnone size-full" src="https://valleyjet.com/wp-content/uploads/2025/01/CCR_small.png" alt="ccr" loading="lazy"/>
-    </div>
-    <div class="carousel-item text-center">
-      <img class="alignnone size-full" src="https://valleyjet.com/wp-content/uploads/2020/02/arizona.png" alt="First slide" loading="lazy">
-    </div>
-    <div class="carousel-item text-center">
-      <img class="alignnone size-full" src="https://valleyjet.com/wp-content/uploads/2020/02/infiniti.png" alt="Second slide" loading="lazy">
-    </div>
-    <div class="carousel-item text-center">
-      <img src="https://valleyjet.com/wp-content/uploads/2020/02/george.png" alt="Third slide" loading="lazy">
-    </div>
-  </div>
-
-  <a class="carousel-control-prev" style="display:none;" href="#brands" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  </a>
-  <a class="carousel-control-next" style="display:none;" href="#brands" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  </a>
-</div>
-  <a class="carousel-control-prev" style="filter: invert(100%);" href="#brands" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" style="filter: invert(100%);" href="#brands" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
 
 <!-- ════════════════════════════════════════════════════════
