@@ -231,18 +231,16 @@
 <!-- ════════════════════════════════════════════════════════
      SECTION 6: MAXIMIZE YOUR TIME (value proposition)
      ════════════════════════════════════════════════════════ -->
-<div class="container mt-5">
-  <div class="row mb-5">
-    <div class="col-md-6 text-section d-flex align-items-center pricing-paragraph">
-      <div>
-        <h3 style="text-align: center;">MAXIMIZE YOUR TIME</h2>
-        <p>
-          Experience the ultimate in executive private air travel with ValleyJet. Our team of local experts will work closely with you to plan every detail of your chartered flight, ensuring that it meets your exacting standards of luxury, safety, and comfort. Choose from our selection of handpicked aircraft options, including regionally based, transient, and floating planes and helicopters, and enjoy exceptional value for money with our competitive pricing. Whether you need a light jet charter from Scottsdale for a short getaway or a midsize cabin for extended travel, we'll match you with the ideal aircraft.
-        </p>
-      </div>
+<div class="lv-section-light">
+  <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto;">
+    <div>
+      <span class="lv-eyebrow-sm">The ValleyJet Difference</span>
+      <h2 style="color: var(--vj-navy);">Maximize Your Time</h2>
+      <p>Experience the ultimate in executive private air travel with ValleyJet. Our team of local experts will work closely with you to plan every detail of your chartered flight, ensuring that it meets your exacting standards of luxury, safety, and comfort. Choose from our selection of handpicked aircraft options, including regionally based, transient, and floating planes and helicopters, and enjoy exceptional value for money with our competitive pricing. Whether you need a light jet charter from Scottsdale for a short getaway or a midsize cabin for extended travel, we'll match you with the ideal aircraft.</p>
+      <a href="https://valleyjet.com/contact/" class="btn-primary" style="margin-top: 16px;">Get a Quote</a>
     </div>
-    <div class="col-md-6 img-container position-relative">
-      <img src="https://valleyjet.com/wp-content/uploads/2023/02/adobestock_98400582.webp" alt="Private Jet Interior" class="main-image" style="position: relative; z-index: 1; width: 100%;" loading="lazy">
+    <div class="lv-intro-img">
+      <img src="https://valleyjet.com/wp-content/uploads/2023/02/adobestock_98400582.webp" alt="Private Jet Interior Luxury Cabin" loading="lazy"/>
     </div>
   </div>
 </div>
