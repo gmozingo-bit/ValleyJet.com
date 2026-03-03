@@ -804,6 +804,10 @@
   display: block;
 }
 
+.hp-full-img--charter-jet img {
+  object-position: center 38%;
+}
+
 /* ── HOMEPAGE RESPONSIVE ── */
 @media (max-width: 867px) {
   .hp-destinations-grid {
