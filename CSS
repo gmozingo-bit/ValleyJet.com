@@ -51,6 +51,29 @@
         height: 100%;
         object-fit: cover;
     }
+    .mobile-hero-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 40px 24px;
+        background: linear-gradient(to top, rgba(0,0,0,.7) 0%, rgba(0,0,0,.35) 50%, transparent 100%);
+    }
+    .mobile-hero-overlay h1 {
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: #fff;
+        line-height: 1.1;
+        margin: 0 0 8px 0;
+        text-transform: uppercase;
+        letter-spacing: .02em;
+    }
+    .mobile-hero-overlay p {
+        font-size: .85rem;
+        color: rgba(255,255,255,.8);
+        margin: 0;
+        letter-spacing: .04em;
+    }
 }
 
 /* --- 2. PRESERVED: YOUR ORIGINAL MOBILE LOGIC --- */
