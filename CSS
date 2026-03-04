@@ -74,6 +74,20 @@
         margin: 0;
         letter-spacing: .04em;
     }
+    .mobile-hero-btn {
+        display: inline-block;
+        margin-top: 16px;
+        padding: 12px 32px;
+        background: #FF533D;
+        color: #fff;
+        font-size: .9rem;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        border: none;
+        transition: background .3s;
+    }
 }
 
 /* --- 2. PRESERVED: YOUR ORIGINAL MOBILE LOGIC --- */
