@@ -47,6 +47,64 @@
 @media (max-width: 1100px) {
   .full-width-image-mobile { margin-left: -50vw; left: 50% !important; width: 100vw; }
 }
+
+.lv-fleet-feature {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5vw;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 56px);
+  align-items: center;
+}
+
+.lv-fleet-feature-image {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(15, 22, 38, 0.18);
+}
+
+.lv-fleet-feature-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.lv-fleet-feature-content {
+  background: linear-gradient(180deg, #0f1626 0%, #1d2943 100%);
+  border-radius: 18px;
+  color: #fff;
+  padding: clamp(24px, 4vw, 48px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 18px 48px rgba(15, 22, 38, 0.25);
+}
+
+.lv-fleet-feature-content h2 {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.lv-fleet-feature-content p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 0;
+}
+
+.lv-fleet-feature-content .btn-primary {
+  margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+  .lv-fleet-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .lv-fleet-feature-image img {
+    min-height: 320px;
+  }
+}
 </style>
 
 <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/fe4153706ea640ee222c49c28/2499365e46bc5a8add6cf2180.js");</script>
@@ -167,6 +225,24 @@
         <span>Up to 6,000+ nm</span>
       </div>
       <a href="https://valleyjet.com/heavyjet/" class="btn-primary" style="display: block; text-align: center; margin-top: 18px; font-size: .85rem; padding: 10px 20px;">Learn More</a>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION 4B: 10,000+ AIRCRAFT FEATURE (restored hero block)
+     ════════════════════════════════════════════════════════ -->
+<div class="lv-section" style="padding-top: 80px; padding-bottom: 80px;">
+  <div class="lv-fleet-feature">
+    <div class="lv-fleet-feature-image">
+      <img src="https://valleyjet.com/wp-content/uploads/2023/02/IMG_0347.jpeg" alt="Private Jet Exterior" loading="lazy" />
+    </div>
+
+    <div class="lv-fleet-feature-content">
+      <span class="lv-eyebrow-sm" style="color: rgba(255,255,255,.75);">Available 24/7</span>
+      <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.6rem);">10,000+ Aircraft</h2>
+      <p>Wherever you go, let ValleyJet take you there in style. Our 24/7 charter service offers the best in private jet rentals, helicopter tours, exquisite catering, ramp-side valet, and bespoke requests. From booking to arrival, we strive to exceed your expectations and make your journey unforgettable. Get in touch with our <a href="https://valleyjet.com/contact/" style="color: #fff; text-decoration: underline;">ValleyJet 24/7 charter service desk</a> today to experience the unparalleled difference that ValleyJet offers.</p>
+      <a href="https://valleyjet.com/contact/" role="button" class="btn-primary">Book Now</a>
     </div>
   </div>
 </div>
