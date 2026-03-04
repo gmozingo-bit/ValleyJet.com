@@ -1,3 +1,10 @@
+/* Global font override */
+html,
+body,
+body * {
+    font-family: Helvetica, Arial, sans-serif !important;
+}
+
 /* --- 1. NEW: DESKTOP VIDEO & POSTER SCALING --- */
 @keyframes heroFadeIn {
     from { opacity: 0; }
