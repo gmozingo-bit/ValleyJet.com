@@ -294,11 +294,11 @@
       </div>
       <div class="lv-service-item">
         <div class="lv-service-icon" style="background: transparent;">
-          <img src="https://valleyjet.com/wp-content/uploads/2018/07/plane-icon-1.png" alt="10000 plus aircraft worldwide" style="width: 36px; height: 36px; filter: invert(40%) sepia(98%) saturate(2472%) hue-rotate(343deg) brightness(101%) contrast(101%);" loading="lazy"/>
+          <img src="https://valleyjet.com/wp-content/uploads/2026/03/Helicopter-Vector-1.png" alt="10000 plus aircraft and helicopter charter worldwide" style="width: 36px; height: 36px; object-fit: contain; filter: invert(40%) sepia(98%) saturate(2472%) hue-rotate(343deg) brightness(101%) contrast(101%);" loading="lazy"/>
         </div>
         <div>
           <h3>10,000+ Aircraft</h3>
-          <p>From anywhere in the world, ValleyJet will match you with the perfect aircraft to suit your wants and needs. <a href="https://valleyjet.com/light-jet-charter/">Light Jet</a> | <a href="https://valleyjet.com/midsize-jet-charter/">Mid Jet</a> | <a href="https://valleyjet.com/heavyjet/">Heavy Jet</a></p>
+          <p>From anywhere in the world, ValleyJet will match you with the perfect aircraft to suit your wants and needs, including seamless helicopter transfers across the Valley and beyond. Over 60 planes and helicopters are available locally for immediate dispatch. <a href="https://valleyjet.com/light-jet-charter/">Light Jet</a> | <a href="https://valleyjet.com/midsize-jet-charter/">Mid Jet</a> | <a href="https://valleyjet.com/heavyjet/">Heavy Jet</a></p>
         </div>
       </div>
       <div class="lv-service-item">
@@ -308,15 +308,6 @@
         <div>
           <h3>Jet Services</h3>
           <p>A dedicated team of aviation experts will provide you with around the clock, over the top customer experiences with white-glove service.</p>
-        </div>
-      </div>
-      <div class="lv-service-item">
-        <div class="lv-service-icon" style="background: transparent; width: 58px; height: 58px;">
-          <img src="https://valleyjet.com/wp-content/uploads/2026/03/Helicopter-Vector-1.png" alt="Helicopter charter" style="width: 58px; height: 58px; object-fit: contain; filter: invert(40%) sepia(98%) saturate(2472%) hue-rotate(343deg) brightness(101%) contrast(101%);" loading="lazy"/>
-        </div>
-        <div>
-          <h3>Helicopter Charter</h3>
-          <p>Seamless helicopter transfers across the Valley and beyond. Over 60 planes and helicopters available locally for immediate dispatch.</p>
         </div>
       </div>
     </div>
