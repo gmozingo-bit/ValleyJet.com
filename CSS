@@ -920,6 +920,14 @@ body * {
   }
 }
 
+/* ── SECTION 3A GRID: image left, text right, top-aligned ── */
+.lv-brand-intro-grid {
+  align-items: start !important;
+}
+.lv-brand-intro-grid .lv-wing-img {
+  order: -1; /* always renders before text regardless of theme CSS */
+}
+
 /* ── POPULAR ROUTE LINKS (Section 3A — below Book Now) ── */
 .lv-route-links {
   display: flex;
