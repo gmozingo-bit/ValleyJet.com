@@ -149,13 +149,13 @@
 <div class="lv-section lv-brand-intro" style="padding: 80px 0;">
   <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
 
-    <!-- Left: wing image -->
-    <div class="lv-intro-img lv-wing-img">
+    <!-- Left: wing image (col 1) -->
+    <div class="lv-intro-img lv-wing-img" style="grid-column: 1;">
       <img src="https://valleyjet.com/wp-content/uploads/2023/02/wing-valley-edit-scaled.jpeg" alt="ValleyJet Private Jet Charter Interior" fetchpriority="high" style="height: auto;"/>
     </div>
 
-    <!-- Right: text column -->
-    <div>
+    <!-- Right: text column (col 2) -->
+    <div style="grid-column: 2;">
       <span class="lv-eyebrow-sm">Premier Charter Service</span>
       <h1 style="font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700; line-height: 1.2; margin-bottom: 8px;">ValleyJet Private Jet Charter</h1>
       <h2 style="font-size: clamp(1rem, 1.8vw, 1.25rem); font-weight: 400; color: var(--vj-muted); line-height: 1.4; margin-bottom: 16px;">On-Demand Private Jet &amp; Helicopter Charter &mdash; Scottsdale, Phoenix &amp; San Diego</h2>
@@ -184,7 +184,7 @@
       <a href="https://valleyjet.com/aircraft/" class="btn-primary" style="margin-top: 16px; display: inline-block;">View Aircraft Fleet</a>
     </div>
     <div class="lv-intro-img">
-      <img src="https://valleyjet.com/wp-content/uploads/2023/02/adobestock_98400582.webp" alt="Private Jet Interior Luxury Cabin" loading="lazy"/>
+      <img src="https://valleyjet.com/wp-content/uploads/2023/02/IMG_0347.jpeg" alt="ValleyJet Executive Aviation Helicopter Charter" loading="lazy"/>
     </div>
   </div>
 </div>
