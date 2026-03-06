@@ -924,10 +924,15 @@ body * {
     display: block;
   }
 
-  /* Screen 1: eyebrow + headline + Book Now — kept above the fold */
+  /* Screen 1: eyebrow + headline + Book Now — fills first viewport */
   .lv-screen-1-text {
-    padding: 20px 6vw 28px;
+    padding: 28px 6vw 36px;
     background: #fff;
+    min-height: 52vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
   }
   .lv-screen-1-text h1 {
     margin-bottom: 20px !important;
@@ -938,20 +943,29 @@ body * {
     text-align: center !important;
   }
 
-  /* Screen 2: h2 + description + secondary CTA — starts below the fold */
+  /* Screen 2: h2 + description + secondary CTA — fills second viewport */
   .lv-screen-2-text {
-    padding: 30px 6vw 48px;
+    padding: 36px 6vw 48px;
     background: var(--vj-light);
     width: 100vw;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
   }
   .lv-screen-2-text h2 {
     margin-top: 0 !important;
   }
+  .lv-screen-2-text p {
+    font-size: 0.83rem;
+    line-height: 1.65;
+  }
   .lv-screen-2-text .lv-hero-ctas {
-    margin-top: 20px !important;
+    margin-top: 24px !important;
   }
   .lv-screen-2-text .btn-outline-vj {
     display: block !important;
