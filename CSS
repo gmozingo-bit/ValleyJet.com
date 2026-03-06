@@ -960,3 +960,72 @@ body * {
     box-sizing: border-box;
   }
 }
+
+/* ── FLEET STATS STRIP (Section 4) ── */
+.lv-fleet-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0 30px;
+  flex-wrap: wrap;
+}
+.lv-fleet-stat { text-align: center; }
+.lv-fleet-num {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--vj-orange);
+  line-height: 1;
+}
+.lv-fleet-label {
+  display: block;
+  font-size: .65rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.5);
+  margin-top: .3rem;
+}
+
+/* Swipe hint — desktop hidden, shown on mobile */
+.lv-swipe-hint { display: none; }
+
+/* ── AIRCRAFT NETWORK MOBILE CAROUSEL ── */
+@media (max-width: 767px) {
+  /* Convert grid to horizontal snap carousel */
+  .lv-aircraft-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 12px !important;
+    margin-top: 20px !important;
+    padding: 0 6vw 16px !important;
+    margin-left: -6vw !important;
+    margin-right: -6vw !important;
+    scrollbar-width: none;
+  }
+  .lv-aircraft-grid::-webkit-scrollbar { display: none; }
+
+  .lv-aircraft-card {
+    flex: 0 0 78vw !important;
+    scroll-snap-align: start !important;
+    margin: 0 !important;
+  }
+  .lv-aircraft-card:last-child { margin-right: 6vw !important; }
+
+  /* Swipe hint */
+  .lv-swipe-hint {
+    display: block !important;
+    text-align: center;
+    font-size: .72rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.4);
+    margin-top: 12px;
+  }
+
+  /* Compact fleet stats on mobile */
+  .lv-fleet-stats { gap: 24px; margin: 16px 0 20px; }
+  .lv-fleet-num { font-size: 1.5rem; }
+}
