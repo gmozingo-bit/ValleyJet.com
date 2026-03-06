@@ -920,6 +920,17 @@ body * {
   }
 }
 
+/* ── DESKTOP/MOBILE BRAND INTRO VISIBILITY ── */
+/* Desktop: show combined content, hide mobile split */
+@media (min-width: 768px) {
+  .lv-brand-mobile-only { display: none; }
+  .lv-section-3b { display: none; }
+}
+/* Mobile: hide desktop combined content */
+@media (max-width: 767px) {
+  .lv-brand-desktop-only { display: none; }
+}
+
 /* ── FLEET STATS STRIP (Section 4) ── */
 .lv-fleet-stats {
   display: flex;
