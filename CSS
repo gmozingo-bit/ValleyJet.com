@@ -920,6 +920,74 @@ body * {
   }
 }
 
+/* ── "V" BRAND MARK — floats above the wing image (Section 3A) ── */
+@keyframes vjVSlideIn {
+  from { opacity: 0; transform: translateY(-14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.lv-v-mark {
+  font-size: 6rem;
+  font-weight: 900;
+  color: var(--vj-navy);
+  line-height: 1;
+  letter-spacing: -.04em;
+  margin-bottom: 12px;
+  animation: vjVSlideIn 1s ease-out both;
+  display: block;
+}
+
+/* ── TESTIMONIAL BADGE text styling (Section 3A — bottom-right of wing image) ── */
+.lv-intro-badge strong {
+  display: block;
+  font-size: .95rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.lv-intro-badge span {
+  display: block;
+  font-size: .7rem;
+  margin-top: 6px;
+  letter-spacing: .12em;
+}
+
+/* ── POPULAR ROUTE LINKS (Section 3A — below Book Now) ── */
+.lv-route-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-top: 18px;
+}
+
+.lv-route-links a {
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--vj-navy);
+  text-decoration: none;
+  border-bottom: 1px solid var(--vj-orange);
+  padding-bottom: 2px;
+  transition: color .2s, border-color .2s;
+}
+
+.lv-route-links a:hover {
+  color: var(--vj-orange);
+  text-decoration: none;
+}
+
+/* Mobile adjustments for V mark and route links */
+@media (max-width: 767px) {
+  .lv-v-mark {
+    font-size: 4rem;
+    margin-bottom: 8px;
+  }
+  .lv-route-links {
+    gap: 8px 14px;
+  }
+}
+
 /* ── FLEET STATS STRIP (Section 4) ── */
 .lv-fleet-stats {
   display: flex;
