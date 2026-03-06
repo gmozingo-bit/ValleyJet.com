@@ -896,23 +896,75 @@ body * {
   }
 }
 
-/* ── MOBILE BRAND INTRO (Section 3A — Wing Image) ── */
+/* ── MOBILE BRAND HERO SPLIT (Section 3 — Wing Image) ── */
 @media (max-width: 767px) {
-  /* Wing image: cap height so it doesn't dominate the viewport */
-  .lv-brand-intro .lv-wing-img img {
-    max-height: 48vh !important;
-    object-fit: cover !important;
-    object-position: center center !important;
+  /* Strip section padding so image can go edge-to-edge */
+  .lv-brand-intro {
+    padding: 0 !important;
   }
-  /* Full-width Book Now on mobile */
-  .lv-brand-intro .btn-primary {
+  .lv-brand-intro .lv-two-col {
+    display: block !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    gap: 0 !important;
+  }
+
+  /* Wing image: full width, full natural proportions (not cropped) */
+  .lv-brand-intro .lv-wing-img {
+    margin-bottom: 0 !important;
+  }
+  .lv-brand-intro .lv-wing-img img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    display: block;
+  }
+
+  /* Screen 1: eyebrow + headline + Book Now — fills first viewport */
+  .lv-screen-1-text {
+    padding: 28px 6vw 36px;
+    background: #fff;
+    min-height: 52vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .lv-screen-1-text h1 {
+    margin-bottom: 20px !important;
+  }
+  .lv-screen-1-text .btn-primary {
     display: block !important;
     width: 100% !important;
     text-align: center !important;
+  }
+
+  /* Screen 2: h2 + description + secondary CTA — fills second viewport */
+  .lv-screen-2-text {
+    padding: 36px 6vw 48px;
+    background: var(--vj-light);
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     box-sizing: border-box;
   }
-  /* Full-width Fleet CTA on mobile (Section 3B) */
-  .lv-section-light .btn-primary {
+  .lv-screen-2-text h2 {
+    margin-top: 0 !important;
+  }
+  .lv-screen-2-text p {
+    font-size: 0.83rem;
+    line-height: 1.65;
+  }
+  .lv-screen-2-text .lv-hero-ctas {
+    margin-top: 24px !important;
+  }
+  .lv-screen-2-text .btn-outline-vj {
     display: block !important;
     width: 100% !important;
     text-align: center !important;
