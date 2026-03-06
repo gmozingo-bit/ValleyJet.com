@@ -144,30 +144,35 @@
 </div>
 
 <!-- ════════════════════════════════════════════════════════
-     SECTION 3: BRAND INTRO (trust + CTA) — NEW DESIGN
-     "ValleyJet Private Jet Charter / Helicopter & Executive
-      Aviation — Scottsdale, Phoenix & San Diego"
+     SECTION 3A: BRAND INTRO — Wing image + headline + CTA
      ════════════════════════════════════════════════════════ -->
 <div class="lv-section lv-brand-intro" style="padding: 80px 0;">
   <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
     <div class="lv-intro-img lv-wing-img">
       <img src="https://valleyjet.com/wp-content/uploads/2023/02/wing-valley-edit-scaled.jpeg" alt="ValleyJet Private Jet Charter Interior" fetchpriority="high" style="height: auto;"/>
     </div>
-    <div class="lv-brand-text">
-      <!-- Mobile Screen 1: headline + primary CTA — above the fold -->
-      <div class="lv-screen-1-text">
-        <span class="lv-eyebrow-sm">Premier Charter Service</span>
-        <h1 style="font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700; line-height: 1.2; margin-bottom: 16px;">ValleyJet Private Jet Charter</h1>
-        <a href="https://valleyjet.com/contact/" class="btn-primary">Book Now</a>
-      </div>
-      <!-- Mobile Screen 2: details + secondary CTA — below the fold -->
-      <div class="lv-screen-2-text">
-        <h2 style="font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: 400; color: var(--vj-muted); margin-bottom: 24px;">Helicopter &amp; Executive Aviation &mdash; Scottsdale, Phoenix &amp; San Diego</h2>
-        <p>ValleyJet is the premier private jet charter in Scottsdale, Phoenix, and San Diego. We set the standard for executive aviation in the Southwest and Southern California. With operational bases in Scottsdale, AZ and San Diego, CA, we provide on-demand private jet and helicopter charters that connect you to the globe. Whether you require a seamless helicopter transfer across the Valley, a coastal charter from San Diego, or a heavy jet for international travel, our team ensures a flawless experience. Enjoy the freedom of on-demand travel without the constraints of membership commitments. We deliver uncompromising safety and white-glove service, available around the clock.</p>
-        <div class="lv-hero-ctas" style="margin-top: 24px;">
-          <a href="https://valleyjet.com/aircraft/" class="btn-outline-vj" style="color: var(--vj-navy); border-color: var(--vj-navy);">View Aircraft Fleet</a>
-        </div>
-      </div>
+    <div>
+      <span class="lv-eyebrow-sm">Premier Charter Service</span>
+      <h1 style="font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700; line-height: 1.2; margin-bottom: 16px;">ValleyJet Private Jet Charter</h1>
+      <p>ValleyJet is the premier private jet charter in Scottsdale, Phoenix, and San Diego. We set the standard for executive aviation in the Southwest and Southern California.</p>
+      <a href="https://valleyjet.com/contact/" class="btn-primary" style="margin-top: 16px; display: inline-block;">Book Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION 3B: EXECUTIVE AVIATION — Second image + details + CTA
+     ════════════════════════════════════════════════════════ -->
+<div class="lv-section-light">
+  <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto;">
+    <div>
+      <span class="lv-eyebrow-sm">Executive Aviation</span>
+      <h2 style="color: var(--vj-navy); font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 700; line-height: 1.3; margin-bottom: 20px;">Helicopter &amp; Executive Aviation &mdash; Scottsdale, Phoenix &amp; San Diego</h2>
+      <p>With operational bases in Scottsdale, AZ and San Diego, CA, we provide on-demand private jet and helicopter charters that connect you to the globe. Whether you require a seamless helicopter transfer across the Valley, a coastal charter from San Diego, or a heavy jet for international travel, our team ensures a flawless experience. Enjoy the freedom of on-demand travel without the constraints of membership commitments. We deliver uncompromising safety and white-glove service, available around the clock.</p>
+      <a href="https://valleyjet.com/aircraft/" class="btn-primary" style="margin-top: 16px; display: inline-block;">View Aircraft Fleet</a>
+    </div>
+    <div class="lv-intro-img">
+      <img src="https://valleyjet.com/wp-content/uploads/2023/02/adobestock_98400582.webp" alt="Private Jet Interior Luxury Cabin" loading="lazy"/>
     </div>
   </div>
 </div>
