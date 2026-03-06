@@ -183,6 +183,12 @@
   <h2 style="text-align: center; color: var(--vj-white); font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700; margin-bottom: 10px;">10,000+ Aircraft at Your Fingertips</h2>
   <p style="text-align: center; color: rgba(255,255,255,.65); max-width: 680px; margin: 0 auto 10px;">From anywhere in the world, ValleyJet will match you with the perfect aircraft to suit your wants and needs. Choose from our selection of handpicked aircraft options, including regionally based, transient, and floating planes and helicopters.</p>
 
+  <div class="lv-fleet-stats">
+    <div class="lv-fleet-stat"><span class="lv-fleet-num">10,000+</span><span class="lv-fleet-label">Total Aircraft</span></div>
+    <div class="lv-fleet-stat"><span class="lv-fleet-num">7,000+</span><span class="lv-fleet-label">Global Jets</span></div>
+    <div class="lv-fleet-stat"><span class="lv-fleet-num">60+</span><span class="lv-fleet-label">Local Fleet</span></div>
+  </div>
+
   <div class="lv-aircraft-grid">
     <div class="lv-aircraft-card">
       <span class="lv-ac-type">Category</span>
@@ -216,7 +222,41 @@
       </div>
       <a href="https://valleyjet.com/heavyjet/" class="btn-primary" style="display: block; text-align: center; margin-top: 18px; font-size: .85rem; padding: 10px 20px;">Learn More</a>
     </div>
+
+    <div class="lv-aircraft-card">
+      <span class="lv-ac-type">Category</span>
+      <div class="lv-ac-name">Turboprop Charter</div>
+      <p>Cost-effective and versatile for short regional hops and scenic routes. Access smaller airports with ease while enjoying a comfortable private cabin.</p>
+      <div class="lv-ac-specs">
+        <span>2-6 Seats</span>
+        <span>Up to 900 nm</span>
+      </div>
+      <a href="https://valleyjet.com/contact/" class="btn-primary" style="display: block; text-align: center; margin-top: 18px; font-size: .85rem; padding: 10px 20px;">Get a Quote</a>
+    </div>
+
+    <div class="lv-aircraft-card">
+      <span class="lv-ac-type">Category</span>
+      <div class="lv-ac-name">Super Midsize Jet</div>
+      <p>A true standout for transcontinental travel. Enjoy a full stand-up cabin, large baggage capacity, and the range to fly coast-to-coast nonstop.</p>
+      <div class="lv-ac-specs">
+        <span>8-12 Seats</span>
+        <span>Up to 4,500 nm</span>
+      </div>
+      <a href="https://valleyjet.com/contact/" class="btn-primary" style="display: block; text-align: center; margin-top: 18px; font-size: .85rem; padding: 10px 20px;">Get a Quote</a>
+    </div>
+
+    <div class="lv-aircraft-card">
+      <span class="lv-ac-type">Category</span>
+      <div class="lv-ac-name">Helicopter Charter</div>
+      <p>Seamless transfers across the Valley and beyond. Over 60 helicopters available locally for immediate dispatch — aerial tours, airport runs, and more.</p>
+      <div class="lv-ac-specs">
+        <span>2-8 Passengers</span>
+        <span>Local Transfers</span>
+      </div>
+      <a href="https://valleyjet.com/contact/" class="btn-primary" style="display: block; text-align: center; margin-top: 18px; font-size: .85rem; padding: 10px 20px;">Get a Quote</a>
+    </div>
   </div>
+  <p class="lv-swipe-hint">Swipe to explore all aircraft &rarr;</p>
 </div>
 
 <!-- ════════════════════════════════════════════════════════
