@@ -103,15 +103,19 @@
 
 /* Visually hidden — keeps text in DOM for crawlers, invisible to users */
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+  color: transparent !important;
+  background: transparent !important;
+  pointer-events: none !important;
 }
 </style>
 
@@ -180,12 +184,11 @@ Private Jet Charter</h1>
         </div>
 
         <!-- Destination links -->
-        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 24px; padding-top: 20px; border-top: 1px solid #e4e6ea;">
-          <span style="font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--vj-muted); align-self: center; margin-right: 4px;">Destinations:</span>
-          <a href="https://valleyjet.com/private-jet-charters-scottsdale/" style="display: inline-block; padding: 6px 16px; border: 1.5px solid #0F1626; color: #0F1626; font-size: .82rem; font-weight: 600; text-decoration: none; transition: background .25s, color .25s;" onmouseover="this.style.background='#0F1626';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='#0F1626'">Scottsdale</a>
-          <a href="https://valleyjet.com/jet-charter-san-diego/" style="display: inline-block; padding: 6px 16px; border: 1.5px solid #0F1626; color: #0F1626; font-size: .82rem; font-weight: 600; text-decoration: none; transition: background .25s, color .25s;" onmouseover="this.style.background='#0F1626';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='#0F1626'">San Diego</a>
-          <a href="https://valleyjet.com/las-vegas-jet-charter/" style="display: inline-block; padding: 6px 16px; border: 1.5px solid #0F1626; color: #0F1626; font-size: .82rem; font-weight: 600; text-decoration: none; transition: background .25s, color .25s;" onmouseover="this.style.background='#0F1626';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='#0F1626'">Las Vegas</a>
-          <a href="https://valleyjet.com/cabo-private-jet-charter/" style="display: inline-block; padding: 6px 16px; border: 1.5px solid #0F1626; color: #0F1626; font-size: .82rem; font-weight: 600; text-decoration: none; transition: background .25s, color .25s;" onmouseover="this.style.background='#0F1626';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='#0F1626'">Cabo</a>
+        <div style="display: flex; gap: 24px; flex-wrap: wrap; margin-top: 24px; padding-top: 20px; border-top: 1px solid #e4e6ea;">
+          <a href="https://valleyjet.com/private-jet-charters-scottsdale/" style="color: #0F1626; font-size: .9rem; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FF533D; padding-bottom: 2px;">Scottsdale</a>
+          <a href="https://valleyjet.com/jet-charter-san-diego/" style="color: #0F1626; font-size: .9rem; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FF533D; padding-bottom: 2px;">San Diego</a>
+          <a href="https://valleyjet.com/las-vegas-jet-charter/" style="color: #0F1626; font-size: .9rem; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FF533D; padding-bottom: 2px;">Las Vegas</a>
+          <a href="https://valleyjet.com/cabo-private-jet-charter/" style="color: #0F1626; font-size: .9rem; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FF533D; padding-bottom: 2px;">Cabo</a>
         </div>
       </div>
 
