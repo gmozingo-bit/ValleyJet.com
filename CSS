@@ -920,12 +920,31 @@ body * {
   }
 }
 
-/* ── SECTION 3A GRID: image left, text right, top-aligned ── */
+/* ── SECTION 3A: image left, text right — flex overrides theme grid interference ── */
 .lv-brand-intro-grid {
-  align-items: start !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 60px !important;
+}
+.lv-brand-intro-grid > * {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
 }
 .lv-brand-intro-grid .lv-wing-img {
-  order: -1; /* always renders before text regardless of theme CSS */
+  order: -1 !important;
+}
+@media (max-width: 867px) {
+  .lv-brand-intro-grid {
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+  .lv-brand-intro-grid .lv-wing-img img {
+    height: auto !important;
+    max-height: 48vh !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
 }
 
 /* ── POPULAR ROUTE LINKS (Section 3A — below Book Now) ── */
