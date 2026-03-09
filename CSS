@@ -1,3 +1,10 @@
+/* Global font override */
+html,
+body,
+body * {
+    font-family: Helvetica, Arial, sans-serif !important;
+}
+
 /* --- 1. NEW: DESKTOP VIDEO & POSTER SCALING --- */
 @keyframes heroFadeIn {
     from { opacity: 0; }
@@ -27,6 +34,67 @@
     min-width: 100% !important; 
     min-height: 100% !important;
     transform: scale(1.02); 
+}
+
+/* --- 1b. MOBILE VIDEO HERO --- */
+.mobile-video-hero {
+    display: none; /* Hidden on desktop by default */
+}
+
+@media (max-width: 767px) {
+    .mobile-video-hero {
+        display: block;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        height: calc(100vh - 90px);
+        overflow: hidden;
+        background: #000;
+        animation: heroFadeIn 1.5s ease-in-out;
+    }
+    .mobile-video-hero video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .mobile-hero-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 40px 24px;
+        background: linear-gradient(to top, rgba(0,0,0,.7) 0%, rgba(0,0,0,.35) 50%, transparent 100%);
+    }
+    .mobile-hero-overlay h1 {
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: #fff;
+        line-height: 1.1;
+        margin: 0 0 8px 0;
+        text-transform: uppercase;
+        letter-spacing: .02em;
+    }
+    .mobile-hero-overlay p {
+        font-size: .85rem;
+        color: rgba(255,255,255,.8);
+        margin: 0;
+        letter-spacing: .04em;
+    }
+    .mobile-hero-btn {
+        display: inline-block;
+        margin-top: 16px;
+        padding: 12px 32px;
+        background: #FF533D;
+        color: #fff;
+        font-size: .9rem;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        border: none;
+        transition: background .3s;
+    }
 }
 
 /* --- 2. PRESERVED: YOUR ORIGINAL MOBILE LOGIC --- */
@@ -501,19 +569,25 @@
   right: -20px;
   background: var(--vj-orange);
   color: var(--vj-white);
-  padding: 18px 22px;
+  padding: 22px 28px;
   text-align: center;
   font-weight: 700;
+  border: 3px solid var(--vj-white);
+  box-shadow: 0 4px 20px rgba(0,0,0,.15);
 }
 .lv-intro-badge strong {
   display: block;
   font-size: 2rem;
   line-height: 1;
+  letter-spacing: .08em;
 }
 .lv-intro-badge span {
+  display: block;
   font-size: .7rem;
-  letter-spacing: .15em;
+  letter-spacing: .2em;
   text-transform: uppercase;
+  margin-top: 6px;
+  opacity: .9;
 }
 
 /* ── AIRCRAFT CARDS ── */
@@ -702,4 +776,301 @@
   .lv-intro-badge { right: 0; bottom: 0; }
   .lv-section-dark,
   .lv-section-light { padding: 60px 6vw; }
+  .lv-intro-img img { height: 280px !important; object-fit: cover; }
+  /* Wing image in brand intro overrides the 280px cap — see mobile split block below */
+  .lv-wing-img img { height: auto !important; }
+  .lv-intro-img { margin-bottom: 24px; }
+}
+
+/* ══════════════════════════════════════════════════════════
+   HOMEPAGE-SPECIFIC COMPONENTS
+   ══════════════════════════════════════════════════════════ */
+
+/* ── DESTINATIONS GRID ── */
+.hp-destinations-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  margin-top: 40px;
+}
+
+.hp-dest-card {
+  background: rgba(255,255,255,.04);
+  overflow: hidden;
+  transition: background .3s;
+}
+.hp-dest-card:hover {
+  background: rgba(255,83,61,.06);
+}
+
+.hp-dest-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.hp-dest-content {
+  padding: 28px 24px;
+}
+
+.hp-dest-content h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--vj-white);
+  margin-bottom: 10px;
+}
+
+.hp-dest-content p {
+  font-size: .88rem;
+  color: rgba(255,255,255,.6);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* ── CUSTOMER LOGO GRID ── */
+.hp-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hp-logo-item {
+  text-align: center;
+}
+
+.hp-logo-item img {
+  max-width: 80%;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: .6;
+  transition: filter .3s, opacity .3s;
+}
+
+.hp-logo-item img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* ── FULL-WIDTH IMAGE BREAK ── */
+.hp-full-img {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+  max-height: 500px;
+}
+
+.hp-full-img img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.hp-full-img--charter-jet img {
+  object-position: center 38%;
+}
+
+/* ── HOMEPAGE RESPONSIVE ── */
+@media (max-width: 867px) {
+  .hp-destinations-grid {
+    grid-template-columns: 1fr;
+  }
+  .hp-dest-card img {
+    height: 200px;
+  }
+  .hp-logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .hp-full-img,
+  .hp-full-img img {
+    height: 280px;
+  }
+}
+
+/* ── MOBILE BRAND INTRO (Section 3A — Wing Image) ── */
+@media (max-width: 767px) {
+  /* Wing image: cap height so it doesn't dominate the viewport */
+  .lv-brand-intro .lv-wing-img img {
+    max-height: 48vh !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+  /* Full-width Book Now on mobile */
+  .lv-brand-intro .btn-primary {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box;
+  }
+  /* Full-width Fleet CTA on mobile (Section 3B) */
+  .lv-section-light .btn-primary {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box;
+  }
+}
+
+/* ── SECTION 3A: image left, text right — flex overrides theme grid interference ── */
+.lv-brand-intro-grid {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 60px !important;
+}
+.lv-brand-intro-grid > * {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+}
+.lv-brand-intro-grid .lv-wing-img {
+  order: -1 !important;
+}
+@media (max-width: 867px) {
+  .lv-brand-intro-grid {
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+  .lv-brand-intro-grid .lv-wing-img img {
+    height: auto !important;
+    max-height: 48vh !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+}
+
+/* ── POPULAR ROUTE LINKS (Section 3A — below Book Now) ── */
+.lv-route-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-top: 18px;
+}
+
+.lv-route-links a {
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--vj-navy);
+  text-decoration: none;
+  border-bottom: 1px solid var(--vj-orange);
+  padding-bottom: 2px;
+  transition: color .2s, border-color .2s;
+}
+
+.lv-route-links a:hover {
+  color: var(--vj-orange);
+  text-decoration: none;
+}
+
+/* Mobile adjustments for route links */
+@media (max-width: 767px) {
+  .lv-route-links {
+    gap: 8px 14px;
+  }
+}
+
+/* ── DARK OUTLINE BUTTON (light backgrounds) ── */
+.btn-outline-dark {
+  display: inline-block;
+  background: transparent;
+  color: var(--vj-navy);
+  padding: 12px 28px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: .85rem;
+  letter-spacing: .05em;
+  border: 2px solid var(--vj-navy);
+  transition: background .25s, color .25s;
+}
+.btn-outline-dark:hover {
+  background: var(--vj-navy);
+  color: var(--vj-white);
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .btn-outline-dark {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box;
+  }
+}
+
+/* ── FLEET STATS STRIP (Section 4) ── */
+.lv-fleet-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0 30px;
+  flex-wrap: wrap;
+}
+.lv-fleet-stat { text-align: center; }
+.lv-fleet-num {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--vj-orange);
+  line-height: 1;
+}
+.lv-fleet-label {
+  display: block;
+  font-size: .65rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.5);
+  margin-top: .3rem;
+}
+
+/* Swipe hint — desktop hidden, shown on mobile */
+.lv-swipe-hint { display: none; }
+
+/* ── AIRCRAFT NETWORK MOBILE CAROUSEL ── */
+@media (max-width: 767px) {
+  /* Convert grid to horizontal snap carousel */
+  .lv-aircraft-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 12px !important;
+    margin-top: 20px !important;
+    padding: 0 6vw 16px !important;
+    margin-left: -6vw !important;
+    margin-right: -6vw !important;
+    scrollbar-width: none;
+  }
+  .lv-aircraft-grid::-webkit-scrollbar { display: none; }
+
+  .lv-aircraft-card {
+    flex: 0 0 78vw !important;
+    scroll-snap-align: start !important;
+    margin: 0 !important;
+  }
+  .lv-aircraft-card:last-child { margin-right: 6vw !important; }
+
+  /* Swipe hint */
+  .lv-swipe-hint {
+    display: block !important;
+    text-align: center;
+    font-size: .72rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.4);
+    margin-top: 12px;
+  }
+
+  /* Compact fleet stats on mobile */
+  .lv-fleet-stats { gap: 24px; margin: 16px 0 20px; }
+  .lv-fleet-num { font-size: 1.5rem; }
 }
