@@ -896,54 +896,35 @@ body * {
   }
 }
 
-/* ── MOBILE BRAND INTRO (Section 3A — Wing Image) ── */
-@media (max-width: 767px) {
-  /* Wing image: cap height so it doesn't dominate the viewport */
-  .lv-brand-intro .lv-wing-img img {
-    max-height: 48vh !important;
-    object-fit: cover !important;
-    object-position: center center !important;
-  }
-  /* Full-width Book Now on mobile */
-  .lv-brand-intro .btn-primary {
-    display: block !important;
-    width: 100% !important;
-    text-align: center !important;
-    box-sizing: border-box;
-  }
-  /* Full-width Fleet CTA on mobile (Section 3B) */
-  .lv-section-light .btn-primary {
-    display: block !important;
-    width: 100% !important;
-    text-align: center !important;
-    box-sizing: border-box;
-  }
-}
-
-/* ── SECTION 3A: image left, text right — flex overrides theme grid interference ── */
+/* ── SECTION 3A: Brand Intro — image left, text right ── */
 .lv-brand-intro-grid {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  gap: 60px !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
 }
 .lv-brand-intro-grid > * {
-  flex: 1 1 0 !important;
-  min-width: 0 !important;
+  flex: 1 1 0;
+  min-width: 0;
 }
-.lv-brand-intro-grid .lv-wing-img {
-  order: -1 !important;
-}
+
 @media (max-width: 867px) {
   .lv-brand-intro-grid {
-    flex-direction: column !important;
-    gap: 24px !important;
+    flex-direction: column;
+    gap: 32px;
   }
   .lv-brand-intro-grid .lv-wing-img img {
-    height: auto !important;
-    max-height: 48vh !important;
-    width: 100% !important;
-    object-fit: cover !important;
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .lv-brand-intro .btn-primary,
+  .lv-section-light .btn-primary {
+    display: block;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
   }
 }
 
