@@ -913,6 +913,29 @@ body * {
 
 /* ── MOBILE BRAND INTRO (Section 3A — Wing Image) ── */
 @media (max-width: 767px) {
+  .lv-intro-cta-row {
+    flex-direction: column;
+    gap: 10px !important;
+    margin-top: 18px !important;
+  }
+
+  .lv-intro-cta-row a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .lv-intro-cta-row .lv-view-aircraft-btn {
+    background: transparent !important;
+    color: var(--vj-navy) !important;
+    border: 2px solid rgba(15, 22, 38, 0.5) !important;
+    font-weight: 700;
+  }
+
+  .lv-intro-cta-row .lv-view-aircraft-btn:hover {
+    background: transparent !important;
+    color: var(--vj-navy) !important;
+  }
+
   /* Wing image: cap height so it doesn't dominate the viewport */
   .lv-brand-intro .lv-wing-img img {
     max-height: 48vh !important;
