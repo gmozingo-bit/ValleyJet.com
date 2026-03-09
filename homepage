@@ -95,6 +95,12 @@
 
 @media (max-width: 767px) {
   .container.mt-5 { margin-top: 6rem !important; margin-bottom: 6rem !important; }
+
+  /* Keep Home Base logo image fully visible on mobile */
+  .lv-homebase-section .lv-intro-img img {
+    height: auto !important;
+    object-fit: contain !important;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -424,10 +430,10 @@ Private Jet Charter</h1>
 <!-- ════════════════════════════════════════════════════════
      SECTION 10: SCOTTSDALE & PHOENIX (primary market)
      ════════════════════════════════════════════════════════ -->
-<div class="lv-section" style="padding: 80px 0;">
+<div class="lv-section lv-homebase-section" style="padding: 80px 0;">
   <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
     <div class="lv-intro-img">
-      <img src="https://valleyjet.com/wp-content/uploads/2026/03/Logo-Badge-Offical-Drake-Scottsdale.png" alt="Scottsdale Phoenix private jet charter service" loading="lazy"/>
+      <img src="https://valleyjet.com/wp-content/uploads/2026/03/ChatGPT-Image-Mar-9-2026-03_05_43-PM.png" alt="Scottsdale Phoenix private jet charter service" loading="lazy"/>
     </div>
     <div>
       <span class="lv-eyebrow-sm">Our Home Base</span>
