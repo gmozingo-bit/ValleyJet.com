@@ -149,9 +149,12 @@
 <div class="lv-section lv-brand-intro" style="padding: 80px 0;">
   <div class="lv-two-col lv-brand-intro-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
 
-    <!-- Left: wing image -->
-    <div class="lv-intro-img lv-wing-img">
-      <img src="https://valleyjet.com/wp-content/uploads/2023/02/wing-valley-edit-scaled.jpeg" alt="ValleyJet Private Jet Charter Interior" fetchpriority="high" style="width: 100%; height: 480px; object-fit: cover; display: block;"/>
+    <!-- Left: wing image with V badge -->
+    <div class="lv-intro-img lv-wing-img" style="position: relative;">
+      <img src="https://valleyjet.com/wp-content/uploads/2023/02/wing-valley-edit-scaled.jpeg" alt="ValleyJet Private Jet Charter" fetchpriority="high" style="width: 100%; height: 480px; object-fit: cover; display: block;"/>
+      <div style="position: absolute; bottom: 0; left: 0; background: #0F1626; width: 110px; height: 110px; display: flex; align-items: center; justify-content: center;">
+        <span style="color: #fff; font-size: 3.2rem; font-weight: 900; font-style: italic; line-height: 1;">V</span>
+      </div>
     </div>
 
     <!-- Right: text column -->
@@ -160,7 +163,10 @@
       <h1 style="font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700; line-height: 1.2; margin-bottom: 8px;">ValleyJet Private Jet Charter</h1>
       <h2 style="font-size: clamp(1rem, 1.8vw, 1.25rem); font-weight: 400; color: var(--vj-muted); line-height: 1.4; margin-bottom: 16px;">On-Demand Private Jet &amp; Helicopter Charter &mdash; Scottsdale, Phoenix &amp; San Diego</h2>
       <p>Premier on-demand jet charter serving Scottsdale, Phoenix, San Diego, and the Southwest &mdash; white-glove service with access to 10,000+ aircraft, no membership required.</p>
-      <a href="https://valleyjet.com/contact/" class="btn-primary" style="margin-top: 16px; display: inline-block;">Book Now</a>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; align-items: center;">
+        <a href="https://valleyjet.com/contact/" class="btn-primary" style="display: inline-block; margin-top: 0;">Book Now</a>
+        <a href="https://valleyjet.com/aircraft/" class="btn-outline-dark">View Aircraft Fleet</a>
+      </div>
       <div class="lv-route-links">
         <a href="https://valleyjet.com/private-jet-charters-scottsdale/">Scottsdale</a>
         <a href="https://valleyjet.com/jet-charter-san-diego/">San Diego</a>

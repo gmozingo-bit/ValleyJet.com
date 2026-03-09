@@ -979,6 +979,33 @@ body * {
   }
 }
 
+/* ── DARK OUTLINE BUTTON (light backgrounds) ── */
+.btn-outline-dark {
+  display: inline-block;
+  background: transparent;
+  color: var(--vj-navy);
+  padding: 12px 28px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: .85rem;
+  letter-spacing: .05em;
+  border: 2px solid var(--vj-navy);
+  transition: background .25s, color .25s;
+}
+.btn-outline-dark:hover {
+  background: var(--vj-navy);
+  color: var(--vj-white);
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .btn-outline-dark {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box;
+  }
+}
+
 /* ── FLEET STATS STRIP (Section 4) ── */
 .lv-fleet-stats {
   display: flex;
