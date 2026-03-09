@@ -920,6 +920,65 @@ body * {
   }
 }
 
+/* ── SECTION 3A: image left, text right — flex overrides theme grid interference ── */
+.lv-brand-intro-grid {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 60px !important;
+}
+.lv-brand-intro-grid > * {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+}
+.lv-brand-intro-grid .lv-wing-img {
+  order: -1 !important;
+}
+@media (max-width: 867px) {
+  .lv-brand-intro-grid {
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+  .lv-brand-intro-grid .lv-wing-img img {
+    height: auto !important;
+    max-height: 48vh !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+}
+
+/* ── POPULAR ROUTE LINKS (Section 3A — below Book Now) ── */
+.lv-route-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-top: 18px;
+}
+
+.lv-route-links a {
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--vj-navy);
+  text-decoration: none;
+  border-bottom: 1px solid var(--vj-orange);
+  padding-bottom: 2px;
+  transition: color .2s, border-color .2s;
+}
+
+.lv-route-links a:hover {
+  color: var(--vj-orange);
+  text-decoration: none;
+}
+
+/* Mobile adjustments for route links */
+@media (max-width: 767px) {
+  .lv-route-links {
+    gap: 8px 14px;
+  }
+}
+
 /* ── FLEET STATS STRIP (Section 4) ── */
 .lv-fleet-stats {
   display: flex;
