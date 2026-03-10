@@ -1524,6 +1524,17 @@ body * {
   .el-accordion-summary::after {
     color: var(--vj-orange);
   }
+
+  /* Full-bleed Empty Leg card — strip all wrapper gaps so the navy card
+     stretches edge-to-edge. Internal card padding (36px 28px) is preserved. */
+  .lv-empty-leg-section {
+    padding: 0 !important;
+  }
+  .lv-empty-leg-section .lv-two-col {
+    padding: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
 }
 
 /* ══════════════════════════════════════════════════════════
