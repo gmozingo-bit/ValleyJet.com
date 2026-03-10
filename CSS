@@ -801,6 +801,37 @@ body * {
   .lv-intro-img { margin-bottom: 24px; }
 }
 
+/* ── NEWSLETTER FEATURED CARD (mobile only) ── */
+@media (max-width: 867px) {
+  .newsletter-featured-card {
+    background: var(--vj-navy);
+    padding: 36px 28px;
+    border-left: 4px solid var(--vj-orange);
+  }
+  .newsletter-featured-card h2 {
+    color: var(--vj-white) !important;
+  }
+  .newsletter-featured-card p,
+  .newsletter-featured-card p a {
+    color: rgba(255, 255, 255, 0.78);
+  }
+  .newsletter-featured-card p strong {
+    color: var(--vj-white);
+  }
+  .newsletter-featured-card .btn-primary {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box;
+    padding: 16px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 28px;
+    box-shadow: 0 4px 18px rgba(255, 83, 61, 0.40);
+  }
+}
+
 /* ══════════════════════════════════════════════════════════
    HOMEPAGE-SPECIFIC COMPONENTS
    ══════════════════════════════════════════════════════════ */
