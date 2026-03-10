@@ -421,14 +421,14 @@ Private Jet Charter</h1>
 <!-- ════════════════════════════════════════════════════════
      SECTION 9: INTERIOR IMAGE (visual break)
      ════════════════════════════════════════════════════════ -->
-<div class="hp-full-img hp-full-img--charter-jet">
+<div class="hp-full-img hp-full-img--charter-jet hp-homebase-img">
   <img src="https://valleyjet.com/wp-content/uploads/2026/03/VJ-Phenom-300E-Branded-2026.png" alt="ValleyJet Phenom 300E private jet" loading="lazy"/>
 </div>
 
 <!-- ════════════════════════════════════════════════════════
      SECTION 10: SCOTTSDALE & PHOENIX (primary market)
      ════════════════════════════════════════════════════════ -->
-<div class="lv-section" style="padding: 80px 0;">
+<div class="lv-section lv-homebase-section" style="padding: 80px 0;">
   <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
     <div class="lv-intro-img">
       <img src="https://valleyjet.com/wp-content/uploads/2026/03/Logo-Badge-Offical-Drake-Scottsdale.png" alt="Scottsdale Phoenix private jet charter service" loading="lazy"/>
@@ -445,14 +445,14 @@ Private Jet Charter</h1>
 <!-- ════════════════════════════════════════════════════════
      SECTION 11: FULL-WIDTH IMAGE (visual break)
      ════════════════════════════════════════════════════════ -->
-<div class="hp-full-img">
+<div class="hp-full-img hp-winter-img">
   <img src="https://valleyjet.com/wp-content/uploads/2026/03/XLS-in-snow-scaled.png" alt="ValleyJet private jet charter fleet on runway" loading="lazy"/>
 </div>
 
 <!-- ════════════════════════════════════════════════════════
      SECTION 12: ASPEN (seasonal destination)
      ════════════════════════════════════════════════════════ -->
-<div class="lv-section-light">
+<div class="lv-section-light lv-winter-section">
   <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto;">
     <div class="lv-intro-img">
       <img src="https://valleyjet.com/wp-content/uploads/2026/03/Gemini_Generated_Image_nie46cnie46cnie4.png" alt="Aspen private jet charter direct flight from Phoenix" loading="lazy"/>

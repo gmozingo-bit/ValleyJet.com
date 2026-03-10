@@ -915,6 +915,103 @@ body * {
   }
 }
 
+/* ── MOBILE: Our Home Base full-width background image ── */
+@media (max-width: 867px) {
+  /* Hide the standalone Phenom 300E image above the section */
+  .hp-homebase-img {
+    display: none;
+  }
+
+  /* Full-width background image */
+  .lv-homebase-section {
+    position: relative;
+    background-image: url('https://valleyjet.com/wp-content/uploads/2026/03/VJ-Phenom-300E-Branded-2026.png');
+    background-size: cover;
+    background-position: center 38%;
+    padding: 60px 6vw !important;
+  }
+
+  /* 40% dark overlay */
+  .lv-homebase-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+  }
+
+  /* Content sits above the overlay */
+  .lv-homebase-section .lv-two-col {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* White text for legibility */
+  .lv-homebase-section .lv-eyebrow-sm {
+    color: var(--vj-white);
+  }
+  .lv-homebase-section h2 {
+    color: var(--vj-white) !important;
+  }
+  .lv-homebase-section p {
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+/* ── MOBILE: Winter Getaway full-width background image ── */
+@media (max-width: 867px) {
+  /* Hide the standalone snowy runway image above the section */
+  .hp-winter-img {
+    display: none;
+  }
+
+  /* Full-width background image */
+  .lv-winter-section {
+    position: relative;
+    background-image: url('https://valleyjet.com/wp-content/uploads/2026/03/XLS-in-snow-scaled.png');
+    background-size: cover;
+    background-position: center center;
+    padding: 60px 6vw !important;
+  }
+
+  /* 45% dark overlay */
+  .lv-winter-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    pointer-events: none;
+  }
+
+  /* Content sits above the overlay */
+  .lv-winter-section .lv-two-col {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Hide the inner Aspen scene image (redundant with full-bleed bg) */
+  .lv-winter-section .lv-intro-img {
+    display: none;
+  }
+
+  /* White text for legibility */
+  .lv-winter-section .lv-eyebrow-sm {
+    color: var(--vj-white);
+  }
+  .lv-winter-section h2 {
+    color: var(--vj-white) !important;
+  }
+  .lv-winter-section p {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  /* Explicitly preserve brand-orange button */
+  .lv-winter-section .btn-primary {
+    background: var(--vj-orange);
+    color: var(--vj-white);
+  }
+}
+
 /* ── MOBILE BRAND INTRO (Section 3A — Wing Image) ── */
 @media (max-width: 767px) {
   .lv-intro-cta-row {
