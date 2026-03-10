@@ -1176,6 +1176,42 @@ body * {
   }
 }
 
+/* ── VIDEO BACKGROUND SECTION (Section 4) ── */
+.lv-section-video-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.lv-section-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.lv-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 15, 28, 0.78);
+  z-index: 1;
+}
+
+.lv-video-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* ── EMPTY LEG IMAGE: hide on mobile ── */
+@media (max-width: 867px) {
+  .lv-empty-leg-img {
+    display: none;
+  }
+}
+
 /* ── FLEET STATS STRIP (Section 4) ── */
 .lv-fleet-stats {
   display: flex;
