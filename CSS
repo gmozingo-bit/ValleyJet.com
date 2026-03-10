@@ -1241,6 +1241,28 @@ body * {
   }
 }
 
+/* ── EMPTY LEG SECTION: full-width card on mobile ── */
+@media (max-width: 867px) {
+  .lv-empty-leg-section {
+    padding: 0 !important;
+  }
+  .lv-empty-leg-section .lv-two-col {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .lv-empty-leg-section .newsletter-featured-card {
+    border-radius: 0;
+    border-left: none;
+    border-top: 4px solid var(--vj-orange);
+  }
+
+  /* Eyebrow text – force orange so it's always visible on the dark card */
+  .newsletter-featured-card .lv-eyebrow-sm {
+    color: var(--vj-orange) !important;
+  }
+}
+
 /* ── FLEET STATS STRIP (Section 4) ── */
 .lv-fleet-stats {
   display: flex;
