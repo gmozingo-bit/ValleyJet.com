@@ -1440,3 +1440,122 @@ body * {
   .lv-fleet-stats { gap: 24px; margin: 16px 0 20px; }
   .lv-fleet-num { font-size: 1.5rem; }
 }
+
+/* ══════════════════════════════════════════════════════════
+   EMPTY LEG ACCORDION (Section 7)
+   — open on desktop, closed on mobile (JS removes 'open')
+   ══════════════════════════════════════════════════════════ */
+
+/* Sub-header: always visible above the CTA */
+.el-savings-subhead {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--vj-navy);
+  margin: 18px 0 0;
+  line-height: 1.3;
+}
+
+/* CTA button spacing */
+.el-cta-btn {
+  margin-top: 14px !important;
+  display: inline-block;
+}
+
+/* Accordion container */
+.el-accordion {
+  margin-top: 22px;
+  border-top: 1px solid rgba(15, 22, 38, 0.15);
+}
+
+/* Remove default <details> marker */
+.el-accordion-summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--vj-navy);
+  user-select: none;
+}
+.el-accordion-summary::-webkit-details-marker { display: none; }
+
+/* Animated chevron via ::after */
+.el-accordion-summary::after {
+  content: '▼';
+  font-size: .65rem;
+  color: var(--vj-orange);
+  transition: transform .25s ease;
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+.el-accordion[open] .el-accordion-summary::after {
+  transform: rotate(180deg);
+}
+
+.el-accordion-body {
+  padding-bottom: 16px;
+}
+
+/* ── MOBILE overrides for accordion card context ── */
+@media (max-width: 867px) {
+  .el-savings-subhead {
+    font-size: 1.35rem;
+    color: var(--vj-white) !important;
+  }
+
+  .el-cta-btn {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box;
+  }
+
+  .el-accordion {
+    border-top-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .el-accordion-summary {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .el-accordion-summary::after {
+    color: var(--vj-orange);
+  }
+}
+
+/* ══════════════════════════════════════════════════════════
+   TRUSTED BY — MOBILE FLEX ORDER REORDERING
+   Wraps all homepage sections in .lv-hp-flex-wrap.
+   On mobile, flex-direction: column + order values move
+   the Trusted By logo strip right after the hero.
+   DOM order is unchanged — SEO crawlers see original order.
+   ══════════════════════════════════════════════════════════ */
+@media (max-width: 867px) {
+  .lv-hp-flex-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Hero: stays first (default order: 0) */
+  .mobile-video-hero    { order: 0; }
+  .video-container      { order: 0; } /* already hidden on mobile */
+
+  /* Trusted By: immediately after hero */
+  .lv-trusted-by-section { order: 1; }
+
+  /* Remaining sections maintain their relative sequence */
+  .lv-brand-intro       { order: 2; }
+  .lv-section-3b        { order: 3; }
+  .lv-section-video-bg  { order: 4; }
+  .lv-maximize-section  { order: 5; }
+  .lv-empty-leg-section { order: 6; }
+  .lv-services-section  { order: 7; }
+  .hp-homebase-img      { order: 8; }
+  .lv-homebase-section  { order: 9; }
+  .hp-winter-img        { order: 10; }
+  .lv-winter-section    { order: 11; }
+  .lv-paradise-section  { order: 12; }
+}
