@@ -801,12 +801,41 @@ body * {
   .lv-intro-img { margin-bottom: 24px; }
 }
 
+/* ── NEWSLETTER VIDEO BG: hidden on desktop ── */
+.newsletter-video-wrap { display: none; }
+
 /* ── NEWSLETTER FEATURED CARD (mobile only) ── */
 @media (max-width: 867px) {
   .newsletter-featured-card {
     background: var(--vj-navy);
     padding: 36px 28px;
     border-left: 4px solid var(--vj-orange);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Video background layer */
+  .newsletter-video-wrap {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .newsletter-video-wrap video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .newsletter-video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 15, 28, 0.78);
+  }
+
+  /* All direct card children sit above the video */
+  .newsletter-featured-card > *:not(.newsletter-video-wrap) {
+    position: relative;
+    z-index: 1;
   }
   .newsletter-featured-card h2 {
     color: var(--vj-white) !important;
@@ -1239,6 +1268,137 @@ body * {
 
 /* Swipe hint — desktop hidden, shown on mobile */
 .lv-swipe-hint { display: none; }
+
+/* ── PARADISE PLANE DIRECT SECTION (Section 13) ── */
+.lv-paradise-section {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  min-height: 72vh;
+  background: url('https://valleyjet.com/wp-content/uploads/2021/01/cb.jpg') center 40% / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.lv-paradise-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(15, 22, 38, 0.90) 0%,
+    rgba(15, 22, 38, 0.70) 50%,
+    rgba(0, 30, 55, 0.80) 100%
+  );
+}
+
+.lv-paradise-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 780px;
+  padding: 100px 6vw;
+  color: var(--vj-white);
+}
+
+.lv-paradise-content .lv-eyebrow {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 11px;
+  color: var(--vj-orange);
+  margin-bottom: 16px;
+}
+
+.lv-paradise-content h2 {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 800;
+  color: var(--vj-white);
+  line-height: 1.0;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 20px rgba(0,0,0,.5);
+}
+
+.lv-paradise-content > p {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.75;
+  max-width: 620px;
+  margin: 0 auto 36px;
+}
+
+.lv-paradise-ctas {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.lv-paradise-destinations {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 52px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 32px;
+}
+
+.lv-paradise-destinations span {
+  font-size: .72rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.50);
+  padding: 0 22px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  line-height: 1;
+}
+
+.lv-paradise-destinations span:last-child {
+  border-right: none;
+}
+
+@media (max-width: 767px) {
+  .lv-paradise-section {
+    min-height: 85vh;
+    background-position: center 30%;
+  }
+  .lv-paradise-content {
+    padding: 80px 6vw 70px;
+  }
+  .lv-paradise-content h2 {
+    font-size: 2.4rem;
+  }
+  .lv-paradise-ctas {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .lv-paradise-ctas .btn-primary,
+  .lv-paradise-ctas .btn-outline-vj {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .lv-paradise-destinations {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .lv-paradise-destinations span {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+  .lv-paradise-destinations span:last-child {
+    border-bottom: none;
+  }
+}
 
 /* ── AIRCRAFT NETWORK MOBILE CAROUSEL ── */
 @media (max-width: 767px) {
