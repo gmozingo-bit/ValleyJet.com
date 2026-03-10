@@ -225,12 +225,17 @@ Private Jet Charter</h1>
      SECTION 4: 10,000+ AIRCRAFT AT YOUR FINGERTIPS — NEW DESIGN
      (product showcase with jet category cards)
      ════════════════════════════════════════════════════════ -->
-<div class="lv-section-dark">
+<div class="lv-section-dark lv-section-video-bg">
+  <video class="lv-section-video" autoplay muted loop playsinline preload="metadata">
+    <source src="https://valleyjet.com/wp-content/uploads/2025/06/Video_Ready_Jet_Removed.mp4" type="video/mp4">
+  </video>
+  <div class="lv-video-overlay"></div>
+  <div class="lv-video-content">
   <div style="text-align: center; margin-bottom: 10px;">
     <span class="lv-eyebrow-sm">Our Fleet</span>
   </div>
-  <h2 style="text-align: center; color: var(--vj-white); font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700; margin-bottom: 10px;">10,000+ Aircraft at Your Fingertips</h2>
-  <p style="text-align: center; color: rgba(255,255,255,.65); max-width: 680px; margin: 0 auto 10px;">From anywhere in the world, ValleyJet will match you with the perfect aircraft to suit your wants and needs. Choose from our selection of handpicked aircraft options, including regionally based, transient, and floating planes and helicopters.</p>
+  <h2 style="text-align: center; color: #fff; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; margin-bottom: 10px; letter-spacing: -.01em; text-shadow: 0 2px 18px rgba(0,0,0,.55);">10,000+ Aircraft at Your Fingertips</h2>
+  <p style="text-align: center; color: rgba(255,255,255,.85); max-width: 680px; margin: 0 auto 10px; text-shadow: 0 1px 8px rgba(0,0,0,.4); font-size: 1rem; line-height: 1.65;">From anywhere in the world, ValleyJet will match you with the perfect aircraft to suit your wants and needs. Choose from our selection of handpicked aircraft options, including regionally based, transient, and floating planes and helicopters.</p>
 
   <div class="lv-fleet-stats">
     <div class="lv-fleet-stat"><span class="lv-fleet-num">10,000+</span><span class="lv-fleet-label">Total Aircraft</span></div>
@@ -306,6 +311,7 @@ Private Jet Charter</h1>
     </div>
   </div>
   <p class="lv-swipe-hint">Swipe to explore all aircraft &rarr;</p>
+  </div>
 </div>
 
 <!-- ════════════════════════════════════════════════════════
@@ -362,7 +368,7 @@ Private Jet Charter</h1>
       <p><strong>Popular routes include our Scottsdale to Vegas private jet charters, which are frequently available at discounted rates.</strong> Stay updated with our Empty Leg Newsletter for one way charters from Scottsdale, Phoenix, and San Diego to <a href="https://valleyjet.com/las-vegas-jet-charter/">Vegas</a>, <a href="https://valleyjet.com/jet-charter-san-diego/">San Diego</a>, Aspen, and <a href="https://districtjet.com/">other popular destinations</a>.</p>
       <a href="https://valleyjet.com/empty-leg-newsletter/" class="btn-primary" style="margin-top: 16px;">Sign Up for Empty Legs</a>
     </div>
-    <div class="lv-intro-img">
+    <div class="lv-intro-img lv-empty-leg-img">
       <img src="https://valleyjet.com/wp-content/uploads/2021/01/cb.jpg" alt="ValleyJet empty leg private jet charter deals Scottsdale San Diego" loading="lazy"/>
     </div>
   </div>
