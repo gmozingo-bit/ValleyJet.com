@@ -475,16 +475,21 @@ Private Jet Charter</h1>
 <!-- ════════════════════════════════════════════════════════
      SECTION 13: PARADISE PLANE DIRECT (aspirational)
      ════════════════════════════════════════════════════════ -->
-<div class="lv-section" style="padding: 80px 0;">
-  <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
-    <div>
-      <span class="lv-eyebrow-sm">Tropical Escapes</span>
-      <h2 style="color: var(--vj-navy);">Paradise Plane Direct</h2>
-      <p>Jet set in one of ValleyJet's premier plane charters to the world's most remote, exotic and beautiful beaches. We are offering more flights than ever to the British Virgin Islands, Jamaica and Costa Rica. Enjoy a new type of first class service, welcomed with warm towels, flowing chilled champagne and cabin comforts that cannot be matched by commercial travel. Aircraft charter to the tropics in comfort and arrive refreshed and ready to explore.</p>
-      <a href="https://goo.gl/maps/WkW65BgzTdteq5HS8" target="_blank" class="btn-primary" style="margin-top: 16px;">View Our Customer Reviews</a>
+<div class="lv-paradise-section">
+  <div class="lv-paradise-overlay"></div>
+  <div class="lv-paradise-content">
+    <span class="lv-eyebrow">Tropical Escapes</span>
+    <h2>Paradise<br>Plane Direct</h2>
+    <p>Jet set in one of ValleyJet's premier plane charters to the world's most remote, exotic and beautiful beaches. Enjoy a new level of first class service — welcomed with warm towels, flowing chilled champagne, and cabin comforts that commercial travel simply cannot match. Arrive refreshed and ready to explore.</p>
+    <div class="lv-paradise-ctas">
+      <a href="https://valleyjet.com/contact/" class="btn-primary">Book Your Escape</a>
+      <a href="https://goo.gl/maps/WkW65BgzTdteq5HS8" target="_blank" class="btn-outline-vj">View Customer Reviews</a>
     </div>
-    <div class="lv-intro-img">
-      <img src="https://valleyjet.com/wp-content/uploads/2020/06/pool-home.jpg" alt="Tropical paradise private plane charter luxury vacation" loading="lazy"/>
+    <div class="lv-paradise-destinations">
+      <span>British Virgin Islands</span>
+      <span>Jamaica</span>
+      <span>Costa Rica</span>
+      <span>Cabo San Lucas</span>
     </div>
   </div>
 </div>
