@@ -213,7 +213,7 @@ Private Jet Charter</h1>
       <span class="lv-eyebrow-sm">Executive Aviation</span>
       <h2 style="color: var(--vj-navy); font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 700; line-height: 1.3; margin-bottom: 20px;">On-Demand Flexibility Without Membership Constraints</h2>
       <p>Enjoy the freedom of on-demand private jet travel tailored to your schedule. From light aircraft for regional Southwest hops to heavy jets for international travel, our team delivers uncompromising safety and white-glove service 24/7. Experience elite private aviation with no membership fees or long-term commitments.</p>
-      <a href="https://valleyjet.com/aircraft/" class="btn-primary" style="margin-top: 16px; display: inline-block;">EXPLORE FEET</a>
+      <a href="https://valleyjet.com/aircraft/" class="btn-primary" style="margin-top: 16px; display: inline-block;">EXPLORE FLEET</a>
     </div>
     <div class="lv-intro-img">
       <img src="https://valleyjet.com/wp-content/uploads/2023/02/IMG_0347.jpeg" alt="Private Jet Interior Luxury Cabin" loading="lazy"/>
@@ -252,7 +252,7 @@ Private Jet Charter</h1>
         <span>4-7 Seats</span>
         <span>Up to 1,500 nm</span>
       </div>
-      <a href="https://valleyjet.com/light-jet-charter/" class="btn-primary" style="display: block; text-align: center; margin-top: 18px; font-size: .85rem; padding: 10px 20px;">Learn More</a>
+      <a href="https://valleyjet.com/light-jet-charter/" class="btn-primary" style="display: block; text-align: center; margin-top: 18px; font-size: .85rem; padding: 10px 20px;">LEARN MORE</a>
     </div>
 
     <div class="lv-aircraft-card">
@@ -263,7 +263,7 @@ Private Jet Charter</h1>
         <span>7-9 Seats</span>
         <span>Up to 3,000 nm</span>
       </div>
-      <a href="https://valleyjet.com/midsize-jet-charter/" class="btn-primary" style="display: block; text-align: center; margin-top: 18px; font-size: .85rem; padding: 10px 20px;">Learn More</a>
+      <a href="https://valleyjet.com/midsize-jet-charter/" class="btn-primary" style="display: block; text-align: center; margin-top: 18px; font-size: .85rem; padding: 10px 20px;">LEARN MORE</a>
     </div>
 
     <div class="lv-aircraft-card">
@@ -274,7 +274,7 @@ Private Jet Charter</h1>
         <span>10-16 Seats</span>
         <span>Up to 6,000+ nm</span>
       </div>
-      <a href="https://valleyjet.com/heavyjet/" class="btn-primary" style="display: block; text-align: center; margin-top: 18px; font-size: .85rem; padding: 10px 20px;">Learn More</a>
+      <a href="https://valleyjet.com/heavyjet/" class="btn-primary" style="display: block; text-align: center; margin-top: 18px; font-size: .85rem; padding: 10px 20px;">LEARN MORE</a>
     </div>
 
     <div class="lv-aircraft-card">
@@ -285,7 +285,7 @@ Private Jet Charter</h1>
         <span>2-6 Seats</span>
         <span>Up to 900 nm</span>
       </div>
-      <a href="https://valleyjet.com/contact/" class="btn-primary" style="display: block; text-align: center; margin-top: 18px; font-size: .85rem; padding: 10px 20px;">Get a Quote</a>
+      <a href="https://valleyjet.com/contact/" class="btn-primary" style="display: block; text-align: center; margin-top: 18px; font-size: .85rem; padding: 10px 20px;">GET A QUOTE</a>
     </div>
 
     <div class="lv-aircraft-card">
@@ -296,7 +296,7 @@ Private Jet Charter</h1>
         <span>8-12 Seats</span>
         <span>Up to 4,500 nm</span>
       </div>
-      <a href="https://valleyjet.com/contact/" class="btn-primary" style="display: block; text-align: center; margin-top: 18px; font-size: .85rem; padding: 10px 20px;">Get a Quote</a>
+      <a href="https://valleyjet.com/contact/" class="btn-primary" style="display: block; text-align: center; margin-top: 18px; font-size: .85rem; padding: 10px 20px;">GET A QUOTE</a>
     </div>
 
     <div class="lv-aircraft-card">
@@ -307,7 +307,7 @@ Private Jet Charter</h1>
         <span>2-8 Passengers</span>
         <span>Local Transfers</span>
       </div>
-      <a href="https://valleyjet.com/contact/" class="btn-primary" style="display: block; text-align: center; margin-top: 18px; font-size: .85rem; padding: 10px 20px;">Get a Quote</a>
+      <a href="https://valleyjet.com/contact/" class="btn-primary" style="display: block; text-align: center; margin-top: 18px; font-size: .85rem; padding: 10px 20px;">GET A QUOTE</a>
     </div>
   </div>
   <p class="lv-swipe-hint">Swipe to explore all aircraft &rarr;</p>
@@ -348,7 +348,7 @@ Private Jet Charter</h1>
       <span class="lv-eyebrow-sm">The ValleyJet Difference</span>
       <h2 style="color: var(--vj-navy);">Maximize Your Time</h2>
       <p>Experience the ultimate in executive private air travel with ValleyJet. Our team of local experts will work closely with you to plan every detail of your chartered flight, ensuring that it meets your exacting standards of luxury, safety, and comfort. Choose from our selection of handpicked aircraft options, including regionally based, transient, and floating planes and helicopters, and enjoy exceptional value for money with our competitive pricing. Whether you need a light jet charter from Scottsdale for a short getaway or a midsize cabin for extended travel, we'll match you with the ideal aircraft.</p>
-      <a href="https://valleyjet.com/contact/" class="btn-primary" style="margin-top: 16px;">Get a Quote</a>
+      <a href="https://valleyjet.com/contact/" class="btn-primary" style="margin-top: 16px;">GET A QUOTE</a>
     </div>
     <div class="lv-intro-img">
       <img src="https://valleyjet.com/wp-content/uploads/2023/02/adobestock_98400582.webp" alt="Private Jet Interior Luxury Cabin" style="object-position: center center;" loading="lazy"/>
@@ -362,6 +362,12 @@ Private Jet Charter</h1>
 <div class="lv-section" style="padding: 80px 0;">
   <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
     <div class="newsletter-featured-card">
+      <div class="newsletter-video-wrap">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="https://valleyjet.com/wp-content/uploads/2025/06/Video_Ready_Jet_Removed.mp4" type="video/mp4">
+        </video>
+        <div class="newsletter-video-overlay"></div>
+      </div>
       <span class="lv-eyebrow-sm">Save Up to 75%</span>
       <h2 style="color: var(--vj-navy);">Empty Leg Newsletter</h2>
       <p>One-way flights, also referred to in the industry as "empty legs", "empty flights", "dead-heads", "repositioning legs", and "ferry flights" are private plane charters that fly without passengers to reposition for a flight or return to home base. Booking wisely using our jet charter Scottsdale and San Diego empty legs, you could save up to 75% on the cost of conventional private jet services.</p>
@@ -443,7 +449,7 @@ Private Jet Charter</h1>
       <span class="lv-eyebrow-sm">Our Home Base</span>
       <h2 style="color: var(--vj-navy);">Scottsdale &amp; Phoenix Private Jet Charter</h2>
       <p>Based in Scottsdale, Arizona, ValleyJet serves the Southwest and the Western United States with exceptional door to ramp service, flight time flexibility that can be scheduled from anywhere at the drop of a dime, and an aircraft network of over 7,000 jets worldwide and over 60 planes and helicopters in the valley. Our team works to effectively organize the best private jet and helicopter charter to fit your budget and preference.</p>
-      <a href="https://valleyjet.com/private-jet-charters-scottsdale/" class="btn-primary" style="margin-top: 16px;">Learn More</a>
+      <a href="https://valleyjet.com/private-jet-charters-scottsdale/" class="btn-primary" style="margin-top: 16px;">LEARN MORE</a>
     </div>
   </div>
 </div>
@@ -467,7 +473,7 @@ Private Jet Charter</h1>
       <span class="lv-eyebrow-sm">Winter Getaway</span>
       <h2 style="color: var(--vj-navy);">Aspen Charter Flight Direct</h2>
       <p>Skip the commute and catch a ValleyJet flight direct to Aspen, Colorado, Provo, Utah, and your other winter vacation destinations. We provide an experience beyond your flight, offering vacation packages for the individuals and couples at the most exclusive resorts in the Rocky Mountains. Aspen chartered flights and other mountainous airport destinations are the fastest and easiest way to enjoy more time on the slopes and less time on the runway.</p>
-      <a href="https://valleyjet.com/aspen-private-jet-charter/" class="btn-primary" style="margin-top: 16px;">Learn More</a>
+      <a href="https://valleyjet.com/aspen-private-jet-charter/" class="btn-primary" style="margin-top: 16px;">LEARN MORE</a>
     </div>
   </div>
 </div>
@@ -475,16 +481,21 @@ Private Jet Charter</h1>
 <!-- ════════════════════════════════════════════════════════
      SECTION 13: PARADISE PLANE DIRECT (aspirational)
      ════════════════════════════════════════════════════════ -->
-<div class="lv-section" style="padding: 80px 0;">
-  <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
-    <div>
-      <span class="lv-eyebrow-sm">Tropical Escapes</span>
-      <h2 style="color: var(--vj-navy);">Paradise Plane Direct</h2>
-      <p>Jet set in one of ValleyJet's premier plane charters to the world's most remote, exotic and beautiful beaches. We are offering more flights than ever to the British Virgin Islands, Jamaica and Costa Rica. Enjoy a new type of first class service, welcomed with warm towels, flowing chilled champagne and cabin comforts that cannot be matched by commercial travel. Aircraft charter to the tropics in comfort and arrive refreshed and ready to explore.</p>
-      <a href="https://goo.gl/maps/WkW65BgzTdteq5HS8" target="_blank" class="btn-primary" style="margin-top: 16px;">View Our Customer Reviews</a>
+<div class="lv-paradise-section">
+  <div class="lv-paradise-overlay"></div>
+  <div class="lv-paradise-content">
+    <span class="lv-eyebrow">Tropical Escapes</span>
+    <h2>Paradise<br>Plane Direct</h2>
+    <p>Jet set in one of ValleyJet's premier plane charters to the world's most remote, exotic and beautiful beaches. Enjoy a new level of first class service — welcomed with warm towels, flowing chilled champagne, and cabin comforts that commercial travel simply cannot match. Arrive refreshed and ready to explore.</p>
+    <div class="lv-paradise-ctas">
+      <a href="https://valleyjet.com/contact/" class="btn-primary">BOOK YOUR ESCAPE</a>
+      <a href="https://goo.gl/maps/WkW65BgzTdteq5HS8" target="_blank" class="btn-outline-vj">View Customer Reviews</a>
     </div>
-    <div class="lv-intro-img">
-      <img src="https://valleyjet.com/wp-content/uploads/2020/06/pool-home.jpg" alt="Tropical paradise private plane charter luxury vacation" loading="lazy"/>
+    <div class="lv-paradise-destinations">
+      <span>British Virgin Islands</span>
+      <span>Jamaica</span>
+      <span>Costa Rica</span>
+      <span>Cabo San Lucas</span>
     </div>
   </div>
 </div>
