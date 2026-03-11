@@ -146,7 +146,7 @@ html, body { overflow-x: hidden; }
   <div class="mobile-hero-overlay">
     <h1>Your Journey,<br>Elevated.</h1>
     <p>Private Jet Charter: Scottsdale • Phoenix • San Diego</p>
-    <a href="https://valleyjet.com/contact/" class="mobile-hero-btn">Book Now</a>
+    <a href="https://valleyjet.com/contact/" class="mobile-hero-btn"><strong><em>Book Now</em></strong></a>
   </div>
 </div>
 
@@ -343,51 +343,7 @@ Private Jet Charter</h1>
 </div>
 
 <!-- ════════════════════════════════════════════════════════
-     SECTION 6: MAXIMIZE YOUR TIME (value proposition)
-     ════════════════════════════════════════════════════════ -->
-<div class="lv-section-light">
-  <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto;">
-    <div>
-      <span class="lv-eyebrow-sm">The ValleyJet Difference</span>
-      <h2 style="color: var(--vj-navy);">Maximize Your Time</h2>
-      <p>Experience the ultimate in executive private air travel with ValleyJet. Our team of local experts will work closely with you to plan every detail of your chartered flight, ensuring that it meets your exacting standards of luxury, safety, and comfort. Choose from our selection of handpicked aircraft options, including regionally based, transient, and floating planes and helicopters, and enjoy exceptional value for money with our competitive pricing. Whether you need a light jet charter from Scottsdale for a short getaway or a midsize cabin for extended travel, we'll match you with the ideal aircraft.</p>
-      <a href="https://valleyjet.com/contact/" class="btn-primary" style="margin-top: 16px;">GET A QUOTE</a>
-    </div>
-    <div class="lv-intro-img">
-      <img src="https://valleyjet.com/wp-content/uploads/2023/02/adobestock_98400582.webp" alt="Private Jet Interior Luxury Cabin" style="object-position: center center;" loading="lazy"/>
-    </div>
-  </div>
-</div>
-
-<!-- ════════════════════════════════════════════════════════
-     SECTION 7: EMPTY LEG NEWSLETTER (conversion / deals)
-     ════════════════════════════════════════════════════════ -->
-<div class="lv-section" style="padding: 80px 0;">
-  <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
-    <div class="newsletter-featured-card">
-      <div class="newsletter-video-wrap">
-        <video autoplay muted loop playsinline preload="metadata">
-          <source src="https://valleyjet.com/wp-content/uploads/2025/06/Video_Ready_Jet_Removed.mp4" type="video/mp4">
-        </video>
-        <div class="newsletter-video-overlay"></div>
-      </div>
-      <span class="lv-eyebrow-sm">Save Up to 75%</span>
-      <h2 style="color: var(--vj-navy);">Empty Leg Newsletter</h2>
-      <details class="faq-empty-leg">
-        <summary>What is an empty leg flight?</summary>
-        <p>One-way &#8220;empty leg&#8221; flights &#8212; also called dead-heads, repositioning legs, or ferry flights &#8212; are private charters repositioning aircraft without passengers. Booking these can save you up to 75% off standard charter rates.</p>
-      </details>
-      <p class="newsletter-routes">Popular routes: Scottsdale &amp; Phoenix to <a href="https://valleyjet.com/las-vegas-jet-charter/">Vegas</a>, <a href="https://valleyjet.com/jet-charter-san-diego/">San Diego</a>, Aspen, and more. Sign up to get notified when deals drop.</p>
-      <a href="https://valleyjet.com/empty-leg-newsletter/" class="btn-primary" style="margin-top: 16px;">Sign Up for Empty Legs</a>
-    </div>
-    <div class="lv-intro-img lv-empty-leg-img">
-      <img src="https://valleyjet.com/wp-content/uploads/2021/01/cb.jpg" alt="ValleyJet empty leg private jet charter deals Scottsdale San Diego" loading="lazy"/>
-    </div>
-  </div>
-</div>
-
-<!-- ════════════════════════════════════════════════════════
-     SECTION 8: CHARTER SERVICES (capabilities — 2x2 grid)
+     SECTION 6: CHARTER SERVICES (capabilities — 2x2 grid)
      ════════════════════════════════════════════════════════ -->
 <div class="lv-section-light">
   <div style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
@@ -432,6 +388,50 @@ Private Jet Charter</h1>
           <p>Seamless helicopter transfers across the Valley and beyond. Over 60 planes and helicopters available locally for immediate dispatch.</p>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION 7: EMPTY LEG NEWSLETTER (conversion / deals)
+     ════════════════════════════════════════════════════════ -->
+<div class="lv-section" style="padding: 80px 0;">
+  <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
+    <div class="newsletter-featured-card">
+      <div class="newsletter-video-wrap">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="https://valleyjet.com/wp-content/uploads/2025/06/Video_Ready_Jet_Removed.mp4" type="video/mp4">
+        </video>
+        <div class="newsletter-video-overlay"></div>
+      </div>
+      <span class="lv-eyebrow-sm">Save Up to 75%</span>
+      <h2 style="color: var(--vj-navy);">Empty Leg Newsletter</h2>
+      <details class="faq-empty-leg" open>
+        <summary>What is an empty leg flight?</summary>
+        <p>One-way &#8220;empty leg&#8221; flights &#8212; also called dead-heads, repositioning legs, or ferry flights &#8212; are private charters repositioning aircraft without passengers. Booking these can save you up to 75% off standard charter rates.</p>
+      </details>
+      <p class="newsletter-routes">Popular routes: Scottsdale &amp; Phoenix to <a href="https://valleyjet.com/las-vegas-jet-charter/">Vegas</a>, <a href="https://valleyjet.com/jet-charter-san-diego/">San Diego</a>, Aspen, and more. Sign up to get notified when deals drop.</p>
+      <a href="https://valleyjet.com/empty-leg-newsletter/" class="btn-primary" style="margin-top: 16px;">Sign Up for Empty Legs</a>
+    </div>
+    <div class="lv-intro-img lv-empty-leg-img">
+      <img src="https://valleyjet.com/wp-content/uploads/2021/01/cb.jpg" alt="ValleyJet empty leg private jet charter deals Scottsdale San Diego" loading="lazy"/>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION 8: MAXIMIZE YOUR TIME (value proposition)
+     ════════════════════════════════════════════════════════ -->
+<div class="lv-section-light">
+  <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto;">
+    <div>
+      <span class="lv-eyebrow-sm">The ValleyJet Difference</span>
+      <h2 style="color: var(--vj-navy);">Maximize Your Time</h2>
+      <p>Experience the ultimate in executive private air travel with ValleyJet. Our team of local experts will work closely with you to plan every detail of your chartered flight, ensuring that it meets your exacting standards of luxury, safety, and comfort. Choose from our selection of handpicked aircraft options, including regionally based, transient, and floating planes and helicopters, and enjoy exceptional value for money with our competitive pricing. Whether you need a light jet charter from Scottsdale for a short getaway or a midsize cabin for extended travel, we'll match you with the ideal aircraft.</p>
+      <a href="https://valleyjet.com/contact/" class="btn-primary" style="margin-top: 16px;">GET A QUOTE</a>
+    </div>
+    <div class="lv-intro-img">
+      <img src="https://valleyjet.com/wp-content/uploads/2023/02/adobestock_98400582.webp" alt="Private Jet Interior Luxury Cabin" style="object-position: center center;" loading="lazy"/>
     </div>
   </div>
 </div>
