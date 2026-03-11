@@ -56,7 +56,7 @@ body * {
     display: none; /* Hidden on desktop by default */
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .mobile-video-hero {
         display: block;
         width: 100vw;
@@ -474,13 +474,22 @@ body * {
   font-weight: 600;
   font-size: .85rem;
   letter-spacing: .05em;
-  border: 2px solid rgba(255,255,255,.45);
+  border: 2px solid rgba(255,255,255,.70);
   transition: border-color .25s, color .25s;
 }
 .btn-outline-vj:hover {
   border-color: var(--vj-orange);
   color: var(--vj-orange);
   text-decoration: none;
+}
+.btn-primary:focus-visible,
+.btn-outline-vj:focus-visible {
+  outline: 3px solid var(--vj-orange);
+  outline-offset: 3px;
+}
+.lv-aircraft-card:focus-visible {
+  outline: 2px solid var(--vj-orange);
+  outline-offset: 2px;
 }
 
 /* ── STATS STRIP ── */
@@ -516,7 +525,7 @@ body * {
   font-size: .7rem;
   letter-spacing: .18em;
   text-transform: uppercase;
-  color: rgba(255,255,255,.55);
+  color: rgba(255,255,255,.80);
   margin-top: .4rem;
 }
 
@@ -1135,7 +1144,7 @@ body * {
 }
 
 /* ── MOBILE BRAND INTRO (Section 3A — Wing Image) ── */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .lv-intro-cta-row {
     flex-direction: column;
     gap: 10px !important;
@@ -1234,7 +1243,7 @@ body * {
 }
 
 /* Mobile adjustments for route links */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .lv-route-links {
     gap: 8px 14px;
   }
@@ -1258,7 +1267,7 @@ body * {
   color: var(--vj-white);
   text-decoration: none;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .btn-outline-dark {
     display: block !important;
     width: 100% !important;
@@ -1424,7 +1433,7 @@ body * {
   border-right: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .lv-paradise-section {
     min-height: 85vh;
     background-position: center 30%;
@@ -1465,7 +1474,7 @@ body * {
 }
 
 /* ── AIRCRAFT NETWORK MOBILE CAROUSEL ── */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* Convert grid to horizontal snap carousel */
   .lv-aircraft-grid {
     display: flex !important;
@@ -1640,7 +1649,7 @@ body * {
 }
 
 /* Mobile adjustments */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .vj-reviews-strip { padding: 44px 0 36px; }
   .vj-reviews-header {
     flex-direction: column;
@@ -1649,4 +1658,12 @@ body * {
   }
   .vj-review-card { flex: 0 0 270px; }
   .vj-reviews-track { gap: 14px; animation-duration: 28s; }
+}
+
+/* ── REDUCED MOTION: respect user accessibility preferences ── */
+@media (prefers-reduced-motion: reduce) {
+  .vj-reviews-track              { animation: none; }
+  .lv-video-container,
+  .vj-mobile-hero                { animation: none; opacity: 1; }
+  .info-overlay                  { animation: none; opacity: 1; }
 }

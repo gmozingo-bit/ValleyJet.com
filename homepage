@@ -4,6 +4,9 @@
 <link rel="preconnect" href="https://chimpstatic.com" crossorigin>
 
 <style>
+/* Prevent horizontal scroll caused by 100vw full-bleed sections */
+html, body { overflow-x: hidden; }
+
 /* General styling for mobile first */
 .wrapper { padding: 0 !important; }
 
@@ -374,7 +377,7 @@ Private Jet Charter</h1>
         <summary>What is an empty leg flight?</summary>
         <p>One-way &#8220;empty leg&#8221; flights &#8212; also called dead-heads, repositioning legs, or ferry flights &#8212; are private charters repositioning aircraft without passengers. Booking these can save you up to 75% off standard charter rates.</p>
       </details>
-      <p class="newsletter-routes">Popular routes: Scottsdale &amp; Phoenix to <a href="https://valleyjet.com/las-vegas-jet-charter/">Vegas</a>, <a href="https://valleyjet.com/jet-charter-san-diego/">San Diego</a>, Aspen, and <a href="https://districtjet.com/">more</a>. Sign up to get notified when deals drop.</p>
+      <p class="newsletter-routes">Popular routes: Scottsdale &amp; Phoenix to <a href="https://valleyjet.com/las-vegas-jet-charter/">Vegas</a>, <a href="https://valleyjet.com/jet-charter-san-diego/">San Diego</a>, Aspen, and more. Sign up to get notified when deals drop.</p>
       <a href="https://valleyjet.com/empty-leg-newsletter/" class="btn-primary" style="margin-top: 16px;">Sign Up for Empty Legs</a>
     </div>
     <div class="lv-intro-img lv-empty-leg-img">
@@ -493,9 +496,9 @@ Private Jet Charter</h1>
 
 <!-- ════════════════════════════════════════════════════════
      SECTION 14: REVIEWS STRIP
-     Replace placeholder quotes below with real Google review text.
      ════════════════════════════════════════════════════════ -->
 <section class="vj-reviews-strip">
+  <h2 class="visually-hidden">Customer Reviews</h2>
   <div class="vj-reviews-header">
     <div class="vj-reviews-score">
       <div class="vj-reviews-stars-row">
@@ -510,59 +513,59 @@ Private Jet Charter</h1>
     <a href="https://goo.gl/maps/WkW65BgzTdteq5HS8" target="_blank" rel="noopener" class="vj-reviews-cta-link">Read All Reviews on Google &rarr;</a>
   </div>
 
-  <div class="vj-reviews-track-wrap" aria-hidden="true">
+  <div class="vj-reviews-track-wrap" role="region" aria-label="Customer reviews">
     <div class="vj-reviews-track">
       <!-- ── Set 1 ── -->
       <div class="vj-review-card">
         <div class="vj-rc-stars">★★★★★</div>
-        <p class="vj-rc-quote">"Exceptional service from start to finish. The team handled every detail perfectly — booking was effortless and the aircraft was flawless."</p>
-        <span class="vj-rc-name">J. Martinez</span>
+        <p class="vj-rc-quote">"We flew with Valley Jet from Scottsdale in one of their midsize jets and it was AMAZING! Super comfy, flexible scheduling, and awesome service. Highly recommended."</p>
+        <span class="vj-rc-name">Paritra M.</span>
       </div>
       <div class="vj-review-card">
         <div class="vj-rc-stars">★★★★★</div>
-        <p class="vj-rc-quote">"ValleyJet made our Aspen trip truly unforgettable. Professional crew, beautiful aircraft, and the whole experience felt first-class."</p>
-        <span class="vj-rc-name">S. Whitmore</span>
+        <p class="vj-rc-quote">"Garrett set me up with a wonderful experience we will never forget! Very polite and communicative. The jet was beautiful, the experience was like no other, and the whole staff was extremely friendly! 10/10 would fly Valley Jet again."</p>
+        <span class="vj-rc-name">Kyler</span>
       </div>
       <div class="vj-review-card">
         <div class="vj-rc-stars">★★★★★</div>
-        <p class="vj-rc-quote">"Best private charter experience in the Valley. Highly recommend for both business and leisure. We'll never fly commercial again."</p>
-        <span class="vj-rc-name">R. Davidson</span>
+        <p class="vj-rc-quote">"I flew with Valley Jet from Scottsdale to LA. Owner provided exceptional customer service and response time. Flight was timely and flight staff was very friendly. Plane was flawless. I highly recommend you book your private flights with Valley Jet."</p>
+        <span class="vj-rc-name">Owen J.</span>
       </div>
       <div class="vj-review-card">
         <div class="vj-rc-stars">★★★★★</div>
-        <p class="vj-rc-quote">"Smooth booking, amazing aircraft, and the team went above and beyond at every turn. Five stars without question."</p>
-        <span class="vj-rc-name">T. Collins</span>
+        <p class="vj-rc-quote">"Valley Jet always provides the most comfortable flight experience you could ask for. Especially grateful for their swiftness in booking last minute flights. The service from booking to landing at your destination is 5 star all around."</p>
+        <span class="vj-rc-name">Jenna P.</span>
       </div>
       <div class="vj-review-card">
         <div class="vj-rc-stars">★★★★★</div>
-        <p class="vj-rc-quote">"Scottsdale to Cabo in pure style. Zero stress, total luxury. ValleyJet is the only way we travel now."</p>
-        <span class="vj-rc-name">A. Reeves</span>
+        <p class="vj-rc-quote">"Everything was perfect. Garrett was amazing at responding to my emails and keeping me in the loop. Thank you!"</p>
+        <span class="vj-rc-name">Julie F.</span>
       </div>
-      <!-- ── Set 2 (duplicate for seamless loop) ── -->
-      <div class="vj-review-card">
+      <!-- ── Set 2 (duplicate for seamless loop — hidden from screen readers) ── -->
+      <div class="vj-review-card" aria-hidden="true">
         <div class="vj-rc-stars">★★★★★</div>
-        <p class="vj-rc-quote">"Exceptional service from start to finish. The team handled every detail perfectly — booking was effortless and the aircraft was flawless."</p>
-        <span class="vj-rc-name">J. Martinez</span>
+        <p class="vj-rc-quote">"We flew with Valley Jet from Scottsdale in one of their midsize jets and it was AMAZING! Super comfy, flexible scheduling, and awesome service. Highly recommended."</p>
+        <span class="vj-rc-name">Paritra M.</span>
       </div>
-      <div class="vj-review-card">
+      <div class="vj-review-card" aria-hidden="true">
         <div class="vj-rc-stars">★★★★★</div>
-        <p class="vj-rc-quote">"ValleyJet made our Aspen trip truly unforgettable. Professional crew, beautiful aircraft, and the whole experience felt first-class."</p>
-        <span class="vj-rc-name">S. Whitmore</span>
+        <p class="vj-rc-quote">"Garrett set me up with a wonderful experience we will never forget! Very polite and communicative. The jet was beautiful, the experience was like no other, and the whole staff was extremely friendly! 10/10 would fly Valley Jet again."</p>
+        <span class="vj-rc-name">Kyler</span>
       </div>
-      <div class="vj-review-card">
+      <div class="vj-review-card" aria-hidden="true">
         <div class="vj-rc-stars">★★★★★</div>
-        <p class="vj-rc-quote">"Best private charter experience in the Valley. Highly recommend for both business and leisure. We'll never fly commercial again."</p>
-        <span class="vj-rc-name">R. Davidson</span>
+        <p class="vj-rc-quote">"I flew with Valley Jet from Scottsdale to LA. Owner provided exceptional customer service and response time. Flight was timely and flight staff was very friendly. Plane was flawless. I highly recommend you book your private flights with Valley Jet."</p>
+        <span class="vj-rc-name">Owen J.</span>
       </div>
-      <div class="vj-review-card">
+      <div class="vj-review-card" aria-hidden="true">
         <div class="vj-rc-stars">★★★★★</div>
-        <p class="vj-rc-quote">"Smooth booking, amazing aircraft, and the team went above and beyond at every turn. Five stars without question."</p>
-        <span class="vj-rc-name">T. Collins</span>
+        <p class="vj-rc-quote">"Valley Jet always provides the most comfortable flight experience you could ask for. Especially grateful for their swiftness in booking last minute flights. The service from booking to landing at your destination is 5 star all around."</p>
+        <span class="vj-rc-name">Jenna P.</span>
       </div>
-      <div class="vj-review-card">
+      <div class="vj-review-card" aria-hidden="true">
         <div class="vj-rc-stars">★★★★★</div>
-        <p class="vj-rc-quote">"Scottsdale to Cabo in pure style. Zero stress, total luxury. ValleyJet is the only way we travel now."</p>
-        <span class="vj-rc-name">A. Reeves</span>
+        <p class="vj-rc-quote">"Everything was perfect. Garrett was amazing at responding to my emails and keeping me in the loop. Thank you!"</p>
+        <span class="vj-rc-name">Julie F.</span>
       </div>
     </div>
   </div>
