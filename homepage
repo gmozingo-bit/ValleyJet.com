@@ -431,18 +431,19 @@ Private Jet Charter</h1>
 </div>
 
 <!-- ════════════════════════════════════════════════════════
-     SECTION 9: INTERIOR IMAGE (visual break)
+     SECTION 9 + 10: CHARTER JET IMAGE + HOME BASE BADGE
+     (on mobile these two stack inside one 100vh screen)
      ════════════════════════════════════════════════════════ -->
-<div class="hp-full-img hp-full-img--charter-jet hp-homebase-img">
-  <img src="https://valleyjet.com/wp-content/uploads/2026/03/VJ-Phenom-300E-Branded-2026.png" alt="ValleyJet Phenom 300E private jet" loading="lazy"/>
-</div>
+<div class="hp-charter-homebase-wrap">
+  <div class="hp-full-img hp-full-img--charter-jet hp-homebase-img">
+    <img class="hp-charter-desktop-img" src="https://valleyjet.com/wp-content/uploads/2026/03/VJ-Phenom-300E-Branded-2026.png" alt="ValleyJet Phenom 300E private jet" loading="lazy"/>
+    <img class="hp-charter-mobile-img" src="https://valleyjet.com/wp-content/uploads/2026/03/mobilesite-phenom-300.png" alt="ValleyJet Phenom 300E private jet" loading="lazy"/>
+  </div>
 
-<!-- ════════════════════════════════════════════════════════
-     SECTION 10: HOME BASE BADGE (brand mark)
-     ════════════════════════════════════════════════════════ -->
-<div class="lv-homebase-badge-section">
-  <img src="https://valleyjet.com/wp-content/uploads/2026/03/Logo-Badge-Offical-Drake-Scottsdale.png"
-       alt="ValleyJet — Scottsdale &amp; Phoenix private jet charter" loading="lazy"/>
+  <div class="lv-homebase-badge-section">
+    <img src="https://valleyjet.com/wp-content/uploads/2026/03/Logo-Badge-Offical-Drake-Scottsdale.png"
+         alt="ValleyJet — Scottsdale &amp; Phoenix private jet charter" loading="lazy"/>
+  </div>
 </div>
 
 <!-- ════════════════════════════════════════════════════════
