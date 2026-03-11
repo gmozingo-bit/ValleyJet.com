@@ -961,6 +961,29 @@ body * {
 .hp-charter-mobile-img { display: none; }
 
 @media (max-width: 867px) {
+  /* Wrapper: image + badge fill exactly one screen */
+  .hp-charter-homebase-wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  /* Image div grows to fill remaining height after badge */
+  .hp-charter-homebase-wrap .hp-full-img {
+    flex: 1;
+    height: auto;
+    max-height: none;
+  }
+
+  /* Show full mobile image — no cropping */
+  .hp-charter-homebase-wrap .hp-full-img img,
+  .hp-charter-homebase-wrap .hp-full-img .hp-charter-mobile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+  }
+
   .hp-charter-desktop-img { display: none; }
   .hp-charter-mobile-img  { display: block; }
 }
@@ -980,6 +1003,11 @@ body * {
   .hp-full-img,
   .hp-full-img img {
     height: 280px;
+  }
+  /* Charter section overrides the 280px cap — sized by 100vh wrapper */
+  .hp-charter-homebase-wrap .hp-full-img,
+  .hp-charter-homebase-wrap .hp-full-img img {
+    height: auto;
   }
 }
 
