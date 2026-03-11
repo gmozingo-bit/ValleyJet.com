@@ -491,6 +491,83 @@ Private Jet Charter</h1>
   </div>
 </div>
 
+<!-- ════════════════════════════════════════════════════════
+     SECTION 14: REVIEWS STRIP
+     Replace placeholder quotes below with real Google review text.
+     ════════════════════════════════════════════════════════ -->
+<section class="vj-reviews-strip">
+  <div class="vj-reviews-header">
+    <div class="vj-reviews-score">
+      <div class="vj-reviews-stars-row">
+        <span class="vj-star">★</span><span class="vj-star">★</span><span class="vj-star">★</span><span class="vj-star">★</span><span class="vj-star">★</span>
+      </div>
+      <div class="vj-reviews-label">
+        <strong>Excellent</strong>
+        <span class="vj-score-num">4.9 / 5</span>
+        <span class="vj-review-count">80+ Google Reviews</span>
+      </div>
+    </div>
+    <a href="https://goo.gl/maps/WkW65BgzTdteq5HS8" target="_blank" rel="noopener" class="vj-reviews-cta-link">Read All Reviews on Google &rarr;</a>
+  </div>
+
+  <div class="vj-reviews-track-wrap" aria-hidden="true">
+    <div class="vj-reviews-track">
+      <!-- ── Set 1 ── -->
+      <div class="vj-review-card">
+        <div class="vj-rc-stars">★★★★★</div>
+        <p class="vj-rc-quote">"Exceptional service from start to finish. The team handled every detail perfectly — booking was effortless and the aircraft was flawless."</p>
+        <span class="vj-rc-name">J. Martinez</span>
+      </div>
+      <div class="vj-review-card">
+        <div class="vj-rc-stars">★★★★★</div>
+        <p class="vj-rc-quote">"ValleyJet made our Aspen trip truly unforgettable. Professional crew, beautiful aircraft, and the whole experience felt first-class."</p>
+        <span class="vj-rc-name">S. Whitmore</span>
+      </div>
+      <div class="vj-review-card">
+        <div class="vj-rc-stars">★★★★★</div>
+        <p class="vj-rc-quote">"Best private charter experience in the Valley. Highly recommend for both business and leisure. We'll never fly commercial again."</p>
+        <span class="vj-rc-name">R. Davidson</span>
+      </div>
+      <div class="vj-review-card">
+        <div class="vj-rc-stars">★★★★★</div>
+        <p class="vj-rc-quote">"Smooth booking, amazing aircraft, and the team went above and beyond at every turn. Five stars without question."</p>
+        <span class="vj-rc-name">T. Collins</span>
+      </div>
+      <div class="vj-review-card">
+        <div class="vj-rc-stars">★★★★★</div>
+        <p class="vj-rc-quote">"Scottsdale to Cabo in pure style. Zero stress, total luxury. ValleyJet is the only way we travel now."</p>
+        <span class="vj-rc-name">A. Reeves</span>
+      </div>
+      <!-- ── Set 2 (duplicate for seamless loop) ── -->
+      <div class="vj-review-card">
+        <div class="vj-rc-stars">★★★★★</div>
+        <p class="vj-rc-quote">"Exceptional service from start to finish. The team handled every detail perfectly — booking was effortless and the aircraft was flawless."</p>
+        <span class="vj-rc-name">J. Martinez</span>
+      </div>
+      <div class="vj-review-card">
+        <div class="vj-rc-stars">★★★★★</div>
+        <p class="vj-rc-quote">"ValleyJet made our Aspen trip truly unforgettable. Professional crew, beautiful aircraft, and the whole experience felt first-class."</p>
+        <span class="vj-rc-name">S. Whitmore</span>
+      </div>
+      <div class="vj-review-card">
+        <div class="vj-rc-stars">★★★★★</div>
+        <p class="vj-rc-quote">"Best private charter experience in the Valley. Highly recommend for both business and leisure. We'll never fly commercial again."</p>
+        <span class="vj-rc-name">R. Davidson</span>
+      </div>
+      <div class="vj-review-card">
+        <div class="vj-rc-stars">★★★★★</div>
+        <p class="vj-rc-quote">"Smooth booking, amazing aircraft, and the team went above and beyond at every turn. Five stars without question."</p>
+        <span class="vj-rc-name">T. Collins</span>
+      </div>
+      <div class="vj-review-card">
+        <div class="vj-rc-stars">★★★★★</div>
+        <p class="vj-rc-quote">"Scottsdale to Cabo in pure style. Zero stress, total luxury. ValleyJet is the only way we travel now."</p>
+        <span class="vj-rc-name">A. Reeves</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Tracking -->
 <script>
 /* Defer Facebook Pixel until after page load to reduce Total Blocking Time */

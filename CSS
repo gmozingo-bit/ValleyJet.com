@@ -1000,16 +1000,17 @@ body * {
     position: relative;
     background-image: url('https://valleyjet.com/wp-content/uploads/2026/03/16-9SnowXLS.png');
     background-size: cover;
-    background-position: center 40%;
+    background-position: center top;
     padding: 60px 6vw !important;
+    min-height: 520px;
   }
 
-  /* 45% dark overlay */
+  /* 40% dark overlay — lighter so sky reads blue, not navy */
   .lv-winter-section::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0.38);
     pointer-events: none;
   }
 
@@ -1037,7 +1038,7 @@ body * {
 
   .lv-winter-section {
     padding-top: 48px !important;
-    padding-bottom: 48px !important;
+    padding-bottom: 200px !important;
   }
   .lv-winter-section .lv-two-col {
     gap: 18px;
@@ -1426,4 +1427,150 @@ body * {
   /* Compact fleet stats on mobile */
   .lv-fleet-stats { gap: 24px; margin: 16px 0 20px; }
   .lv-fleet-num { font-size: 1.5rem; }
+}
+
+/* ══════════════════════════════════════════════════════════
+   SECTION 14: REVIEWS STRIP
+   ══════════════════════════════════════════════════════════ */
+
+.vj-reviews-strip {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background: var(--vj-navy);
+  padding: 56px 0 48px;
+  overflow: hidden;
+}
+
+/* Header: score + link */
+.vj-reviews-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 6vw;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.vj-reviews-score {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.vj-reviews-stars-row {
+  display: flex;
+  gap: 4px;
+}
+.vj-star {
+  font-size: 1.6rem;
+  color: var(--vj-orange);
+  line-height: 1;
+}
+
+.vj-reviews-label {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.vj-reviews-label strong {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--vj-white);
+  letter-spacing: .01em;
+}
+.vj-score-num {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--vj-orange);
+}
+.vj-review-count {
+  font-size: .78rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.45);
+}
+
+.vj-reviews-cta-link {
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.55);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color .2s;
+}
+.vj-reviews-cta-link:hover { color: var(--vj-white); }
+
+/* Scrolling track */
+.vj-reviews-track-wrap {
+  overflow: hidden;
+  width: 100%;
+}
+
+.vj-reviews-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: vj-scroll-reviews 36s linear infinite;
+}
+.vj-reviews-track:hover { animation-play-state: paused; }
+
+@keyframes vj-scroll-reviews {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Individual card */
+.vj-review-card {
+  flex: 0 0 320px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 4px;
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vj-rc-stars {
+  font-size: 1rem;
+  color: var(--vj-orange);
+  letter-spacing: .1em;
+}
+
+.vj-rc-quote {
+  font-size: .9rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,.80);
+  margin: 0;
+  flex: 1;
+}
+
+.vj-rc-name {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.40);
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .vj-reviews-strip { padding: 44px 0 36px; }
+  .vj-reviews-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 28px;
+  }
+  .vj-review-card { flex: 0 0 270px; }
+  .vj-reviews-track { gap: 14px; animation-duration: 28s; }
 }
