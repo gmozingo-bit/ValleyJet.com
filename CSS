@@ -1670,6 +1670,24 @@ body * {
   .vj-reviews-track { gap: 14px; animation-duration: 28s; }
 }
 
+/* ── MOBILE SECTION 3B SWAP: Loyal Customers + Destinations (mobile only) ── */
+/* Mobile swap block is hidden by default (desktop shows Executive Aviation) */
+.lv-section-3b-mobile-swap { display: none; }
+
+@media (max-width: 768px) {
+  /* Hide the Executive Aviation content in Section 3B on mobile */
+  .lv-exec-aviation-desktop { display: none; }
+
+  /* Show the Loyal Customers + Destinations block in Section 3B on mobile */
+  .lv-section-3b-mobile-swap { display: block; }
+
+  /* Hide the original Section 5 Loyal Customers on mobile (shown in 3B instead) */
+  .lv-loyal-customers-section { display: none; }
+
+  /* Hide destination links from their Section 3A position on mobile */
+  .lv-dest-links-box { display: none !important; }
+}
+
 /* ── REDUCED MOTION: respect user accessibility preferences ── */
 @media (prefers-reduced-motion: reduce) {
   .vj-reviews-track              { animation: none; }
