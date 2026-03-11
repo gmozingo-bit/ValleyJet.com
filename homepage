@@ -4,6 +4,9 @@
 <link rel="preconnect" href="https://chimpstatic.com" crossorigin>
 
 <style>
+/* Prevent horizontal scroll caused by 100vw full-bleed sections */
+html, body { overflow-x: hidden; }
+
 /* General styling for mobile first */
 .wrapper { padding: 0 !important; }
 
@@ -496,6 +499,7 @@ Private Jet Charter</h1>
      Replace placeholder quotes below with real Google review text.
      ════════════════════════════════════════════════════════ -->
 <section class="vj-reviews-strip">
+  <h2 class="visually-hidden">Customer Reviews</h2>
   <div class="vj-reviews-header">
     <div class="vj-reviews-score">
       <div class="vj-reviews-stars-row">
@@ -510,7 +514,7 @@ Private Jet Charter</h1>
     <a href="https://goo.gl/maps/WkW65BgzTdteq5HS8" target="_blank" rel="noopener" class="vj-reviews-cta-link">Read All Reviews on Google &rarr;</a>
   </div>
 
-  <div class="vj-reviews-track-wrap" aria-hidden="true">
+  <div class="vj-reviews-track-wrap" role="region" aria-label="Customer reviews">
     <div class="vj-reviews-track">
       <!-- ── Set 1 ── -->
       <div class="vj-review-card">
@@ -538,28 +542,28 @@ Private Jet Charter</h1>
         <p class="vj-rc-quote">"Scottsdale to Cabo in pure style. Zero stress, total luxury. ValleyJet is the only way we travel now."</p>
         <span class="vj-rc-name">A. Reeves</span>
       </div>
-      <!-- ── Set 2 (duplicate for seamless loop) ── -->
-      <div class="vj-review-card">
+      <!-- ── Set 2 (duplicate for seamless loop — hidden from screen readers) ── -->
+      <div class="vj-review-card" aria-hidden="true">
         <div class="vj-rc-stars">★★★★★</div>
         <p class="vj-rc-quote">"Exceptional service from start to finish. The team handled every detail perfectly — booking was effortless and the aircraft was flawless."</p>
         <span class="vj-rc-name">J. Martinez</span>
       </div>
-      <div class="vj-review-card">
+      <div class="vj-review-card" aria-hidden="true">
         <div class="vj-rc-stars">★★★★★</div>
         <p class="vj-rc-quote">"ValleyJet made our Aspen trip truly unforgettable. Professional crew, beautiful aircraft, and the whole experience felt first-class."</p>
         <span class="vj-rc-name">S. Whitmore</span>
       </div>
-      <div class="vj-review-card">
+      <div class="vj-review-card" aria-hidden="true">
         <div class="vj-rc-stars">★★★★★</div>
         <p class="vj-rc-quote">"Best private charter experience in the Valley. Highly recommend for both business and leisure. We'll never fly commercial again."</p>
         <span class="vj-rc-name">R. Davidson</span>
       </div>
-      <div class="vj-review-card">
+      <div class="vj-review-card" aria-hidden="true">
         <div class="vj-rc-stars">★★★★★</div>
         <p class="vj-rc-quote">"Smooth booking, amazing aircraft, and the team went above and beyond at every turn. Five stars without question."</p>
         <span class="vj-rc-name">T. Collins</span>
       </div>
-      <div class="vj-review-card">
+      <div class="vj-review-card" aria-hidden="true">
         <div class="vj-rc-stars">★★★★★</div>
         <p class="vj-rc-quote">"Scottsdale to Cabo in pure style. Zero stress, total luxury. ValleyJet is the only way we travel now."</p>
         <span class="vj-rc-name">A. Reeves</span>

@@ -474,7 +474,7 @@ body * {
   font-weight: 600;
   font-size: .85rem;
   letter-spacing: .05em;
-  border: 2px solid rgba(255,255,255,.45);
+  border: 2px solid rgba(255,255,255,.70);
   transition: border-color .25s, color .25s;
 }
 .btn-outline-vj:hover {
