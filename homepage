@@ -128,6 +128,12 @@
 <meta name="msvalidate.01" content="5D23002D2A65C8F88EE04B321CEEDC92" />
 
 <!-- ════════════════════════════════════════════════════════
+     FLEX ORDER WRAPPER — mobile only reordering via CSS
+     order values are set in CSS; DOM order is unchanged
+     ════════════════════════════════════════════════════════ -->
+<div class="lv-hp-flex-wrap">
+
+<!-- ════════════════════════════════════════════════════════
      SECTION 1: MOBILE VIDEO HERO (mobile only)
      ════════════════════════════════════════════════════════ -->
 <div class="mobile-video-hero d-lg-none d-xl-none">
@@ -317,7 +323,7 @@ Private Jet Charter</h1>
 <!-- ════════════════════════════════════════════════════════
      SECTION 5: LOYAL CUSTOMERS — SOCIAL PROOF
      ════════════════════════════════════════════════════════ -->
-<div class="lv-section" style="padding: 80px 0;">
+<div class="lv-section lv-trusted-by-section" style="padding: 80px 0;">
   <div style="text-align: center; margin-bottom: 40px;">
     <span class="lv-eyebrow-sm">Trusted By</span>
     <h2 style="color: var(--vj-navy); font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700;">Our Loyal Customers</h2>
@@ -342,7 +348,7 @@ Private Jet Charter</h1>
 <!-- ════════════════════════════════════════════════════════
      SECTION 6: MAXIMIZE YOUR TIME (value proposition)
      ════════════════════════════════════════════════════════ -->
-<div class="lv-section-light">
+<div class="lv-section-light lv-maximize-section">
   <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto;">
     <div>
       <span class="lv-eyebrow-sm">The ValleyJet Difference</span>
@@ -359,7 +365,7 @@ Private Jet Charter</h1>
 <!-- ════════════════════════════════════════════════════════
      SECTION 7: EMPTY LEG NEWSLETTER (conversion / deals)
      ════════════════════════════════════════════════════════ -->
-<div class="lv-section" style="padding: 80px 0;">
+<div class="lv-section lv-empty-leg-section" style="padding: 80px 0;">
   <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
     <div class="newsletter-featured-card">
       <div class="newsletter-video-wrap">
@@ -370,20 +376,39 @@ Private Jet Charter</h1>
       </div>
       <span class="lv-eyebrow-sm">Save Up to 75%</span>
       <h2 style="color: var(--vj-navy);">Empty Leg Newsletter</h2>
-      <p>One-way flights, also referred to in the industry as "empty legs", "empty flights", "dead-heads", "repositioning legs", and "ferry flights" are private plane charters that fly without passengers to reposition for a flight or return to home base. Booking wisely using our jet charter Scottsdale and San Diego empty legs, you could save up to 75% on the cost of conventional private jet services.</p>
-      <p><strong>Popular routes include our Scottsdale to Vegas private jet charters, which are frequently available at discounted rates.</strong> Stay updated with our Empty Leg Newsletter for one way charters from Scottsdale, Phoenix, and San Diego to <a href="https://valleyjet.com/las-vegas-jet-charter/">Vegas</a>, <a href="https://valleyjet.com/jet-charter-san-diego/">San Diego</a>, Aspen, and <a href="https://districtjet.com/">other popular destinations</a>.</p>
-      <a href="https://valleyjet.com/empty-leg-newsletter/" class="btn-primary" style="margin-top: 16px;">Sign Up for Empty Legs</a>
+
+      <!-- Always-visible sub-header and primary CTA -->
+      <p class="el-savings-subhead">Save up to 75% on Private Flights.</p>
+      <a href="https://valleyjet.com/empty-leg-newsletter/" class="btn-primary el-cta-btn">SIGN UP FOR EMPTY LEGS</a>
+
+      <!-- Accordion: open on desktop, closed by default on mobile (JS below handles mobile) -->
+      <details class="el-accordion" open>
+        <summary class="el-accordion-summary">What are Empty Leg Flights?</summary>
+        <div class="el-accordion-body">
+          <p>One-way flights, also referred to in the industry as "empty legs", "empty flights", "dead-heads", "repositioning legs", and "ferry flights" are private plane charters that fly without passengers to reposition for a flight or return to home base. Booking wisely using our jet charter Scottsdale and San Diego empty legs, you could save up to 75% on the cost of conventional private jet services.</p>
+          <p><strong>Popular routes include our Scottsdale to Vegas private jet charters, which are frequently available at discounted rates.</strong> Stay updated with our Empty Leg Newsletter for one way charters from Scottsdale, Phoenix, and San Diego to <a href="https://valleyjet.com/las-vegas-jet-charter/">Vegas</a>, <a href="https://valleyjet.com/jet-charter-san-diego/">San Diego</a>, Aspen, and <a href="https://districtjet.com/">other popular destinations</a>.</p>
+        </div>
+      </details>
     </div>
     <div class="lv-intro-img lv-empty-leg-img">
       <img src="https://valleyjet.com/wp-content/uploads/2021/01/cb.jpg" alt="ValleyJet empty leg private jet charter deals Scottsdale San Diego" loading="lazy"/>
     </div>
   </div>
 </div>
+<script>
+/* Close the Empty Leg accordion on mobile — open on desktop */
+(function () {
+  if (window.innerWidth <= 867) {
+    var acc = document.querySelector('.el-accordion');
+    if (acc) acc.removeAttribute('open');
+  }
+})();
+</script>
 
 <!-- ════════════════════════════════════════════════════════
      SECTION 8: CHARTER SERVICES (capabilities — 2x2 grid)
      ════════════════════════════════════════════════════════ -->
-<div class="lv-section-light">
+<div class="lv-section-light lv-services-section">
   <div style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
     <div style="text-align: center; margin-bottom: 40px;">
       <span class="lv-eyebrow-sm">What We Offer</span>
@@ -499,6 +524,8 @@ Private Jet Charter</h1>
     </div>
   </div>
 </div>
+
+</div><!-- /.lv-hp-flex-wrap -->
 
 <!-- Tracking -->
 <script>
