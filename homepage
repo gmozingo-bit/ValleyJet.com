@@ -419,7 +419,7 @@ Private Jet Charter</h1>
       </div>
       <div class="lv-service-item">
         <div class="lv-service-icon" style="background: transparent; width: 58px; height: 58px;">
-          <img src="https://valleyjet.com/wp-content/uploads/2026/03/helicopter-tail.png" alt="Helicopter charter" style="width: 58px; height: 58px; object-fit: contain;" loading="lazy"/>
+          <img src="https://valleyjet.com/wp-content/uploads/2026/03/helicopter-tail.png" alt="Helicopter charter" style="width: 58px; height: 58px; object-fit: contain; filter: invert(40%) sepia(98%) saturate(2472%) hue-rotate(343deg) brightness(101%) contrast(101%);" loading="lazy"/>
         </div>
         <div>
           <h3>Helicopter Charter</h3>
