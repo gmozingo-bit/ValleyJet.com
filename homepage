@@ -370,8 +370,11 @@ Private Jet Charter</h1>
       </div>
       <span class="lv-eyebrow-sm">Save Up to 75%</span>
       <h2 style="color: var(--vj-navy);">Empty Leg Newsletter</h2>
-      <p>One-way flights, also referred to in the industry as "empty legs", "empty flights", "dead-heads", "repositioning legs", and "ferry flights" are private plane charters that fly without passengers to reposition for a flight or return to home base. Booking wisely using our jet charter Scottsdale and San Diego empty legs, you could save up to 75% on the cost of conventional private jet services.</p>
-      <p><strong>Popular routes include our Scottsdale to Vegas private jet charters, which are frequently available at discounted rates.</strong> Stay updated with our Empty Leg Newsletter for one way charters from Scottsdale, Phoenix, and San Diego to <a href="https://valleyjet.com/las-vegas-jet-charter/">Vegas</a>, <a href="https://valleyjet.com/jet-charter-san-diego/">San Diego</a>, Aspen, and <a href="https://districtjet.com/">other popular destinations</a>.</p>
+      <details class="faq-empty-leg">
+        <summary>What is an empty leg flight?</summary>
+        <p>One-way &#8220;empty leg&#8221; flights &#8212; also called dead-heads, repositioning legs, or ferry flights &#8212; are private charters repositioning aircraft without passengers. Booking these can save you up to 75% off standard charter rates.</p>
+      </details>
+      <p class="newsletter-routes">Popular routes: Scottsdale &amp; Phoenix to <a href="https://valleyjet.com/las-vegas-jet-charter/">Vegas</a>, <a href="https://valleyjet.com/jet-charter-san-diego/">San Diego</a>, Aspen, and <a href="https://districtjet.com/">more</a>. Sign up to get notified when deals drop.</p>
       <a href="https://valleyjet.com/empty-leg-newsletter/" class="btn-primary" style="margin-top: 16px;">Sign Up for Empty Legs</a>
     </div>
     <div class="lv-intro-img lv-empty-leg-img">

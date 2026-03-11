@@ -859,6 +859,45 @@ body * {
     margin-top: 28px;
     box-shadow: 0 4px 18px rgba(255, 83, 61, 0.40);
   }
+
+  /* ── FAQ collapsible (mobile only) ── */
+  .faq-empty-leg {
+    margin: 12px 0 4px;
+  }
+  .faq-empty-leg summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--vj-orange);
+    font-size: 0.95rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .faq-empty-leg summary::-webkit-details-marker { display: none; }
+  .faq-empty-leg summary::after {
+    content: '+';
+    font-size: 1.2rem;
+    line-height: 1;
+    transition: content 0.2s;
+  }
+  .faq-empty-leg[open] summary::after {
+    content: '\2212'; /* − */
+  }
+  .faq-empty-leg > p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ── FAQ: desktop — show as plain text, no toggle ── */
+@media (min-width: 868px) {
+  .faq-empty-leg summary {
+    display: none;
+  }
+  .faq-empty-leg > p {
+    display: block !important;
+  }
 }
 
 /* ══════════════════════════════════════════════════════════
