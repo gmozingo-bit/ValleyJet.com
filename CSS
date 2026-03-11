@@ -975,63 +975,17 @@ body * {
   }
 }
 
-/* ── MOBILE: Our Home Base full-width background image ── */
-@media (max-width: 867px) {
-  /* Hide the standalone Phenom 300E image above the section */
-  .hp-homebase-img {
-    display: none;
-  }
-
-  /* Full-width background image */
-  .lv-homebase-section {
-    position: relative;
-    background-image: url('https://valleyjet.com/wp-content/uploads/2026/03/VJ-Phenom-300E-Branded-2026.png');
-    background-size: cover;
-    background-position: center 38%;
-    padding: 60px 6vw !important;
-  }
-
-  /* 40% dark overlay */
-  .lv-homebase-section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    pointer-events: none;
-  }
-
-  /* Content sits above the overlay */
-  .lv-homebase-section .lv-two-col {
-    position: relative;
-    z-index: 1;
-  }
-
-  /* White text for legibility */
-  .lv-homebase-section .lv-eyebrow-sm {
-    color: var(--vj-white);
-  }
-  .lv-homebase-section h2 {
-    color: var(--vj-white) !important;
-  }
-  .lv-homebase-section p {
-    color: rgba(255, 255, 255, 0.9);
-  }
-
-  /* Tighten spacing so final sections flow naturally on mobile */
-  .lv-homebase-section {
-    padding-top: 48px !important;
-    padding-bottom: 48px !important;
-  }
-  .lv-homebase-section .lv-two-col {
-    gap: 18px;
-  }
-  .lv-homebase-section h2 {
-    margin-bottom: 12px;
-  }
-  .lv-homebase-section p {
-    margin-bottom: 0;
-    line-height: 1.6;
-  }
+/* ── HOME BASE BADGE ── */
+.lv-homebase-badge-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 6vw;
+}
+.lv-homebase-badge-section img {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
 }
 
 /* ── MOBILE: Winter Getaway full-width background image ── */

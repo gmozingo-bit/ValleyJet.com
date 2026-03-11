@@ -438,20 +438,11 @@ Private Jet Charter</h1>
 </div>
 
 <!-- ════════════════════════════════════════════════════════
-     SECTION 10: SCOTTSDALE & PHOENIX (primary market)
+     SECTION 10: HOME BASE BADGE (brand mark)
      ════════════════════════════════════════════════════════ -->
-<div class="lv-section lv-homebase-section" style="padding: 80px 0;">
-  <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
-    <div class="lv-intro-img">
-      <img src="https://valleyjet.com/wp-content/uploads/2026/03/Logo-Badge-Offical-Drake-Scottsdale.png" alt="Scottsdale Phoenix private jet charter service" loading="lazy"/>
-    </div>
-    <div>
-      <span class="lv-eyebrow-sm">Our Home Base</span>
-      <h2 style="color: var(--vj-navy);">Scottsdale &amp; Phoenix Private Jet Charter</h2>
-      <p>Based in Scottsdale, Arizona, ValleyJet serves the Southwest and the Western United States with exceptional door to ramp service, flight time flexibility that can be scheduled from anywhere at the drop of a dime, and an aircraft network of over 7,000 jets worldwide and over 60 planes and helicopters in the valley. Our team works to effectively organize the best private jet and helicopter charter to fit your budget and preference.</p>
-      <a href="https://valleyjet.com/private-jet-charters-scottsdale/" class="btn-primary" style="margin-top: 16px;">LEARN MORE</a>
-    </div>
-  </div>
+<div class="lv-homebase-badge-section">
+  <img src="https://valleyjet.com/wp-content/uploads/2026/03/Logo-Badge-Offical-Drake-Scottsdale.png"
+       alt="ValleyJet — Scottsdale &amp; Phoenix private jet charter" loading="lazy"/>
 </div>
 
 <!-- ════════════════════════════════════════════════════════
@@ -472,7 +463,7 @@ Private Jet Charter</h1>
     <div>
       <span class="lv-eyebrow-sm">Winter Getaway</span>
       <h2 style="color: var(--vj-navy);">Aspen Charter Flight Direct</h2>
-      <p>Skip the commute and catch a ValleyJet flight direct to Aspen, Colorado, Provo, Utah, and your other winter vacation destinations. We provide an experience beyond your flight, offering vacation packages for the individuals and couples at the most exclusive resorts in the Rocky Mountains. Aspen chartered flights and other mountainous airport destinations are the fastest and easiest way to enjoy more time on the slopes and less time on the runway.</p>
+      <p>Fly direct from Phoenix to Aspen, Provo, and the Rockies' most exclusive ski resorts. Aspen chartered flights mean more time on the slopes and less time on the runway.</p>
       <a href="https://valleyjet.com/aspen-private-jet-charter/" class="btn-primary" style="margin-top: 16px;">LEARN MORE</a>
     </div>
   </div>
@@ -486,7 +477,7 @@ Private Jet Charter</h1>
   <div class="lv-paradise-content">
     <span class="lv-eyebrow">Tropical Escapes</span>
     <h2>Paradise<br>Plane Direct</h2>
-    <p>Jet set in one of ValleyJet's premier plane charters to the world's most remote, exotic and beautiful beaches. Enjoy a new level of first class service — welcomed with warm towels, flowing chilled champagne, and cabin comforts that commercial travel simply cannot match. Arrive refreshed and ready to explore.</p>
+    <p>Charter direct to the Caribbean, Costa Rica, and Cabo in first-class comfort — warm towels, chilled champagne, and zero layovers. Arrive refreshed and ready to explore.</p>
     <div class="lv-paradise-ctas">
       <a href="https://valleyjet.com/contact/" class="btn-primary">BOOK YOUR ESCAPE</a>
       <a href="https://goo.gl/maps/WkW65BgzTdteq5HS8" target="_blank" class="btn-outline-vj">View Customer Reviews</a>
