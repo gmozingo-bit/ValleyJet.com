@@ -434,7 +434,8 @@ Private Jet Charter</h1>
      SECTION 9: INTERIOR IMAGE (visual break)
      ════════════════════════════════════════════════════════ -->
 <div class="hp-full-img hp-full-img--charter-jet hp-homebase-img">
-  <img src="https://valleyjet.com/wp-content/uploads/2026/03/VJ-Phenom-300E-Branded-2026.png" alt="ValleyJet Phenom 300E private jet" loading="lazy"/>
+  <img class="hp-charter-desktop-img" src="https://valleyjet.com/wp-content/uploads/2026/03/VJ-Phenom-300E-Branded-2026.png" alt="ValleyJet Phenom 300E private jet" loading="lazy"/>
+  <img class="hp-charter-mobile-img" src="https://valleyjet.com/wp-content/uploads/2026/03/mobilesite-phenom-300.png" alt="ValleyJet Phenom 300E private jet" loading="lazy"/>
 </div>
 
 <!-- ════════════════════════════════════════════════════════

@@ -957,6 +957,14 @@ body * {
   object-position: center 38%;
 }
 
+/* ── CHARTER JET IMAGE: mobile/desktop swap ── */
+.hp-charter-mobile-img { display: none; }
+
+@media (max-width: 867px) {
+  .hp-charter-desktop-img { display: none; }
+  .hp-charter-mobile-img  { display: block; }
+}
+
 /* ── HOMEPAGE RESPONSIVE ── */
 @media (max-width: 867px) {
   .hp-destinations-grid {
