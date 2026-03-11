@@ -998,11 +998,12 @@ body * {
   /* Full-width background image */
   .lv-winter-section {
     position: relative;
-    background-image: url('https://valleyjet.com/wp-content/uploads/2026/03/16-9SnowXLS-1.png');
+    background-image: url('https://valleyjet.com/wp-content/uploads/2026/03/16-9SnowXLS-2.png');
     background-size: cover;
-    background-position: center top;
+    background-position: center center;
+    background-repeat: no-repeat;
     padding: 60px 6vw !important;
-    min-height: 520px;
+    min-height: clamp(300px, 56.25vw, 520px);
   }
 
   /* 40% dark overlay — lighter so sky reads blue, not navy */
