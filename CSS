@@ -1014,6 +1014,16 @@ body * {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    overflow: hidden;
+  }
+
+  /* Direct mobile image child — grows to fill remaining height */
+  .hp-charter-homebase-wrap > .hp-charter-mobile-img {
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    object-fit: contain;
+    object-position: center center;
   }
 
   /* Image div grows to fill remaining height after badge */
@@ -1123,7 +1133,7 @@ body * {
 
   .lv-winter-section {
     padding-top: 48px !important;
-    padding-bottom: 200px !important;
+    padding-bottom: 60px !important;
   }
   .lv-winter-section .lv-two-col {
     gap: 18px;
