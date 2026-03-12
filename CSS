@@ -1084,9 +1084,15 @@ body * {
 
 /* ── MOBILE: Winter Getaway full-width background image ── */
 @media (max-width: 867px) {
-  /* Hide the standalone snowy runway image above the section */
+  /* Show the standalone snowy runway image in full on mobile — no cropping */
   .hp-winter-img {
-    display: none;
+    height: auto;
+    max-height: none;
+    overflow: visible;
+  }
+  .hp-winter-img img {
+    height: auto !important;
+    object-fit: contain;
   }
 
   /* Full-width background image */
