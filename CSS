@@ -1694,6 +1694,26 @@ body * {
   .lv-dest-links-box { display: none !important; }
 }
 
+/* ── FIX: Section 3 — symmetric whitespace (bottom = top, matching empty leg newsletter) ── */
+
+/* Section 3A (lv-brand-intro): reduce mobile padding from 80px to 60px to match lv-section-light */
+@media (max-width: 867px) {
+  .lv-brand-intro {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+}
+
+/* Section 3B: explicitly lock padding-bottom to prevent theme overrides */
+.lv-section-3b {
+  padding-bottom: 80px !important;
+}
+@media (max-width: 867px) {
+  .lv-section-3b {
+    padding-bottom: 60px !important;
+  }
+}
+
 /* ── REDUCED MOTION: respect user accessibility preferences ── */
 @media (prefers-reduced-motion: reduce) {
   .vj-reviews-track              { animation: none; }
