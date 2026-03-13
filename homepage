@@ -195,6 +195,14 @@ Private Jet Charter</h1>
           <a href="https://valleyjet.com/las-vegas-jet-charter/" style="color: #0F1626; font-size: .9rem; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FF533D; padding-bottom: 2px;">More Destinations</a>
       
         </div>
+
+        <!-- Destination links -->
+        <div style="display: flex; gap: 24px; flex-wrap: wrap; margin-top: 24px; padding-top: 20px; border-top: 1px solid #e4e6ea;">
+          <a href="https://valleyjet.com/private-jet-charters-scottsdale/" style="color: #0F1626; font-size: .9rem; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FF533D; padding-bottom: 2px;">Scottsdale</a>
+          <a href="https://valleyjet.com/jet-charter-san-diego/" style="color: #0F1626; font-size: .9rem; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FF533D; padding-bottom: 2px;">San Diego</a>
+          <a href="https://valleyjet.com/las-vegas-jet-charter/" style="color: #0F1626; font-size: .9rem; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FF533D; padding-bottom: 2px;">Las Vegas</a>
+          <a href="https://valleyjet.com/cabo-private-jet-charter/" style="color: #0F1626; font-size: .9rem; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FF533D; padding-bottom: 2px;">Cabo</a>
+        </div>
       </div>
 
       <!-- Mobile: short intro + Book Now only -->
