@@ -359,7 +359,7 @@ Private Jet Charter</h1>
 <!-- ════════════════════════════════════════════════════════
      SECTION 7: EMPTY LEG NEWSLETTER (conversion / deals)
      ════════════════════════════════════════════════════════ -->
-<div class="lv-section" style="padding: 80px 0;">
+<div class="lv-section lv-empty-leg-section" style="padding: 80px 0;">
   <div class="lv-two-col" style="max-width: 1200px; margin: 0 auto; padding: 0 5vw;">
     <div class="newsletter-featured-card">
       <div class="newsletter-video-wrap">
