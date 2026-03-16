@@ -1747,10 +1747,10 @@ body * {
     position: relative !important;
     background-image: url('https://valleyjet.com/wp-content/uploads/2026/03/16-9SnowXLS-2.png') !important;
     background-repeat: no-repeat !important;
-    background-position: center center !important;
+    background-position: center bottom !important;
     background-size: cover !important;
     background-color: #0F1626 !important;
-    min-height: clamp(320px, 80vw, 500px) !important;
+    min-height: clamp(320px, 115vw, 650px) !important;
     padding-top: 2em !important;
     padding-bottom: 2em !important;
     overflow: hidden !important;
