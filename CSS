@@ -1742,31 +1742,31 @@ body * {
     visibility: hidden !important;
   }
 
-  /* 2) Aspen card section: use full image without bottom crop */
+  /* 2) Aspen card section: text at top over background image */
   .lv-section-light.lv-winter-section {
     position: relative !important;
     background-image: url('https://valleyjet.com/wp-content/uploads/2026/03/16-9SnowXLS-2.png') !important;
     background-repeat: no-repeat !important;
     background-position: top center !important;
-    background-size: 100% auto !important; /* show full image width without cropping */
+    background-size: 100% auto !important;
     background-color: #0F1626 !important;
-    min-height: 0 !important;
-    padding-top: 16em !important;   /* room for the full image */
-
+    min-height: clamp(300px, 56.25vw, 520px) !important;
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
     overflow: hidden !important;
   }
 
-  /* 3) Lighter overlay, but only behind text area */
+  /* 3) Overlay darkens the top so text is readable */
   .lv-section-light.lv-winter-section::before {
     content: '' !important;
     position: absolute !important;
     inset: 0 !important;
     background: linear-gradient(
       to bottom,
-      rgba(0,0,0,0.08) 0%,
-      rgba(0,0,0,0.08) 45%,
-      rgba(0,0,0,0.45) 75%,
-      rgba(0,0,0,0.55) 100%
+      rgba(0,0,0,0.55) 0%,
+      rgba(0,0,0,0.45) 25%,
+      rgba(0,0,0,0.08) 55%,
+      rgba(0,0,0,0.0) 100%
     ) !important;
     pointer-events: none !important;
   }
@@ -1810,10 +1810,10 @@ body * {
     background-position: top center !important;
     background-repeat: no-repeat !important;
 
-    padding-top: 14em !important;   /* space for image */
+    padding-top: 2em !important;
     padding-bottom: 2em !important;
 
-    min-height: auto !important;
+    min-height: clamp(300px, 56.25vw, 520px) !important;
     height: auto !important;
   }
 
